@@ -28,6 +28,8 @@ No laboratory work was done. A synthesis and characterisation plan is proposed i
 | Thermodynamics | LaNi₅: 1.84 bar at 25 °C, 1 bar at 11.6 °C, 15.95 MJ/kg H₂; MgH₂ needs 302 °C; 85% of single-plateau alloys reach 1 bar at ≤ 80 °C |
 | Screening | mobile: Ti-based AB₂/AB alloys lead; stationary: TiFe-type and Ti–Zr–Mn alloys. Rankings are material-level screening results, not recommendations for use |
 
+**To run it on your own computer, follow [RUNNING.md](RUNNING.md)** (install, start the app, what to try, troubleshooting; printable copy: [Running_Guide.pdf](Running_Guide.pdf)).
+
 ## Documents
 
 | File | Contents |
