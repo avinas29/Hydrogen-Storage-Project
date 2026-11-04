@@ -1,0 +1,81 @@
+<section>
+<h1 class="part" id="p1"><span class="tag">Part 1</span>Hydrogen storage and metal hydrides</h1>
+<div class="srcline">Report: Chapter 1 and §2.1, §2.3–2.4</div>
+<p class="lede">The physics you need before anything else: why hydrogen is hard to store, what actually happens inside a metal hydride, and why the pressure stays flat (the "plateau") while the metal fills up. Examiners from an energy background usually start here.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p1-1"><span class="num">1.1</span>Why storing hydrogen is hard <span class="tg b">background</span></h2>
+<p>Hydrogen carries a lot of energy per <i>kilogram</i>: its lower heating value (LHV) is about <b>120 MJ/kg</b> (the project uses 119.96 MJ/kg), roughly three times that of petrol. But as a gas at room conditions it is extremely light, so it carries very little energy per <i>litre</i>. Every storage method is a way of packing more hydrogen into a given volume:</p>
+<table class="compact">
+<tr><th style="width:34mm">Method</th><th>How</th><th>Main cost</th></tr>
+<tr><td class="k">Compressed gas</td><td>squeeze to several hundred bar in a strong tank</td><td>compression energy, heavy/expensive vessel, high-pressure safety</td></tr>
+<tr><td class="k">Liquid hydrogen</td><td>cool to about 20 K (−253 °C)</td><td>liquefaction energy, boil-off, cryogenic insulation</td></tr>
+<tr><td class="k">Solid-state (metal hydride)</td><td>let a metal alloy absorb hydrogen into its crystal</td><td>weight of the metal, heat management</td></tr>
+</table>
+<p>Metal hydrides store hydrogen at a <b>few bar</b>, close to room temperature, and can pack more hydrogen per litre than liquid hydrogen. Their weakness is <b>mass</b>: the metal is heavy, so only about 1–2% of the weight is hydrogen for the common alloys.</p>
+
+<h2 id="p1-2"><span class="num">1.2</span>What happens inside a metal hydride <span class="tg b">background</span></h2>
+<div class="box intuition"><div class="lbl">Picture it</div>
+Imagine a crystal of metal atoms as a stack of marbles. Between the marbles there are small gaps ("interstitial sites"). A hydrogen molecule H₂ lands on the surface, splits into two H atoms, and the tiny H atoms slip into the gaps. Fill enough gaps and the metal becomes a new compound, the <b>hydride</b>. Heat it and the H atoms come back out, recombine into H₂ and leave as gas.</div>
+<p>The steps, in order: (1) H₂ sticks to the surface (physisorption); (2) it dissociates into 2 H atoms; (3) the atoms diffuse into interstitial sites. Two directions:</p>
+<ul>
+<li><b>Absorption</b> (charging): metal + H₂ → hydride. It <b>releases heat</b> (exothermic), so the tank must be <i>cooled</i> while refuelling.</li>
+<li><b>Desorption</b> (discharging): hydride → metal + H₂. It <b>needs heat</b> (endothermic), so the tank must be <i>heated</i> to deliver hydrogen. If the heat stops, the hydrogen flow stops, which is a built-in safety feature.</li>
+</ul>
+
+<h2 id="p1-3"><span class="num">1.3</span>The α phase, the β phase and the plateau <span class="tg b">background</span></h2>
+<figure class="wide"><img src="../../report/figures/f_pct_schematic.png" style="max-height:62mm"><figcaption>Schematic PCT isotherms (report Fig. 2.1). Illustrative shapes only.</figcaption></figure>
+<p>Read the left plot from left to right, at one fixed temperature, as you push hydrogen in:</p>
+<ol>
+<li><b>α region</b> (left): a little hydrogen dissolves in the metal as a solid solution. Pressure rises quickly with each bit added.</li>
+<li><b>α + β plateau</b> (middle): the hydride phase β starts to form. Now two solid phases coexist, and the pressure stays almost <b>constant</b> while the metal converts from α to β. This flat part is where nearly all the useful storage happens.</li>
+<li><b>β region</b> (right): all metal is hydride; adding more needs a steep pressure rise.</li>
+</ol>
+<div class="box derive"><div class="lbl">Why is the plateau flat? (Gibbs phase rule)</div>
+Phase rule: degrees of freedom \(F = C - P + 2\). On the plateau there are \(C=2\) components (metal, hydrogen) and \(P=3\) phases (α solid, β solid, H₂ gas). So \(F = 2 - 3 + 2 = 1\). Choosing the temperature uses up that one freedom, so the <b>pressure is fixed</b>: it cannot change while α and β coexist. That fixed pressure is the <b>plateau pressure</b> \(P_{eq}\). At a higher temperature the plateau sits higher (the three curves in the figure).</div>
+<p>This curve is called the <b>PCI</b> (pressure–composition isotherm) or <b>PCT</b> (pressure–composition–temperature) curve. Measuring it in a <b>Sieverts apparatus</b> (a calibrated gas volume connected to the sample) is the standard experiment.</p>
+
+<h2 id="p1-4"><span class="num">1.4</span>How real materials differ from the ideal <span class="tg b">background</span> <span class="tg n">Report §2.1</span></h2>
+<table class="compact">
+<tr><th style="width:30mm">Effect</th><th>What it is</th><th style="width:56mm">Why an engineer cares</th></tr>
+<tr><td class="k">Sloped plateau</td><td>the "flat" part tilts upward, because of composition gradients and lattice strain</td><td>the last hydrogen comes out at a lower pressure than the first. In your data the pressure at 10% charge is a median of 1.75× lower than at 90%.</td></tr>
+<tr><td class="k">Hysteresis</td><td>absorption happens at a higher pressure than desorption at the same T</td><td>you must charge at a higher pressure (compressor work). For TiFe the charging pressure is ≈ 1.9× the delivery pressure.</td></tr>
+<tr><td class="k">Several plateaus</td><td>two or more reaction steps, each with its own ΔH, ΔS (e.g. NaAlH₄)</td><td>only part of the capacity is available at the lower temperature</td></tr>
+<tr><td class="k">Activation</td><td>fresh alloy needs initial cycles/heating before it absorbs (TiFe is famous for this)</td><td>extra processing step</td></tr>
+</table>
+
+<h2 id="p1-5"><span class="num">1.5</span>The families of hydride alloys <span class="tg n">Report Table 2.1</span></h2>
+<p>Alloys are named by stoichiometry. <b>A</b> = an element that likes hydrogen strongly (La, rare earths, Ti, Zr, Mg, Ca). <b>B</b> = an element that does not (Ni, Fe, Mn, Cr, Co, Al). Mixing A and B tunes how strongly the alloy holds hydrogen.</p>
+<table class="compact">
+<tr><th>Family</th><th>Examples</th><th class="c">Median ΔH<br>kJ/mol</th><th class="c">Median wt%<br>(max)</th><th class="c">Median<br>T(1 bar)</th><th>Remember</th></tr>
+<tr><td class="k">AB₅</td><td>LaNi₅, MmNi₄.₅Al₀.₅, CaNi₅</td><td class="c">33.0</td><td class="c">1.2 (1.9)</td><td class="c">24 °C</td><td>the reference hydride; easy activation, flat plateau; La/Co costly</td></tr>
+<tr><td class="k">AB₂ (Laves)</td><td>TiCr₂₋ₓMnₓ, ZrMn₂, Ti–Zr–Mn–V</td><td class="c">29.0</td><td class="c">1.7 (2.9)</td><td class="c">−4 °C</td><td>largest family; lighter, so higher wt%; very tunable; sloped plateaus</td></tr>
+<tr><td class="k">AB</td><td>TiFe, TiFe₁₋ₓMnₓ</td><td class="c">34.7</td><td class="c">1.5 (2.2)</td><td class="c">32 °C</td><td>cheap elements; hard to activate</td></tr>
+<tr><td class="k">SS (BCC)</td><td>V–Ti–Fe, V–Ti–Cr</td><td class="c">30.8</td><td class="c">0.7 (3.7)</td><td class="c">49 °C</td><td>up to ≈ 4 wt%, but only part is reversible at ambient</td></tr>
+<tr><td class="k">Mg-based</td><td>MgH₂, Mg₂Ni</td><td class="c">72.4</td><td class="c">5.6 (7.6)</td><td class="c">266 °C</td><td>high capacity, but needs ≈ 300 °C and is slow</td></tr>
+<tr><td class="k">Complex</td><td>NaAlH₄ (+Ti)</td><td class="c" colspan="3">two steps: 37 and 47 kJ/mol</td><td>reversible only with Ti doping; two plateaus</td></tr>
+</table>
+<p class="small muted">Numbers are medians over single-plateau Purdue materials, computed in this project from the measured ΔH, ΔS and reported capacities.</p>
+<div class="box tip"><div class="lbl">The one trade-off that explains everything</div>
+Light alloys (Mg-based) store more hydrogen per kg but hold it too tightly (high ΔH), so they need high temperatures. Alloys that release hydrogen near room temperature (AB₅, AB₂, AB) are transition-metal alloys: heavy, so only ≈ 1–2 wt%. <b>No material in the data has both high capacity and near-ambient operation.</b></div>
+
+<h2 id="p1-6"><span class="num">1.6</span>Engineering properties and their definitions <span class="tg n">Report §2.3</span></h2>
+<ul>
+<li><b>Gravimetric capacity</b>, wt% = mass of H ÷ mass of hydride × 100. Also given as <b>H/M</b>: hydrogen atoms per metal atom, or per formula unit (the Purdue files use per formula unit). Literature values differ in definition: total uptake, reversible capacity between two pressures, or first plateau only.</li>
+<li><b>Material vs system capacity</b>: a real tank adds the vessel, a heat exchanger and empty space between powder grains, so the <i>system</i> capacity is much lower than the material's. The <b>DOE 2025 target of 5.5 wt% is a system target</b>.</li>
+<li><b>Volumetric capacity</b> (kg H₂ per m³) needs the density of the hydride or the powder bed. It is reported for only 37 Purdue materials, so the project does not estimate it elsewhere.</li>
+<li><b>Reaction heat</b> Q (MJ per kg H₂): must be supplied on discharge and removed on refuelling.</li>
+<li><b>Kinetics</b>: how fast it absorbs/desorbs. Depends on particle size, surface, catalysts, and how far the pressure is from equilibrium.</li>
+<li><b>Cycle life</b>: capacity loss over many cycles. Not available in the datasets.</li>
+</ul>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q1.1</span>Why metal hydrides and not compressed gas?</div><div class="aa"><p>Hydrides store at a few bar near room temperature, so the vessel is cheaper and safer, and the volumetric density is high. The price is weight (≈ 1–2 wt% for common alloys) and the need to manage heat. So they suit stationary storage, forklifts or systems with waste heat, where weight matters less.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q1.2</span>What is the plateau and why is it flat?</div><div class="aa"><p>It is the two-phase region where α (solid solution) and β (hydride) coexist. With 2 components and 3 phases, the phase rule gives one degree of freedom, so at a fixed temperature the pressure is fixed. That is the plateau pressure, \(P_{eq}\).</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q1.3</span>What is hysteresis and why does it matter?</div><div class="aa"><p>Absorption needs a higher pressure than desorption at the same temperature. Each cycle therefore needs extra compression (or a larger temperature swing), which is an energy loss. For TiFe the charging pressure is about 1.9 times the desorption pressure.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q1.4</span>Is 2 wt% good enough for a car?</div><div class="aa"><p>Not for a light-duty car. The DOE 2025 target is 5.5 wt% for the whole <i>system</i>, and ≈ 2 wt% is the <i>material</i> alone; a system would be lower still. That is why the report recommends hydrides for uses where mass matters less: forklifts, buses, stationary buffers.</p></div>
+<div class="why"><b>Trap</b> Never present 2 wt% as a tank figure.</div></div>
+<div class="qa"><div class="qq"><span class="qn">Q1.5</span>Why not just use MgH₂? It holds 7.6 wt%.</div><div class="aa"><p>Its ΔH is ≈ 78 kJ/mol, so it needs ≈ 300 °C to give 1 bar, and the heat needed is ≈ 39 MJ per kg H₂, almost a third of the hydrogen's own energy content. It is also kinetically slow. Fuel-cell waste heat (≈ 70 °C) cannot drive it, so Mg-based materials fail both screens.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q1.6</span>Why is absorption exothermic?</div><div class="aa"><p>Hydrogen atoms bound in the lattice are at lower energy than free H₂ gas, so forming the hydride releases energy. Getting them out costs the same energy, which is why desorption needs heat. The amount per mole of H₂ is ΔH.</p></div></div>
+</section>

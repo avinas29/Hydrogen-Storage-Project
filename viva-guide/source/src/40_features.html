@@ -1,0 +1,65 @@
+<section>
+<h1 class="part" id="p4"><span class="tag">Part 4</span>Turning a formula into numbers</h1>
+<div class="srcline">Report: §3.4, Appendix A</div>
+<p class="lede">A model cannot read "LaNi₅". It needs numbers. This part shows exactly how a formula becomes 38 numbers, with LaNi₅ computed by hand, so you can do it on the board if asked.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p4-1"><span class="num">4.1</span>The idea: describe an alloy by its elements</h2>
+<p>Each element has known properties (mass, size, electronegativity …). An alloy is a mixture of elements in given fractions. So we describe the alloy by <b>statistics of its elements' properties, weighted by how much of each element there is</b>. This is the standard "composition-based descriptor" approach (Ward et al. 2016, "Magpie"). All elemental values come from <b>pymatgen</b>'s periodic table, none typed by hand.</p>
+<div class="box def"><div class="lbl">The rule: composition only</div>
+Inputs come only from the chemical formula. <b>No ΔS, pressure, temperature, capacity or H/M</b> is ever used as an input (the build script asserts this). That is what makes the model usable for an alloy that has never been measured.</div>
+
+<h2 id="p4-2"><span class="num">4.2</span>The 38 descriptors <span class="tg n">Report Table 3.3</span></h2>
+<table class="compact">
+<tr><th style="width:32mm">Group</th><th>What</th><th class="c" style="width:12mm">n</th></tr>
+<tr><td class="k">Elemental statistics</td><td>for 6 properties (atomic mass, electronegativity X, atomic radius, melting point T<sub>m</sub>, molar volume, valence electrons): fraction-weighted <b>mean</b>, <b>standard deviation</b>, <b>min</b>, <b>max</b> = 24, minus 2 removed as duplicates</td><td class="c">22</td></tr>
+<tr><td class="k">Alloy descriptors</td><td>number of elements; configurational entropy; atomic size mismatch δ; fraction of hydride-forming atoms</td><td class="c">4</td></tr>
+<tr><td class="k">Element fractions</td><td>atomic fraction of the 12 most common elements: Zr, Ti, Mn, Fe, Ni, Cr, V, La, Co, Al, Mg, Cu</td><td class="c">12</td></tr>
+</table>
+<p><b>Pruning</b>: if two descriptors were almost identical (|Pearson r| &gt; 0.95), the less interpretable one was dropped. This removed the radius standard deviation (r = 0.999 with δ) and the maximum molar volume (r = 0.964 with the maximum radius). 40 − 2 = <b>38</b>.</p>
+
+<h2 id="p4-3"><span class="num">4.3</span>Worked example: LaNi₅ by hand</h2>
+<div class="ex breakable"><div class="lbl">Step 1: atomic fractions</div>
+<p>LaNi₅ has 6 atoms per formula unit: \(x_{La} = 1/6 = 0.167\), \(x_{Ni} = 5/6 = 0.833\).</p>
+<div class="lbl" style="margin-top:4pt">Step 2: elemental values (pymatgen)</div>
+<table class="compact small" style="width:auto">
+<tr><th>Element</th><th class="c">molar volume (cm³/mol)</th><th class="c">valence electrons</th><th class="c">radius (Å)</th><th class="c">hydride former?</th></tr>
+<tr><td>La</td><td class="c">22.39</td><td class="c">3</td><td class="c">1.95</td><td class="c">yes</td></tr>
+<tr><td>Ni</td><td class="c">6.59</td><td class="c">10</td><td class="c">1.35</td><td class="c">no</td></tr>
+</table>
+<div class="lbl" style="margin-top:4pt">Step 3: descriptors</div>
+<p><b>Mean molar volume</b> (the most important descriptor): \(0.167\times22.39 + 0.833\times6.59 = 3.74 + 5.49 = \mathbf{9.23}\) cm³/mol.</p>
+<p><b>Valence-electron mean and spread</b>: mean \(= 0.167\times3 + 0.833\times10 = 8.83\);<br>
+std \(=\sqrt{0.167(3-8.83)^2 + 0.833(10-8.83)^2} = \sqrt{5.68+1.14} = \mathbf{2.61}\).</p>
+<p><b>Fraction of hydride formers</b>: only La counts \(\Rightarrow \mathbf{0.167}\).</p>
+<p><b>Configurational entropy</b> (units of R): \(-\sum x_i\ln x_i = -(0.167\ln0.167 + 0.833\ln0.833) = 0.299+0.152 = \mathbf{0.451}\).</p>
+<p><b>Size mismatch</b>: \(\bar r = 0.167\times1.95+0.833\times1.35 = 1.450\) Å;
+\(\delta = \sqrt{\sum x_i(1-r_i/\bar r)^2} = \sqrt{0.167(0.345)^2+0.833(0.069)^2} = \mathbf{0.154}\).</p>
+<p class="ans">These match the project's code exactly (vol_mean 9.2286, vec_std 2.6108, config_entropy 0.4511, size_mismatch 0.1543).</p></div>
+
+<h2 id="p4-4"><span class="num">4.4</span>Why these descriptors make physical sense</h2>
+<ul>
+<li><b>Mean molar volume ↔ hole size.</b> Bigger atoms make bigger interstitial holes, and bigger holes bind hydrogen more strongly (higher ΔH). This is the classic Lundin, Lynch and Magee (1977) correlation. In your data, vol_mean has the strongest single correlation with ΔH (Spearman 0.54, positive, as expected).</li>
+<li><b>Fraction of hydride formers ↔ A:B ratio.</b> More "A" atoms (La, Ti, Zr, Mg) means more strongly bound hydrogen.</li>
+<li><b>Valence-electron spread ↔ electronic structure.</b> Electron count affects how hydrogen bonds to the metal.</li>
+<li><b>δ, configurational entropy</b>: lattice strain and mixing, used in multicomponent/high-entropy alloy work (Zhang et al. 2008).</li>
+</ul>
+<div class="box tip"><div class="lbl">A good sign of no leakage</div>
+No single descriptor correlates very strongly with ΔH (maximum |Spearman| = 0.54). If one input correlated at 0.99, it would almost certainly be leaking the target.</div>
+
+<h2 id="p4-5"><span class="num">4.5</span>What composition descriptors cannot see</h2>
+<ul>
+<li><b>Crystal structure</b>: the same composition can form a hexagonal C14 or a cubic C15 Laves phase with different ΔH. Descriptors are identical for both.</li>
+<li><b>Microstructure, processing, impurities</b>: annealing, segregation, secondary phases.</li>
+<li><b>Pseudo-elements</b>: mischmetal and ferrovanadium have undefined compositions, so they cannot be featurised.</li>
+</ul>
+<p>These limits are one reason the error cannot fall to the measurement floor.</p>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q4.1</span>What is a "descriptor" or "feature"?</div><div class="aa"><p>A number computed from the input that the model uses, here from the chemical formula. For example, the fraction-weighted mean molar volume of the elements.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q4.2</span>Compute one descriptor for LaNi₅.</div><div class="aa"><p>Mean molar volume = (1/6)(22.39) + (5/6)(6.59) = 9.23 cm³/mol. (Section 4.3 has the others.)</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q4.3</span>Why did you remove correlated features if random forests can handle them?</div><div class="aa"><p>Random forests do tolerate correlation, but near-duplicates (r &gt; 0.95) add nothing and split the importance between two copies, which makes interpretation harder. Ridge regression, used as a comparison, is also sensitive to collinearity.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q4.4</span>Why not use DFT-calculated or structural descriptors?</div><div class="aa"><p>Structure is known only for some compositions, and DFT for 725 alloys was beyond the project's scope. Composition-only inputs keep the model applicable to any formula. Adding structure (C14/C15, lattice parameter) is listed as the most useful future improvement.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q4.5</span>You added a family one-hot encoding. Did it help?</div><div class="aa"><p>No: with and without it the MAE is 5.26 kJ/mol within one standard deviation. The composition descriptors already encode the family, so the final model uses composition only.</p></div></div>
+</section>

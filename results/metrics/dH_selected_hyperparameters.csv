@@ -1,0 +1,91 @@
+tag,seed,fold,model,params,feature_set
+composition,0,0,Ridge,"{""ridge__alpha"": 10}",composition
+composition,0,0,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,0,0,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,0,1,Ridge,"{""ridge__alpha"": 100}",composition
+composition,0,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,0,1,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,0,2,Ridge,"{""ridge__alpha"": 100}",composition
+composition,0,2,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,0,2,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,0,3,Ridge,"{""ridge__alpha"": 10}",composition
+composition,0,3,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,0,3,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,0,4,Ridge,"{""ridge__alpha"": 100}",composition
+composition,0,4,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,0,4,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,1,0,Ridge,"{""ridge__alpha"": 100}",composition
+composition,1,0,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,1,0,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,1,1,Ridge,"{""ridge__alpha"": 100}",composition
+composition,1,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,1,1,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,1,2,Ridge,"{""ridge__alpha"": 100}",composition
+composition,1,2,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,1,2,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,1,3,Ridge,"{""ridge__alpha"": 10}",composition
+composition,1,3,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,1,3,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,1,4,Ridge,"{""ridge__alpha"": 100}",composition
+composition,1,4,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition
+composition,1,4,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,2,0,Ridge,"{""ridge__alpha"": 100}",composition
+composition,2,0,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition
+composition,2,0,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition,2,1,Ridge,"{""ridge__alpha"": 100}",composition
+composition,2,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,2,1,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,2,2,Ridge,"{""ridge__alpha"": 100}",composition
+composition,2,2,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,2,2,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,2,3,Ridge,"{""ridge__alpha"": 100}",composition
+composition,2,3,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition
+composition,2,3,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition
+composition,2,4,Ridge,"{""ridge__alpha"": 100}",composition
+composition,2,4,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition
+composition,2,4,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition
+composition+family,0,0,Ridge,"{""ridge__alpha"": 10}",composition+family
+composition+family,0,0,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,0,0,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,0,1,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,0,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,0,1,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,0,2,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,0,2,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition+family
+composition+family,0,2,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,0,3,Ridge,"{""ridge__alpha"": 10}",composition+family
+composition+family,0,3,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition+family
+composition+family,0,3,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,0,4,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,0,4,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,0,4,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,1,0,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,1,0,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,1,0,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family
+composition+family,1,1,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,1,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,1,1,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,1,2,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,1,2,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,1,2,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family
+composition+family,1,3,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,1,3,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,1,3,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,1,4,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,1,4,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,1,4,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family
+composition+family,2,0,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,2,0,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,2,0,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family
+composition+family,2,1,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,2,1,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,2,1,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,2,2,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,2,2,RandomForest,"{""max_features"": 0.66, ""min_samples_leaf"": 1}",composition+family
+composition+family,2,2,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family
+composition+family,2,3,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,2,3,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,2,3,GradientBoosting,"{""learning_rate"": 0.1, ""max_depth"": 3}",composition+family
+composition+family,2,4,Ridge,"{""ridge__alpha"": 100}",composition+family
+composition+family,2,4,RandomForest,"{""max_features"": 0.33, ""min_samples_leaf"": 1}",composition+family
+composition+family,2,4,GradientBoosting,"{""learning_rate"": 0.05, ""max_depth"": 3}",composition+family

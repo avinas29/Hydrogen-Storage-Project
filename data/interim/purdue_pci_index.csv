@@ -1,0 +1,69 @@
+material_id,pci_file,author,doi_or_source,figure_location,note,digitized_from_figure,shifted_by_curator,n_curves,n_abs,n_des,T_K_list,n_points
+Ca[0.85]Mm[0.15]Ni[5],Ca[0.85]Mm[0.15]Ni[5]_PCI.csv,Liang,10.1016/S0925-8388(01)01010-6,Figure 6,Isotherm shifted left by 0.15 mass percent to zero on reversible portion only,True,True,1,0,1,303,15
+Ca[1]Ni[3],Ca[1]Ni[3]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 5,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,37
+Ca[1]Ni[5],Ca[1]Ni[5]_PCI.csv,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True,True,5,1,4,298;303;333;353,94
+Ca[1]Ti[1]Mg[1]Ni[9],Ca[1]Ti[1]Mg[1]Ni[9]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 7c,Isotherms shifted by 0.15 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,47
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]_PCI.csv,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,True,False,8,4,4,253;273;298;308,87
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]_PCI.csv,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,True,False,6,3,3,273;296;353,58
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]_PCI.csv,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True,True,6,3,3,273;296;353,56
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]_PCI.csv,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,True,False,7,3,4,296;329;343;373,99
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]_PCI.csv,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,True,False,6,3,3,273;296;329,97
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]_PCI.csv,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,True,False,6,3,3,273;296;338,77
+Ce[1]Ni[5],Ce[1]Ni[5]_PCI.csv,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True,True,6,3,3,273;296;353,60
+Er[1]Ni[3],Er[1]Ni[3]_PCI.csv,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,True,False,8,4,4,273;283;293;298,182
+Er[2]Co[7],Er[2]Co[7]_PCI.csv,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 20,,True,False,3,0,3,323;347.6;374,81
+Ho[1]Co[3],Ho[1]Co[3]_PCI.csv,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,True,False,5,0,5,273;293;313;333;353,207
+Ho[2]Co[7],Ho[2]Co[7]_PCI.csv,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 19,,True,False,3,0,3,323;347.6;373,103
+HydralloyC2,HydralloyC2_PCI.csv,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C2),,True,False,2,1,1,298;333,21
+La[0.5]Ca[0.5]Ni[3],La[0.5]Ca[0.5]Ni[3]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 6,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,38
+La[0.5]Ca[1.5]Mg[1]Ni[9],La[0.5]Ca[1.5]Mg[1]Ni[9]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 7b,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,50
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]_PCI.csv,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,True,False,6,3,3,273;295;313,145
+La[1]Ca[1]Mg[1]Ni[6]Al[3],La[1]Ca[1]Mg[1]Ni[6]Al[3]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 8a,Isotherms shifted by 0.6 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,41
+La[1]Ca[1]Mg[1]Ni[6]Mn[3],La[1]Ca[1]Mg[1]Ni[6]Mn[3]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 8b,Isotherms shifted by 0.3 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,55
+La[1]Ca[1]Mg[1]Ni[9],La[1]Ca[1]Mg[1]Ni[9]_PCI.csv,Chen,10.1016/S0925-8388(00)00694-0,Figure 7a,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True,True,3,0,3,293;303;313,53
+La[1]Ni[4.5]Sn[0.5],La[1]Ni[4.5]Sn[0.5]_PCI.csv,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,True,False,2,1,1,373,28
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]_PCI.csv,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,True,False,6,3,3,313;373;423,167
+La[1]Ni[4.68]Sn[0.32],La[1]Ni[4.68]Sn[0.32]_PCI.csv,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,True,False,2,1,1,373,22
+La[1]Ni[4.6]Sn[0.4],La[1]Ni[4.6]Sn[0.4]_PCI.csv,Luo,10.1016/0925-8388(95)01871-9,Figures 1 and 5,,True,False,4,2,2,300;373,54
+La[1]Ni[4.75]Sn[0.25],La[1]Ni[4.75]Sn[0.25]_PCI.csv,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,True,False,2,1,1,373,19
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]_PCI.csv,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,True,False,6,3,3,300;313;333,63
+La[1]Ni[4.7]Sn[0.3],La[1]Ni[4.7]Sn[0.3]_PCI.csv,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,True,False,3,0,3,298;323;348,100
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]_PCI.csv,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,True,False,7,7,0,273;298;323;373;423;473;513,107
+La[1]Ni[4.9]Sn[0.1],La[1]Ni[4.9]Sn[0.1]_PCI.csv,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,True,False,2,1,1,373,27
+La[1]Ni[5],La[1]Ni[5]_PCI.csv,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,True,False,10,5,5,248;262;273;298;323,122
+Lu[1]Co[3],Lu[1]Co[3]_PCI.csv,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,True,False,5,0,5,273;293;313;333;353,116
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]_PCI.csv,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,True,False,5,5,0,547;573;593;623;653,48
+Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],Mm[0.5]La[0.5]Ni[4.7]Sn[0.3]_PCI.csv,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,True,False,3,0,3,298;323;348,72
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]_PCI.csv,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,True,False,8,4,4,323;373;423;473,65
+Mm[1]Ni[4.5]Fe[0.5],Mm[1]Ni[4.5]Fe[0.5]_PCI.csv,Singh,10.1016/j.jallcom.2003.11.005,Figure 3a,,True,False,3,0,3,325;350;375,28
+Mm[1]Ni[4.6]Fe[0.4],Mm[1]Ni[4.6]Fe[0.4]_PCI.csv,Muthukumar,10.1016/j.ijhydene.2004.12.007,Figure 4,,True,False,4,4,0,283;288;293;298,81
+Mm[1]Ni[4.7]Fe[0.3],Mm[1]Ni[4.7]Fe[0.3]_PCI.csv,Singh,10.1016/j.jallcom.2003.11.005,Figure 3b,,True,False,3,0,3,325;350;375,29
+Mm[1]Ni[4.7]Sn[0.3],Mm[1]Ni[4.7]Sn[0.3]_PCI.csv,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,True,False,3,0,3,298;323;348,76
+Mm[1]Ni[4.9]Fe[0.1],Mm[1]Ni[4.9]Fe[0.1]_PCI.csv,Singh,10.1016/j.jallcom.2003.11.005,Figure 3c,,True,False,3,0,3,325;350;375,25
+Na[1]Al[1]H[1],Na[1]Al[1]H[1]_PCI.csv,Streukens,10.1039/b603268k,Figure 1 4 mol % Ti,,True,False,2,1,1,433,43
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]_PCI.csv,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,True,False,6,3,3,320;350;375,50
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]_PCI.csv,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,True,False,6,3,3,320;350;375,53
+Tb[2]Co[7],Tb[2]Co[7]_PCI.csv,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 16,,True,False,3,0,3,323;348;374,61
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]_PCI.csv,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,True,False,10,5,5,323;343;363;393;423,81
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]_PCI.csv,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,True,False,6,3,3,393;413;433,61
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]_PCI.csv,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,True,False,8,4,4,373;393;413;433,93
+Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8],Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8]_PCI.csv,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4b,,True,False,4,2,2,298;333,55
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]_PCI.csv,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,True,False,10,5,5,273.15;295.15;298.15;323.15;348.15;373.15,337
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]_PCI.csv,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,True,False,6,3,3,273;303;333,145
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]_PCI.csv,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,True,False,6,3,3,263;274;284,251
+Ti[1]Cr[1.2]Mn[0.6],Ti[1]Cr[1.2]Mn[0.6]_PCI.csv,Agresti,10.1016/j.msea.2008.09.154,Figure 5c,,True,False,2,0,2,273;307,42
+Ti[1]Cr[1.4]Mn[0.4],Ti[1]Cr[1.4]Mn[0.4]_PCI.csv,Agresti,10.1016/j.msea.2008.09.154,Figure 5b,,True,False,1,0,1,307,24
+Ti[1]Cr[1.78],Ti[1]Cr[1.78]_PCI.csv,Agresti,10.1016/j.msea.2008.09.154,Figure 5a,,True,False,3,0,3,251;273;297,77
+Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15],Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15]_PCI.csv,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4a,,True,False,4,2,2,298;333,40
+Ti[1]Cr[1]Mn[0.8],Ti[1]Cr[1]Mn[0.8]_PCI.csv,Agresti,10.1016/j.msea.2008.09.154,Figure 5d,,True,False,2,0,2,273;307,50
+Ti[1]Fe[0.8]Ni[0.15]V[0.05],Ti[1]Fe[0.8]Ni[0.15]V[0.05]_PCI.csv,Oguro,10.1016/0022-5088(83)90280-1,Figure 2,(Isotherms shifted by 0.1 mass% to remove irreversible portion(,True,True,4,2,2,393;423,74
+Ti[1]Fe[0.8]Ni[0.2]Nb[0.05],Ti[1]Fe[0.8]Ni[0.2]Nb[0.05]_PCI.csv,Oguro,10.1016/0022-5088(83)90280-1,Figure 5,,True,False,4,2,2,393;423,73
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]_PCI.csv,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,True,False,6,3,3,273;303;333,160
+Ti[1]Mn[1.5]V[0.45]Fe[0.1],Ti[1]Mn[1.5]V[0.45]Fe[0.1]_PCI.csv,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C0),Isotherms shifted by 0.15 to zero on reversible portion,True,True,2,1,1,298;333,22
+Y[1]Co[3],Y[1]Co[3]_PCI.csv,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 2,,True,False,4,0,4,348;393;423;498,117
+Y[2]Co[7],Y[2]Co[7]_PCI.csv,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,True,False,5,0,5,298;323;348;423;498,145
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]_PCI.csv,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,True,False,6,6,0,323;348;373;398;423;448,86
+Zr[0.5]Ti[0.5]Cr[1]Fe[1],Zr[0.5]Ti[0.5]Cr[1]Fe[1]_PCI.csv,Yu,10.1016/0022-5088(85)90368-6,Figure 3,,True,False,4,0,4,273;296;323;373,55
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]_PCI.csv,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,True,False,6,6,0,323;348;373;398;423;448,63
+Zr[0.7]Ti[0.3]Cr[1]Fe[1],Zr[0.7]Ti[0.3]Cr[1]Fe[1]_PCI.csv,Yu,10.1016/0022-5088(85)90368-6,Figure 2,,True,False,3,0,3,296;323;373,41
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]_PCI.csv,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True,True,8,4,4,523;573;623;673,55

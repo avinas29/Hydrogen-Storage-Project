@@ -1,0 +1,48 @@
+feature,group,description,kept_after_pruning,n_missing_dH_table
+mass_mean,elemental statistic,fraction-weighted mean of g/mol,True,0
+mass_std,elemental statistic,fraction-weighted std of g/mol,True,0
+mass_min,elemental statistic,minimum over elements of g/mol,True,0
+mass_max,elemental statistic,maximum over elements of g/mol,True,0
+X_mean,elemental statistic,fraction-weighted mean of Pauling electronegativity,True,0
+X_std,elemental statistic,fraction-weighted std of Pauling electronegativity,True,0
+X_min,elemental statistic,minimum over elements of Pauling electronegativity,True,0
+X_max,elemental statistic,maximum over elements of Pauling electronegativity,True,0
+radius_mean,elemental statistic,"fraction-weighted mean of empirical atomic radius, Å",True,0
+radius_std,elemental statistic,"fraction-weighted std of empirical atomic radius, Å",False,0
+radius_min,elemental statistic,"minimum over elements of empirical atomic radius, Å",True,0
+radius_max,elemental statistic,"maximum over elements of empirical atomic radius, Å",True,0
+Tm_mean,elemental statistic,fraction-weighted mean of K,True,0
+Tm_std,elemental statistic,fraction-weighted std of K,True,0
+Tm_min,elemental statistic,minimum over elements of K,True,0
+Tm_max,elemental statistic,maximum over elements of K,True,0
+vol_mean,elemental statistic,fraction-weighted mean of cm3/mol,True,0
+vol_std,elemental statistic,fraction-weighted std of cm3/mol,True,0
+vol_min,elemental statistic,minimum over elements of cm3/mol,True,0
+vol_max,elemental statistic,maximum over elements of cm3/mol,False,0
+vec_mean,elemental statistic,fraction-weighted mean of valence electrons (group convention),True,0
+vec_std,elemental statistic,fraction-weighted std of valence electrons (group convention),True,0
+vec_min,elemental statistic,minimum over elements of valence electrons (group convention),True,0
+vec_max,elemental statistic,maximum over elements of valence electrons (group convention),True,0
+n_elements,alloy descriptor,number of elements,True,0
+config_entropy,alloy descriptor,"ideal configurational entropy, -sum x ln x (units of R)",True,0
+size_mismatch,alloy descriptor,atomic size mismatch delta,True,0
+frac_hydride_former,alloy descriptor,fraction of atoms from stable-hydride-forming elements,True,0
+x_Zr,elemental fraction,atomic fraction of Zr,True,0
+x_Ti,elemental fraction,atomic fraction of Ti,True,0
+x_Mn,elemental fraction,atomic fraction of Mn,True,0
+x_Fe,elemental fraction,atomic fraction of Fe,True,0
+x_Ni,elemental fraction,atomic fraction of Ni,True,0
+x_Cr,elemental fraction,atomic fraction of Cr,True,0
+x_V,elemental fraction,atomic fraction of V,True,0
+x_La,elemental fraction,atomic fraction of La,True,0
+x_Co,elemental fraction,atomic fraction of Co,True,0
+x_Al,elemental fraction,atomic fraction of Al,True,0
+x_Mg,elemental fraction,atomic fraction of Mg,True,0
+x_Cu,elemental fraction,atomic fraction of Cu,True,0
+fam_AB,family,one-hot: family = AB,True,0
+fam_AB2,family,one-hot: family = AB2,True,0
+fam_AB5,family,one-hot: family = AB5,True,0
+fam_MIC,family,one-hot: family = MIC,True,0
+fam_Mg,family,one-hot: family = Mg,True,0
+fam_SS,family,one-hot: family = SS,True,0
+fam_other,family,one-hot: family = other,True,0

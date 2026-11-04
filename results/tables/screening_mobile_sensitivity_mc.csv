@@ -1,0 +1,465 @@
+scheme,purdue_id,family,base_rank,median_rank,rank_q10,rank_q90,p_top5,p_top10
+"perturbed (Dirichlet, base x 20)",Ca[0.85]Mm[0.15]Ni[5],AB5,140,140.0,115.0,164.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ca[1]Ni[5],AB5,74,78.0,43.0,120.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ca[1]Ti[1]Mg[1]Ni[9],AB3,44,46.0,29.0,73.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.2]Pr[0.8]Co[5],AB5,218,215.0,209.0,221.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.4]Pr[0.6]Co[5],AB5,194,197.0,177.9,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.5]La[0.5]Ni[2.5]Cu[2.5],AB5,70,74.0,41.0,106.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.6]Pr[0.4]Co[5],AB5,193,197.0,178.0,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.7]La[0.7]Ni[5],AB5,68,71.0,50.0,92.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[0.8]Pr[0.2]Co[5],AB5,190,192.0,172.0,204.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[1]Ni[4.25]Mn[0.75],AB5,78,80.0,61.0,104.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[1]Ni[4.5]Al[0.5],AB5,65,66.0,54.0,84.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ce[1]Ni[4.5]Mn[0.5],AB5,107,107.0,76.0,151.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Dy[1]Ni[4.25]Ga[0.75],AB5,169,167.0,145.0,181.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Dy[1]Ni[4]Al[1],AB5,183,183.0,167.0,194.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Er[1]Ni[3],AB3,122,122.0,100.0,140.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Er[1]Ni[4]Al[1],AB5,154,155.0,135.0,173.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Er[2]Co[7],A2B7,182,178.0,149.0,207.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Er[6]Fe[23],Misc,155,154.0,88.0,200.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Gd[1]Ni[4.5]Al[0.5],AB5,158,158.0,138.0,175.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Gd[1]Ni[4]Al[1],AB5,212,211.0,204.0,218.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Gd[2]Co[7],A2B7,228,227.0,221.0,230.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ho[1]Ni[4]Al[1],AB5,177,177.0,158.0,189.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ho[6]Fe[23],Misc,188,188.0,148.0,214.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",HydralloyC1,AB2,50,52.0,39.0,75.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",HydralloyC2,AB2,57,59.0,48.0,79.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.13]Ce[0.35]Pr[0.52]Co[5],AB5,189,192.0,173.0,203.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.1]Ce[0.9]Co[5],AB5,202,204.0,185.0,216.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.2]Ce[0.8]Co[5],AB5,209,212.0,192.0,224.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.2]Pr[0.8]Co[5],AB5,211,209.0,204.0,215.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.3]Mm[0.7]Ni[4.5]Cu[0.3]Al[0.2],AB5,102,100.0,85.0,111.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.4]Ce[0.6]Co[5],AB5,197,199.0,182.0,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.5]Ca[0.5]Ni[3],AB3,121,120.0,106.0,130.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.5]Ca[1.5]Mg[1]Ni[9],AB3,91,90.0,60.0,119.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.65]Ce[0.28]Pr[0.07]Co[5],AB5,221,219.0,209.0,229.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.66]Ce[0.2]Pr[0.14]Co[5],AB5,206,207.0,199.0,214.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.6]Pr[0.4]Co[5],AB5,219,216.0,209.0,223.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.6]Y[0.4]Ni[4.8]Mn[0.2],AB5,62,64.0,47.0,84.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.75]Ce[0.25]Ni[4]Cu[0.8]Al[0.2],AB5,124,122.0,110.0,132.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.75]Ce[0.25]Ni[4]Cu[0.9]Al[0.1],AB5,108,110.0,94.0,122.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.75]Ce[0.25]Ni[4]Cu[0.9]Ti[0.1],AB5,143,144.0,119.0,163.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.75]Pr[0.25]Ni[4.5]Cu[0.3]Al[0.2],AB5,120,120.5,104.0,134.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.7]Ce[0.3]Co[5],AB5,223,221.0,215.0,226.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.8]Ce[0.2]Co[5],AB5,201,200.0,191.0,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.8]Ce[0.2]Ni[4.25]Co[0.5]Sn[0.25],AB5,174,172.0,161.0,181.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.8]Ce[0.2]Ni[4.8]Sn[0.25],AB5,128,127.0,113.0,139.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[0.8]Pr[0.2]Co[5],AB5,215,213.0,201.0,221.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ca[1]Mg[1]Ni[6]Al[3],AB3,172,168.0,160.0,175.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ca[1]Mg[1]Ni[9],AB3,63,65.0,52.0,82.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Cu[5],AB5,225,224.0,215.0,229.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[1]Co[4],AB5,229,228.0,219.0,232.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[2]Cu[3],AB5,166,164.0,149.0,178.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[2]Fe[1]Cu[2],AB5,176,174.0,165.0,182.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[3]Cr[0.5]Cu[1.5],AB5,167,165.0,156.0,172.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[3]Cu[2],AB5,141,141.0,126.0,156.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[3]Fe[1]Cu[1],AB5,186,186.0,181.0,192.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.25]Co[0.5]Sn[0.25],AB5,196,196.0,180.0,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.35]Al[0.65],AB5,181,180.0,143.0,198.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.4]B[0.6],AB5,171,168.0,114.0,192.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.4]Zn[0.6],AB5,165,161.0,145.0,176.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.5]Al[0.5],AB5,200,197.0,186.0,209.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.5]Mn[0.3]Al[0.3],AB5,204,203.0,187.0,217.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.5]Si[0.5],AB5,153,155.0,131.0,166.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.65]Al[0.35],AB5,159,158.0,132.0,174.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.65]Mn[0.2]Al[0.15],AB5,146,145.0,120.0,164.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.68]Sn[0.32],AB5,173,172.0,124.0,194.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Al[0.4],AB5,142,145.0,103.0,160.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Cu[0.3]Mn[0.1],AB5,123,120.5,109.0,132.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Ga[0.4],AB5,180,178.0,172.9,183.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Ge[0.4],AB5,179,178.0,167.0,187.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Mn[0.4],AB5,170,165.0,103.0,195.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Si[0.4],AB5,187,188.0,180.0,196.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.6]Sn[0.4],AB5,205,204.0,180.0,222.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.75]Al[0.25],AB5,147,145.0,138.0,153.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.75]Sn[0.25],AB5,139,139.0,88.9,164.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.7]Al[0.3],AB5,73,78.0,46.0,110.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.7]Mn[0.3],AB5,131,130.0,108.0,147.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.7]Si[0.3],AB5,109,113.0,80.0,133.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.7]Sn[0.3],AB5,178,176.0,161.0,188.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.8]Al[0.2],AB5,101,97.0,83.0,111.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.8]Sn[0.2],AB5,118,122.0,73.0,151.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.95]Sn[0.05],AB5,89,88.0,63.0,108.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.9]Al[0.1],AB5,94,92.0,79.0,105.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.9]Mn[0.1],AB5,83,83.0,71.0,97.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4.9]Sn[0.1],AB5,79,84.0,55.0,107.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4]Al[0.5]Cu[0.5],AB5,203,201.0,181.0,219.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4]Cu[1],AB5,156,156.0,141.0,170.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[4]Fe[0.5]Cu[0.5],AB5,160,159.0,149.0,166.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[5.2]Mn[0.05]Al[0.05],AB5,135,135.0,101.0,166.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[5.5]Mn[0.1]Al[0.05],AB5,106,108.0,81.9,138.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[5],AB5,58,62.0,37.0,89.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",La[1]Ni[6.37]Mn[0.33],AB5,111,113.0,71.0,154.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Lm[1]Ni[4.4]Co[0.2]Mn[0.2]Al[0.2],AB5,137,136.0,129.0,144.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Lu[1]Co[3],AB3,168,168.0,148.0,184.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Lu[6]Fe[23],Misc,224,222.0,204.0,229.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mg[1]Y[1]Ni[4],AB2,199,197.0,188.0,208.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[0.3]Ca[0.7]Ni[5],AB5,10,12.0,4.0,31.0,0.252,0.471
+"perturbed (Dirichlet, base x 20)",Mm[0.5]Ca[0.5]Ni[2.5]Co[2.5],AB5,151,151.0,136.0,164.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[0.5]Ca[0.5]Ni[5],AB5,87,85.0,72.0,102.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],AB5,145,143.0,137.0,151.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[0.9]Ti[0.1]Ni[5],AB5,117,120.0,111.0,129.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],AB5,99,98.0,64.0,124.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[3.5]Co[0.7]Al[0.8],AB5,191,192.0,159.0,214.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[3.5]Cu[0.5],AB5,75,78.0,46.0,109.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[3]Co[2],AB5,105,108.0,92.0,120.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.15]Fe[0.85],AB5,64,66.0,39.0,97.0,0.0,0.0005
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.25]Al[0.75],AB5,149,149.0,116.0,165.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Al[0.4]Co[0.4],AB5,92,91.0,78.0,106.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Al[0.4]Cr[0.4],AB5,112,113.0,101.0,125.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Al[0.4]Fe[0.4],AB5,126,124.0,106.0,141.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Al[0.4]Mn[0.4],AB5,100,96.0,83.0,109.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Al[0.8],AB5,192,193.0,185.0,205.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.2]Co[0.2]Mn[0.3]Al[0.3],AB5,161,156.0,106.0,187.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.3]Al[0.7],AB5,125,125.0,90.0,146.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.4]Al[0.6],AB5,77,80.0,55.0,103.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.5]Al[0.5],AB5,98,96.0,74.0,115.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.5]Cr[0.5],AB5,82,84.0,61.0,107.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.5]Fe[0.5],AB5,52,53.0,34.0,74.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.5]Si[0.5],AB5,130,130.0,101.0,157.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.6]Al[0.4],AB5,71,74.0,62.0,90.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.6]Sn[0.4],AB5,163,161.0,130.0,188.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.7]Fe[0.3],AB5,61,62.0,51.0,80.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.7]Sn[0.3],AB5,119,121.0,107.0,133.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.8]Al[0.2],AB5,103,101.0,87.0,112.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4.9]Fe[0.1],AB5,59,61.0,48.0,79.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4]Cu[0.7]Ti[0.1]Sn[0.1]Fe[0.1],AB5,138,137.0,114.0,155.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Mm[1]Ni[4]Cu[0.7]Ti[0.1]Sn[0.1]V[0.1],AB5,136,135.0,112.0,153.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Nd[1]Co[5],AB5,207,210.0,194.0,220.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Nd[1]Ni[4.8]Sn[0.2],AB5,41,41.0,18.0,67.0,0.0015,0.043
+"perturbed (Dirichlet, base x 20)",Nd[1]Ni[4.9]Sn[0.1],AB5,55,56.0,34.0,78.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.75]Rh[0.25],SS,208,206.0,172.0,223.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.825]Ni[0.1]Rh[0.075],SS,198,197.0,143.0,221.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.85]Rh[0.15],SS,216,215.0,188.0,225.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.88]Pt[0.06]Rh[0.06],SS,217,215.0,180.0,227.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.8]Rh[0.2],SS,213,212.0,182.0,225.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.925]Rh[0.075],SS,230,229.0,221.0,231.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.95]Cr[0.05],SS,231,231.0,221.0,232.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.9]Co[0.1],SS,227,226.0,205.0,229.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.9]Ni[0.05]Rh[0.05],SS,222,221.0,195.0,228.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pd[0.9]Rh[0.1],SS,232,231.0,225.0,232.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Pr[1]Ni[2.5]Cu[2.5],AB5,116,122.0,60.0,167.0,0.0,0.002
+"perturbed (Dirichlet, base x 20)",Pr[1]Ni[4.5]Fe[0.5],AB5,48,52.0,22.0,80.0,0.0045,0.0225
+"perturbed (Dirichlet, base x 20)",Pr[2]Co[7],A2B7,214,212.0,194.0,222.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Tb[1]Ni[4.5]Al[0.5],AB5,110,113.0,90.9,135.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Tb[1]Ni[4]Al[1],AB5,164,163.0,145.0,179.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.3]Zr[0.7]Mn[2],AB2,49,51.0,19.0,101.0,0.0185,0.04
+"perturbed (Dirichlet, base x 20)",Ti[0.46]Fe[0.45]V[0.05]Mn[0.05],AB,51,53.0,43.0,71.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],AB,3,4.0,1.0,22.0,0.604,0.7125
+"perturbed (Dirichlet, base x 20)",Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],AB2,129,123.0,61.0,180.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.5]Zr[0.5]Mn[2],AB2,133,131.5,62.900000000000006,182.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.6]Zr[0.4]Mn[1.4]Cr[0.4]Cu[0.2],AB2,148,145.0,70.0,194.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.6]Zr[0.4]Mn[1.9]Cu[0.1],AB2,95,92.5,49.0,144.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.7]Zr[0.3]Mn[1.9]Mo[0.1],AB2,76,75.0,40.0,132.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[0.8]Cr[1]Fe[0.2],AB2,24,26.5,16.0,40.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.2]Cr[0.8],AB2,7,11.0,4.0,20.0,0.18,0.484
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.2]V[0.2]Cr[0.6],AB2,46,47.0,35.0,69.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.4]V[0.2]Cr[0.4],AB2,43,43.0,32.0,64.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.5]Cr[0.5],AB2,5,7.0,2.0,14.0,0.425,0.773
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.5]Cu[0.5],AB2,21,25.0,15.0,38.0,0.0,0.0025
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.5]Fe[0.5],AB2,14,15.0,7.0,26.0,0.054,0.246
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.5]V[0.5],AB2,162,161.0,94.0,195.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.6]V[0.2]Cr[0.2],AB2,45,46.0,35.0,70.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.7]V[0.2]Mo[0.1],AB2,56,63.0,40.0,98.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.8]Zr[0.2]Mn[1.8]Mo[0.2],AB2,25,27.0,16.0,37.0,0.0,0.001
+"perturbed (Dirichlet, base x 20)",Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],AB2,26,27.0,15.0,45.0,0.0,0.0155
+"perturbed (Dirichlet, base x 20)",Ti[0.96]Zr[0.04]Fe[0.95]Nb[0.04],AB,132,133.0,118.0,147.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.98]Zr[0.02]V[0.43]Fe[0.09]Cr[0.05]Mn[1.5],AB2,37,37.0,27.0,57.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.1]Fe[1],AB,66,73.0,39.0,103.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.1]Mn[1.4],AB2,19,23.0,10.0,47.0,0.0145,0.102
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.1]Mn[1]Cr[0.9]V[0.1],AB2,17,21.0,6.0,49.0,0.081,0.287
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.4]Cr[0.4]V[0.2],AB2,13,13.0,6.0,31.0,0.0755,0.416
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.4]Cr[0.4]Vf[0.2],AB2,4,5.0,2.0,22.0,0.554,0.711
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.6]Cr[0.2]Vf[0.2],AB2,29,29.0,17.0,49.0,0.0,0.0065
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.6]Ni[0.2]V[0.2],AB2,36,37.0,23.0,62.0,0.0,0.0005
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.6]Ni[0.2]Vf[0.2],AB2,18,20.0,6.0,41.0,0.0845,0.2495
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.8]V[0.2],AB2,31,30.0,13.900000000000006,59.0,0.0045,0.054
+"perturbed (Dirichlet, base x 20)",Ti[0.9]Zr[0.2]Mn[1.8]Vf[0.2],AB2,47,48.0,30.0,81.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1.2]Cr[1]Mn[1],AB2,2,3.0,1.0,15.0,0.7185,0.8355
+"perturbed (Dirichlet, base x 20)",Ti[1.3]Cr[1.2]Mn[0.8],AB2,1,2.0,1.0,12.0,0.754,0.879
+"perturbed (Dirichlet, base x 20)",Ti[1]Co[0.5]Fe[0.5],AB,220,218.5,203.0,227.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Cr[1]Mn[0.85]Fe[0.3]V[0.15],AB2,30,31.0,9.0,53.0,0.0345,0.12
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.7]Mn[0.2],AB,34,35.0,19.0,71.0,0.0,0.004
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.85]Mn[0.15],AB,9,11.0,6.0,20.0,0.061,0.41
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.8]Be[0.2],AB,104,112.0,67.0,140.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.8]Mn[0.2],AB,54,56.0,32.0,82.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.8]Ni[0.2],AB,184,180.0,114.0,211.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.95]Mn[0.05],AB,33,35.0,21.0,47.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.9]Al[0.1],AB,32,32.0,12.900000000000006,54.0,0.0155,0.0745
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.9]Co[0.1],AB,81,84.0,68.0,98.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.9]Cr[0.1],AB,72,79.0,45.0,105.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.9]Mn[0.1],AB,11,12.0,5.0,19.0,0.104,0.431
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[0.9]Ni[0.1],AB,80,83.0,50.0,118.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Fe[1],AB,6,10.0,5.0,17.0,0.128,0.568
+"perturbed (Dirichlet, base x 20)",Ti[1]Mn[1.3]Fe[0.11],AB2,38,40.0,24.900000000000006,62.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Ti[1]Mn[1.4],AB2,8,11.0,5.0,21.0,0.12,0.436
+"perturbed (Dirichlet, base x 20)",Ti[1]Mn[1.4]V[0.62],AB2,22,24.0,11.0,44.0,0.0025,0.0775
+"perturbed (Dirichlet, base x 20)",Ti[1]Mn[1.5],AB2,16,20.0,12.0,30.0,0.0,0.0485
+"perturbed (Dirichlet, base x 20)",Ti[1]Mn[1.5]V[0.62],AB2,23,24.0,11.0,44.0,0.001,0.073
+"perturbed (Dirichlet, base x 20)",V[0.8455]Ti[0.1045]Fe[0.05],SS,39,43.0,2.0,150.0,0.196,0.263
+"perturbed (Dirichlet, base x 20)",V[0.855]Ti[0.095]Fe[0.05],SS,35,41.0,1.0,157.0,0.231,0.283
+"perturbed (Dirichlet, base x 20)",V[0.95]Cr[0.05],SS,152,149.0,88.0,194.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",V[0.9]Cr[0.1],SS,144,139.0,84.0,187.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Y[1]Ni[4.25]Al[0.75],AB5,85,87.0,56.0,116.10000000000014,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Y[1]Ni[4.5]Al[0.5],AB5,97,94.0,56.0,135.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Y[1]Ni[4]Al[1],AB5,195,196.0,188.0,204.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[0.5]Ti[0.5]Cr[1]Fe[1],AB2,12,13.0,6.0,22.0,0.063,0.355
+"perturbed (Dirichlet, base x 20)",Zr[0.6]Ho[0.4]Co[2],AB2,157,158.0,142.9,172.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[0.76]Ti[0.24]Ni[1.16]Mn[0.63]V[0.14]Fe[0.18],AB2,28,32.0,8.0,52.0,0.0135,0.134
+"perturbed (Dirichlet, base x 20)",Zr[0.79]Ti[0.21]Mn[1]Fe[1.02],AB2,88,86.0,49.0,138.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[0.7]Ti[0.3]Cr[0.6]Fe[1.4],AB2,15,14.0,3.0,31.0,0.2035,0.361
+"perturbed (Dirichlet, base x 20)",Zr[0.7]Ti[0.3]Cr[1]Fe[1],AB2,27,30.0,19.0,41.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[0.8]Ti[0.2]Cr[0.6]Fe[1.4],AB2,20,25.0,15.0,38.0,0.0,0.0035
+"perturbed (Dirichlet, base x 20)",Zr[0.8]Ti[0.2]Fe[1]Mn[1],AB2,86,82.0,44.0,147.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Co[1.5]V[0.5],AB2,134,134.0,115.0,150.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Co[1]Cr[1],AB2,185,183.0,151.0,201.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Cr[1.2]Fe[0.8],AB2,210,208.0,166.0,230.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Cr[1]Fe[1.2],AB2,113,112.0,66.0,153.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Cr[1]Fe[1.6],AB2,42,42.0,22.0,64.0,0.0,0.003
+"perturbed (Dirichlet, base x 20)",Zr[1]Cr[1]Fe[1]Cu[0.8],AB2,53,55.0,32.0,78.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[0.6]Mn[1.4],AB2,69,75.0,36.0,125.0,0.0005,0.0005
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[1.4]Cr[0.6],AB2,40,43.0,26.0,59.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[1.5]Cr[0.5],AB2,60,60.0,34.0,108.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[1.6]Al[0.4],AB2,114,123.0,72.9,153.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[1]Mn[1],AB2,84,80.0,45.0,137.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Fe[1]Mo[1],AB2,93,94.0,56.0,127.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[1.11]Fe[1.22],AB2,96,93.0,53.0,149.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[1.22]Fe[1.14],AB2,115,116.0,66.0,174.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[1.2]Fe[0.8],AB2,127,120.0,65.0,170.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[1.99]Fe[0.8],AB2,90,87.0,50.0,137.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[2.7],AB2,150,149.0,92.9,182.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Mn[3],AB2,67,72.0,43.0,103.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[1]Ni[1.44]V[0.48]Mn[0.48],AB2,175,174.0,150.0,188.0,0.0,0.0
+"perturbed (Dirichlet, base x 20)",Zr[2]Ni[5],Misc,226,223.0,200.0,230.10000000000014,0.0,0.0
+random (uniform Dirichlet),Ca[0.85]Mm[0.15]Ni[5],AB5,140,120.0,92.0,161.0,0.0,0.0
+random (uniform Dirichlet),Ca[1]Ni[5],AB5,74,51.0,22.0,144.0,0.0,0.0325
+random (uniform Dirichlet),Ca[1]Ti[1]Mg[1]Ni[9],AB3,44,41.0,23.0,89.0,0.0,0.0
+random (uniform Dirichlet),Ce[0.2]Pr[0.8]Co[5],AB5,218,206.0,195.0,216.0,0.0,0.0
+random (uniform Dirichlet),Ce[0.4]Pr[0.6]Co[5],AB5,194,175.0,134.0,205.0,0.0,0.0
+random (uniform Dirichlet),Ce[0.5]La[0.5]Ni[2.5]Cu[2.5],AB5,70,71.0,28.0,120.0,0.0,0.0225
+random (uniform Dirichlet),Ce[0.6]Pr[0.4]Co[5],AB5,193,176.0,135.0,205.0,0.0,0.0
+random (uniform Dirichlet),Ce[0.7]La[0.7]Ni[5],AB5,68,93.0,52.0,130.0,0.0,0.0
+random (uniform Dirichlet),Ce[0.8]Pr[0.2]Co[5],AB5,190,169.0,130.0,201.0,0.0,0.0
+random (uniform Dirichlet),Ce[1]Ni[4.25]Mn[0.75],AB5,78,96.0,58.0,157.0,0.0,0.0
+random (uniform Dirichlet),Ce[1]Ni[4.5]Al[0.5],AB5,65,72.0,52.0,93.0,0.0,0.0
+random (uniform Dirichlet),Ce[1]Ni[4.5]Mn[0.5],AB5,107,127.0,65.9,205.10000000000014,0.0,0.0
+random (uniform Dirichlet),Dy[1]Ni[4.25]Ga[0.75],AB5,169,163.0,127.0,184.0,0.0,0.0
+random (uniform Dirichlet),Dy[1]Ni[4]Al[1],AB5,183,166.0,150.0,190.0,0.0,0.0
+random (uniform Dirichlet),Er[1]Ni[3],AB3,122,133.0,95.0,157.0,0.0,0.0
+random (uniform Dirichlet),Er[1]Ni[4]Al[1],AB5,154,134.0,110.0,168.0,0.0,0.0
+random (uniform Dirichlet),Er[2]Co[7],A2B7,182,175.0,136.0,216.0,0.0,0.0
+random (uniform Dirichlet),Er[6]Fe[23],Misc,155,148.0,41.900000000000006,214.0,0.015,0.0275
+random (uniform Dirichlet),Gd[1]Ni[4.5]Al[0.5],AB5,158,136.0,112.0,171.0,0.0,0.0
+random (uniform Dirichlet),Gd[1]Ni[4]Al[1],AB5,212,207.0,197.0,217.0,0.0,0.0
+random (uniform Dirichlet),Gd[2]Co[7],A2B7,228,222.0,215.0,229.0,0.0,0.0
+random (uniform Dirichlet),Ho[1]Ni[4]Al[1],AB5,177,160.0,137.0,184.0,0.0,0.0
+random (uniform Dirichlet),Ho[6]Fe[23],Misc,188,185.0,116.0,219.0,0.0,0.0
+random (uniform Dirichlet),HydralloyC1,AB2,50,73.0,40.0,118.0,0.0,0.0
+random (uniform Dirichlet),HydralloyC2,AB2,57,71.0,40.0,97.0,0.0,0.0
+random (uniform Dirichlet),La[0.13]Ce[0.35]Pr[0.52]Co[5],AB5,189,175.0,132.9,201.0,0.0,0.0
+random (uniform Dirichlet),La[0.1]Ce[0.9]Co[5],AB5,202,184.5,141.0,212.0,0.0,0.0
+random (uniform Dirichlet),La[0.2]Ce[0.8]Co[5],AB5,209,192.0,147.0,220.0,0.0,0.0
+random (uniform Dirichlet),La[0.2]Pr[0.8]Co[5],AB5,211,202.0,191.0,211.0,0.0,0.0
+random (uniform Dirichlet),La[0.3]Mm[0.7]Ni[4.5]Cu[0.3]Al[0.2],AB5,102,103.0,83.0,120.0,0.0,0.0
+random (uniform Dirichlet),La[0.4]Ce[0.6]Co[5],AB5,197,180.0,150.0,205.0,0.0,0.0
+random (uniform Dirichlet),La[0.5]Ca[0.5]Ni[3],AB3,121,132.0,114.0,143.0,0.0,0.0
+random (uniform Dirichlet),La[0.5]Ca[1.5]Mg[1]Ni[9],AB3,91,107.0,65.0,147.0,0.0,0.0
+random (uniform Dirichlet),La[0.65]Ce[0.28]Pr[0.07]Co[5],AB5,221,214.0,200.0,229.0,0.0,0.0
+random (uniform Dirichlet),La[0.66]Ce[0.2]Pr[0.14]Co[5],AB5,206,206.0,195.0,215.0,0.0,0.0
+random (uniform Dirichlet),La[0.6]Pr[0.4]Co[5],AB5,219,214.0,202.0,223.0,0.0,0.0
+random (uniform Dirichlet),La[0.6]Y[0.4]Ni[4.8]Mn[0.2],AB5,62,60.0,27.0,86.0,0.0,0.0
+random (uniform Dirichlet),La[0.75]Ce[0.25]Ni[4]Cu[0.8]Al[0.2],AB5,124,131.0,116.0,142.0,0.0,0.0
+random (uniform Dirichlet),La[0.75]Ce[0.25]Ni[4]Cu[0.9]Al[0.1],AB5,108,112.0,90.0,131.0,0.0,0.0
+random (uniform Dirichlet),La[0.75]Ce[0.25]Ni[4]Cu[0.9]Ti[0.1],AB5,143,140.0,104.0,175.0,0.0,0.0
+random (uniform Dirichlet),La[0.75]Pr[0.25]Ni[4.5]Cu[0.3]Al[0.2],AB5,120,124.0,106.0,143.0,0.0,0.0
+random (uniform Dirichlet),La[0.7]Ce[0.3]Co[5],AB5,223,216.0,205.0,224.0,0.0,0.0
+random (uniform Dirichlet),La[0.8]Ce[0.2]Co[5],AB5,201,200.0,178.0,211.0,0.0,0.0
+random (uniform Dirichlet),La[0.8]Ce[0.2]Ni[4.25]Co[0.5]Sn[0.25],AB5,174,174.0,159.0,187.0,0.0,0.0
+random (uniform Dirichlet),La[0.8]Ce[0.2]Ni[4.8]Sn[0.25],AB5,128,121.0,101.0,140.0,0.0,0.0
+random (uniform Dirichlet),La[0.8]Pr[0.2]Co[5],AB5,215,214.0,198.0,224.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ca[1]Mg[1]Ni[6]Al[3],AB3,172,173.0,160.0,183.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ca[1]Mg[1]Ni[9],AB3,63,81.0,58.0,102.0,0.0,0.0
+random (uniform Dirichlet),La[1]Cu[5],AB5,225,222.0,208.0,228.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[1]Co[4],AB5,229,228.0,212.0,232.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[2]Cu[3],AB5,166,153.0,135.0,176.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[2]Fe[1]Cu[2],AB5,176,170.0,160.0,181.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[3]Cr[0.5]Cu[1.5],AB5,167,160.0,150.0,170.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[3]Cu[2],AB5,141,130.0,107.0,153.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[3]Fe[1]Cu[1],AB5,186,187.0,177.0,194.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.25]Co[0.5]Sn[0.25],AB5,196,202.0,180.0,216.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.35]Al[0.65],AB5,181,181.0,66.0,207.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.4]B[0.6],AB5,171,162.0,35.0,202.0,0.0045,0.022
+random (uniform Dirichlet),La[1]Ni[4.4]Zn[0.6],AB5,165,176.0,150.0,192.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.5]Al[0.5],AB5,200,197.0,153.0,214.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.5]Mn[0.3]Al[0.3],AB5,204,212.0,189.0,226.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.5]Si[0.5],AB5,153,153.0,77.0,173.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.65]Al[0.35],AB5,159,158.0,79.0,186.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.65]Mn[0.2]Al[0.15],AB5,146,151.0,116.0,180.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.68]Sn[0.32],AB5,173,173.0,48.0,202.0,0.0,0.007
+random (uniform Dirichlet),La[1]Ni[4.6]Al[0.4],AB5,142,130.0,35.0,161.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.6]Cu[0.3]Mn[0.1],AB5,123,135.0,118.0,154.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.6]Ga[0.4],AB5,180,177.0,166.0,184.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.6]Ge[0.4],AB5,179,170.0,157.0,185.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.6]Mn[0.4],AB5,170,178.0,48.0,210.0,0.0,0.003
+random (uniform Dirichlet),La[1]Ni[4.6]Si[0.4],AB5,187,181.0,168.0,194.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.6]Sn[0.4],AB5,205,204.0,86.9,226.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.75]Al[0.25],AB5,147,145.0,137.0,155.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.75]Sn[0.25],AB5,139,136.0,28.0,180.0,0.0,0.0155
+random (uniform Dirichlet),La[1]Ni[4.7]Al[0.3],AB5,73,77.0,18.0,147.0,0.0,0.013
+random (uniform Dirichlet),La[1]Ni[4.7]Mn[0.3],AB5,131,128.0,98.0,157.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.7]Si[0.3],AB5,109,87.0,32.0,127.10000000000014,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.7]Sn[0.3],AB5,178,185.0,164.0,197.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.8]Al[0.2],AB5,101,89.0,57.0,109.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.8]Sn[0.2],AB5,118,125.0,31.0,174.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.95]Sn[0.05],AB5,89,72.0,28.0,108.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.9]Al[0.1],AB5,94,96.0,78.0,114.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.9]Mn[0.1],AB5,83,89.0,70.0,108.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4.9]Sn[0.1],AB5,79,69.0,20.0,112.0,0.0,0.009
+random (uniform Dirichlet),La[1]Ni[4]Al[0.5]Cu[0.5],AB5,203,215.0,186.0,228.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4]Cu[1],AB5,156,142.0,120.0,166.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[4]Fe[0.5]Cu[0.5],AB5,160,166.0,151.0,176.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[5.2]Mn[0.05]Al[0.05],AB5,135,110.0,66.0,166.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[5.5]Mn[0.1]Al[0.05],AB5,106,96.0,55.0,142.0,0.0,0.0
+random (uniform Dirichlet),La[1]Ni[5],AB5,58,53.0,12.0,96.0,0.0,0.0685
+random (uniform Dirichlet),La[1]Ni[6.37]Mn[0.33],AB5,111,92.0,36.0,157.10000000000014,0.0,0.0075
+random (uniform Dirichlet),Lm[1]Ni[4.4]Co[0.2]Mn[0.2]Al[0.2],AB5,137,140.0,129.0,151.0,0.0,0.0
+random (uniform Dirichlet),Lu[1]Co[3],AB3,168,146.0,118.0,178.0,0.0,0.0
+random (uniform Dirichlet),Lu[6]Fe[23],Misc,224,212.0,168.0,226.0,0.0,0.0
+random (uniform Dirichlet),Mg[1]Y[1]Ni[4],AB2,199,202.0,182.0,217.0,0.0,0.0
+random (uniform Dirichlet),Mm[0.3]Ca[0.7]Ni[5],AB5,10,14.0,2.0,54.0,0.324,0.4485
+random (uniform Dirichlet),Mm[0.5]Ca[0.5]Ni[2.5]Co[2.5],AB5,151,141.0,113.0,161.0,0.0,0.0
+random (uniform Dirichlet),Mm[0.5]Ca[0.5]Ni[5],AB5,87,87.0,62.0,112.0,0.0,0.0
+random (uniform Dirichlet),Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],AB5,145,145.0,137.0,154.0,0.0,0.0
+random (uniform Dirichlet),Mm[0.9]Ti[0.1]Ni[5],AB5,117,128.0,114.0,142.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],AB5,99,98.0,29.0,149.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[3.5]Co[0.7]Al[0.8],AB5,191,198.0,83.0,222.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[3.5]Cu[0.5],AB5,75,74.0,32.0,122.0,0.0,0.0095
+random (uniform Dirichlet),Mm[1]Ni[3]Co[2],AB5,105,110.0,88.9,129.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.15]Fe[0.85],AB5,64,54.0,17.0,99.0,0.0,0.015
+random (uniform Dirichlet),Mm[1]Ni[4.25]Al[0.75],AB5,149,136.0,59.0,170.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Al[0.4]Co[0.4],AB5,92,92.0,71.0,116.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Al[0.4]Cr[0.4],AB5,112,112.0,93.0,129.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Al[0.4]Fe[0.4],AB5,126,112.0,90.9,141.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Al[0.4]Mn[0.4],AB5,100,100.0,81.0,118.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Al[0.8],AB5,192,197.0,173.0,211.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.2]Co[0.2]Mn[0.3]Al[0.3],AB5,161,167.0,58.0,200.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.3]Al[0.7],AB5,125,105.0,35.0,145.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.4]Al[0.6],AB5,77,62.0,21.0,95.10000000000014,0.0,0.003
+random (uniform Dirichlet),Mm[1]Ni[4.5]Al[0.5],AB5,98,79.0,40.0,107.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.5]Cr[0.5],AB5,82,81.0,46.0,118.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.5]Fe[0.5],AB5,52,63.0,32.0,92.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.5]Si[0.5],AB5,130,109.0,73.0,156.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.6]Al[0.4],AB5,71,80.0,59.0,103.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.6]Sn[0.4],AB5,163,129.0,94.0,183.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.7]Fe[0.3],AB5,61,75.0,55.0,98.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.7]Sn[0.3],AB5,119,116.0,97.0,135.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.8]Al[0.2],AB5,103,104.0,84.0,121.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4.9]Fe[0.1],AB5,59,78.0,55.0,100.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4]Cu[0.7]Ti[0.1]Sn[0.1]Fe[0.1],AB5,138,134.0,101.0,166.0,0.0,0.0
+random (uniform Dirichlet),Mm[1]Ni[4]Cu[0.7]Ti[0.1]Sn[0.1]V[0.1],AB5,136,133.0,100.0,164.0,0.0,0.0
+random (uniform Dirichlet),Nd[1]Co[5],AB5,207,193.0,158.0,216.0,0.0,0.0
+random (uniform Dirichlet),Nd[1]Ni[4.8]Sn[0.2],AB5,41,32.0,6.0,65.0,0.086,0.266
+random (uniform Dirichlet),Nd[1]Ni[4.9]Sn[0.1],AB5,55,47.0,14.0,76.0,0.0,0.028
+random (uniform Dirichlet),Pd[0.75]Rh[0.25],SS,208,208.0,147.0,225.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.825]Ni[0.1]Rh[0.075],SS,198,197.0,106.0,224.0,0.0,0.002
+random (uniform Dirichlet),Pd[0.85]Rh[0.15],SS,216,210.0,151.0,225.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.88]Pt[0.06]Rh[0.06],SS,217,214.0,149.9,227.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.8]Rh[0.2],SS,213,212.0,150.0,226.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.925]Rh[0.075],SS,230,229.0,213.0,231.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.95]Cr[0.05],SS,231,230.0,212.0,232.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.9]Co[0.1],SS,227,224.0,181.0,229.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.9]Ni[0.05]Rh[0.05],SS,222,220.0,177.0,228.0,0.0,0.0
+random (uniform Dirichlet),Pd[0.9]Rh[0.1],SS,232,230.0,216.0,232.0,0.0,0.0
+random (uniform Dirichlet),Pr[1]Ni[2.5]Cu[2.5],AB5,116,139.5,37.0,185.0,0.015,0.03
+random (uniform Dirichlet),Pr[1]Ni[4.5]Fe[0.5],AB5,48,58.0,12.0,101.10000000000014,0.054,0.092
+random (uniform Dirichlet),Pr[2]Co[7],A2B7,214,201.0,171.0,221.0,0.0,0.0
+random (uniform Dirichlet),Tb[1]Ni[4.5]Al[0.5],AB5,110,116.0,79.0,144.0,0.0,0.0
+random (uniform Dirichlet),Tb[1]Ni[4]Al[1],AB5,164,143.0,116.0,174.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.3]Zr[0.7]Mn[2],AB2,49,28.0,2.0,93.0,0.192,0.2605
+random (uniform Dirichlet),Ti[0.46]Fe[0.45]V[0.05]Mn[0.05],AB,51,71.0,48.0,94.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],AB,3,12.0,2.0,53.0,0.3345,0.4815
+random (uniform Dirichlet),Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],AB2,129,132.0,37.0,201.0,0.0,0.0075
+random (uniform Dirichlet),Ti[0.5]Zr[0.5]Mn[2],AB2,133,162.0,49.0,205.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.6]Zr[0.4]Mn[1.4]Cr[0.4]Cu[0.2],AB2,148,151.5,46.0,206.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.6]Zr[0.4]Mn[1.9]Cu[0.1],AB2,95,88.0,38.0,164.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.7]Zr[0.3]Mn[1.9]Mo[0.1],AB2,76,61.0,27.0,151.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[0.8]Cr[1]Fe[0.2],AB2,24,36.0,18.0,87.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.2]Cr[0.8],AB2,7,16.0,6.0,45.0,0.0985,0.2825
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.2]V[0.2]Cr[0.6],AB2,46,73.0,41.0,102.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.4]V[0.2]Cr[0.4],AB2,43,75.0,43.0,102.10000000000014,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.5]Cr[0.5],AB2,5,12.0,3.0,38.0,0.2085,0.454
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.5]Cu[0.5],AB2,21,22.0,12.0,49.0,0.0,0.0575
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.5]Fe[0.5],AB2,14,14.0,5.0,39.0,0.1425,0.339
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.5]V[0.5],AB2,162,189.0,104.0,216.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.6]V[0.2]Cr[0.2],AB2,45,73.0,41.0,101.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.7]V[0.2]Mo[0.1],AB2,56,92.0,45.0,136.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.8]Zr[0.2]Mn[1.8]Mo[0.2],AB2,25,24.0,15.0,53.0,0.0,0.008
+random (uniform Dirichlet),Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],AB2,26,36.0,14.0,64.0,0.0,0.028
+random (uniform Dirichlet),Ti[0.96]Zr[0.04]Fe[0.95]Nb[0.04],AB,132,122.0,102.0,146.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.98]Zr[0.02]V[0.43]Fe[0.09]Cr[0.05]Mn[1.5],AB2,37,68.0,37.0,97.0,0.0,0.0
+random (uniform Dirichlet),Ti[0.9]Zr[0.1]Fe[1],AB,66,39.0,19.0,84.0,0.0,0.0105
+random (uniform Dirichlet),Ti[0.9]Zr[0.1]Mn[1.4],AB2,19,20.0,5.0,77.0,0.1125,0.2885
+random (uniform Dirichlet),Ti[0.9]Zr[0.1]Mn[1]Cr[0.9]V[0.1],AB2,17,42.0,8.0,133.0,0.049,0.171
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.4]Cr[0.4]V[0.2],AB2,13,32.0,9.0,60.0,0.0325,0.1345
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.4]Cr[0.4]Vf[0.2],AB2,4,13.0,4.0,52.0,0.2065,0.44
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.6]Cr[0.2]Vf[0.2],AB2,29,54.0,21.0,83.0,0.0,0.012
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.6]Ni[0.2]V[0.2],AB2,36,67.0,29.0,104.0,0.0,0.0065
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.6]Ni[0.2]Vf[0.2],AB2,18,49.0,11.900000000000006,109.0,0.036,0.09
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.8]V[0.2],AB2,31,69.0,25.0,168.0,0.002,0.0215
+random (uniform Dirichlet),Ti[0.9]Zr[0.2]Mn[1.8]Vf[0.2],AB2,47,92.0,43.0,176.10000000000014,0.0,0.0
+random (uniform Dirichlet),Ti[1.2]Cr[1]Mn[1],AB2,2,6.0,2.0,69.10000000000014,0.491,0.622
+random (uniform Dirichlet),Ti[1.3]Cr[1.2]Mn[0.8],AB2,1,3.0,1.0,40.0,0.622,0.722
+random (uniform Dirichlet),Ti[1]Co[0.5]Fe[0.5],AB,220,222.0,203.0,230.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Cr[1]Mn[0.85]Fe[0.3]V[0.15],AB2,30,47.0,7.900000000000006,82.0,0.0665,0.129
+random (uniform Dirichlet),Ti[1]Fe[0.7]Mn[0.2],AB,34,47.0,20.0,118.0,0.0005,0.023
+random (uniform Dirichlet),Ti[1]Fe[0.85]Mn[0.15],AB,9,12.0,5.0,31.0,0.1285,0.4225
+random (uniform Dirichlet),Ti[1]Fe[0.8]Be[0.2],AB,104,78.0,37.0,131.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Fe[0.8]Mn[0.2],AB,54,35.0,15.0,82.0,0.0,0.056
+random (uniform Dirichlet),Ti[1]Fe[0.8]Ni[0.2],AB,184,178.0,49.0,221.0,0.0,0.0045
+random (uniform Dirichlet),Ti[1]Fe[0.95]Mn[0.05],AB,33,30.0,18.0,61.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Fe[0.9]Al[0.1],AB,32,10.0,2.0,42.0,0.34,0.5205
+random (uniform Dirichlet),Ti[1]Fe[0.9]Co[0.1],AB,81,93.0,71.9,112.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Fe[0.9]Cr[0.1],AB,72,51.0,29.0,98.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Fe[0.9]Mn[0.1],AB,11,14.5,6.0,39.0,0.0695,0.303
+random (uniform Dirichlet),Ti[1]Fe[0.9]Ni[0.1],AB,80,67.0,34.0,137.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Fe[1],AB,6,10.0,5.0,26.0,0.153,0.5255
+random (uniform Dirichlet),Ti[1]Mn[1.3]Fe[0.11],AB2,38,36.0,20.0,80.0,0.0,0.0
+random (uniform Dirichlet),Ti[1]Mn[1.4],AB2,8,8.0,3.0,20.0,0.33,0.6455
+random (uniform Dirichlet),Ti[1]Mn[1.4]V[0.62],AB2,22,55.0,20.0,84.0,0.0045,0.03
+random (uniform Dirichlet),Ti[1]Mn[1.5],AB2,16,25.0,12.0,67.0,0.0,0.069
+random (uniform Dirichlet),Ti[1]Mn[1.5]V[0.62],AB2,23,55.0,20.0,84.0,0.003,0.0305
+random (uniform Dirichlet),V[0.8455]Ti[0.1045]Fe[0.05],SS,39,151.0,11.0,216.0,0.0775,0.099
+random (uniform Dirichlet),V[0.855]Ti[0.095]Fe[0.05],SS,35,174.0,15.900000000000006,220.0,0.0745,0.091
+random (uniform Dirichlet),V[0.95]Cr[0.05],SS,152,169.0,94.0,215.0,0.0,0.0
+random (uniform Dirichlet),V[0.9]Cr[0.1],SS,144,169.0,107.9,215.0,0.0,0.0
+random (uniform Dirichlet),Y[1]Ni[4.25]Al[0.75],AB5,85,80.0,39.0,126.0,0.0,0.001
+random (uniform Dirichlet),Y[1]Ni[4.5]Al[0.5],AB5,97,126.0,51.0,172.0,0.0,0.0035
+random (uniform Dirichlet),Y[1]Ni[4]Al[1],AB5,195,193.0,181.0,206.0,0.0,0.0
+random (uniform Dirichlet),Zr[0.5]Ti[0.5]Cr[1]Fe[1],AB2,12,14.0,6.0,38.0,0.0855,0.346
+random (uniform Dirichlet),Zr[0.6]Ho[0.4]Co[2],AB2,157,148.5,117.0,170.0,0.0,0.0
+random (uniform Dirichlet),Zr[0.76]Ti[0.24]Ni[1.16]Mn[0.63]V[0.14]Fe[0.18],AB2,28,30.0,4.0,65.0,0.197,0.315
+random (uniform Dirichlet),Zr[0.79]Ti[0.21]Mn[1]Fe[1.02],AB2,88,90.0,36.0,196.0,0.0,0.0
+random (uniform Dirichlet),Zr[0.7]Ti[0.3]Cr[0.6]Fe[1.4],AB2,15,13.0,1.0,44.0,0.3185,0.432
+random (uniform Dirichlet),Zr[0.7]Ti[0.3]Cr[1]Fe[1],AB2,27,30.0,19.0,62.0,0.0,0.0
+random (uniform Dirichlet),Zr[0.8]Ti[0.2]Cr[0.6]Fe[1.4],AB2,20,22.0,12.0,49.0,0.0,0.0505
+random (uniform Dirichlet),Zr[0.8]Ti[0.2]Fe[1]Mn[1],AB2,86,85.0,33.0,208.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Co[1.5]V[0.5],AB2,134,155.0,124.0,172.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Co[1]Cr[1],AB2,185,200.0,159.0,214.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Cr[1.2]Fe[0.8],AB2,210,210.0,76.9,231.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Cr[1]Fe[1.2],AB2,113,122.0,46.0,183.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Cr[1]Fe[1.6],AB2,42,19.0,6.0,49.0,0.098,0.2585
+random (uniform Dirichlet),Zr[1]Cr[1]Fe[1]Cu[0.8],AB2,53,38.0,20.0,77.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Fe[0.6]Mn[1.4],AB2,69,39.0,12.0,105.0,0.0275,0.0855
+random (uniform Dirichlet),Zr[1]Fe[1.4]Cr[0.6],AB2,40,36.0,22.0,69.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Fe[1.5]Cr[0.5],AB2,60,63.0,27.0,182.10000000000014,0.0,0.0
+random (uniform Dirichlet),Zr[1]Fe[1.6]Al[0.4],AB2,114,78.0,36.0,143.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Fe[1]Mn[1],AB2,84,99.5,40.0,186.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Fe[1]Mo[1],AB2,93,86.0,40.0,153.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[1.11]Fe[1.22],AB2,96,84.0,34.0,196.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[1.22]Fe[1.14],AB2,115,110.5,41.0,213.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[1.2]Fe[0.8],AB2,127,140.0,49.0,200.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[1.99]Fe[0.8],AB2,90,76.0,32.0,183.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[2.7],AB2,150,163.0,54.0,203.0,0.0,0.0
+random (uniform Dirichlet),Zr[1]Mn[3],AB2,67,73.0,35.0,147.10000000000014,0.0,0.0
+random (uniform Dirichlet),Zr[1]Ni[1.44]V[0.48]Mn[0.48],AB2,175,186.0,152.0,199.0,0.0,0.0
+random (uniform Dirichlet),Zr[2]Ni[5],Misc,226,213.0,115.0,229.0,0.0,0.0

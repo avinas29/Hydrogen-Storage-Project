@@ -1,0 +1,53 @@
+<section class="ref">
+<h1 class="part" id="p10"><span class="tag">Part 10</span>One-page cheat sheet</h1>
+<div class="cols">
+<div class="blk"><h3>Equations</h3>
+\[ \ln\frac{P_{eq}}{P_0} = -\frac{\Delta H}{RT}+\frac{\Delta S}{R} \]
+\[ T(P)=\frac{\Delta H}{\Delta S-R\ln(P/P_0)},\quad T(1\,\text{bar})\approx\frac{\Delta H}{\Delta S} \]
+\[ Q=\frac{\Delta H}{M_{H_2}},\ \ 1\ \tfrac{\text{kJ}}{\text{mol}} \approx 0.496\ \tfrac{\text{MJ}}{\text{kg H}_2} \]
+<p>\(R=8.314462618\), \(P_0=1\) atm \(=1.01325\) bar, \(M_{H_2}=2.01588\) g/mol, LHV 119.96 MJ/kg.<br>Phase rule on plateau: \(F=2-3+2=1\).<br>5 kJ/mol ≈ ×7.5 in pressure at 25 °C.</p></div>
+<div class="blk"><h3>Data</h3><ul>
+<li>Purdue: 337 .mh files, 68 digitised PCT, negative J/mol</li>
+<li>HydPARK: 772 rows, 4 blocks, positive kJ/mol, ΔS back-calculated (395/412)</li>
+<li>Overlap 248/288 → no external validation</li>
+<li>Union: <b>725</b> compositions (276 Purdue, 449 HydPARK); 659 CV groups</li>
+<li>Inter-source scatter ≈ 2.2 kJ/mol</li></ul></div>
+<div class="blk"><h3>Descriptors</h3><ul>
+<li>38 = 22 elemental stats + 4 alloy + 12 fractions</li>
+<li>Composition only: no ΔS, P, T, capacity</li>
+<li>Top importances: vol_mean 3.57, frac_hydride_former 2.10, vec_std 1.31</li>
+<li>LaNi₅ vol_mean = 9.23 cm³/mol</li></ul></div>
+<div class="blk"><h3>Model</h3><ul>
+<li>RF: 300 trees, max_features 0.33, min_samples_leaf 1, seed 0</li>
+<li>Nested grouped CV, 5×3 outer, 4 inner</li>
+<li><b>MAE 5.26 ± 0.14</b>, RMSE 10.32, R² 0.715</li>
+<li>GB 5.30 · Ridge 7.09 · family median 8.88 · mean 12.26</li>
+<li>Hold-out 5.55 (R² 0.73, n 145); ungrouped CV 5.12</li>
+<li>AB₅ 3.09 · AB₂ 4.17; clean subset 3.51</li>
+<li>Leave-family-out: fails (SS 20.98 vs 12.33)</li></ul></div>
+<div class="blk"><h3>Domain and interval</h3><ul>
+<li>MAE 2.62 (d ≤ 0.05) → 16.9 (d &gt; 0.5)</li>
+<li>Domain: d<sub>NN</sub> ≤ 0.15</li>
+<li>Interval \([\hat y-q_{90},\ \hat y-q_{10}]\); 91% coverage on check set</li>
+<li>LaNi₄.₂Al₀.₈: 38.7 [34.3, 41.6]; Ti₀.₅V₀.₅: out of domain</li></ul></div>
+<div class="blk"><h3>Thermodynamics</h3><ul>
+<li>LaNi₅: 32.15 / 112.8 → 1.84 bar @25 °C, 1 bar @11.6 °C, 15.95 MJ/kg (13.3%)</li>
+<li>TiFe 4.16 bar · TiCrMn 107.5 bar · MgH₂ 302 °C, 38.8 MJ/kg</li>
+<li>85% reach 1 bar ≤ 80 °C; median heat 15.1 MJ/kg</li>
+<li>PCT check median 1.76 kJ/mol (consistency only)</li>
+<li>ML-estimate T band ≈ 105 K (65 ΔH + 35 ΔS)</li></ul></div>
+<div class="blk"><h3>Screening</h3><ul>
+<li>Gate 319/337; mobile pass 232; stationary 252</li>
+<li>Mobile weights: capacity 0.35, heat 0.20 …; stationary: cost 0.25, safety 0.20 …</li>
+<li>Mobile top: Ti-based AB₂/AB; stationary: TiFe-type, Ti–Zr–Mn</li>
+<li>Scenarios: 278/4/55 and 222/6/109; top-5 overlap 0</li>
+<li>Robust membership, not order; τ min 0.65</li></ul></div>
+<div class="blk"><h3>Never say</h3><ul>
+<li>"discovered" → say "candidates"</li>
+<li>"predicts temperature" → "predicts ΔH; ΔS assumed"</li>
+<li>"80% sure" → "empirical interval"</li>
+<li>"tank stores 2 wt%" → "material-level reported capacity"</li>
+<li>"validated externally" → "grouped nested CV"</li>
+<li>"experiments show" → "literature data; experiments proposed"</li></ul></div>
+</div>
+</section>

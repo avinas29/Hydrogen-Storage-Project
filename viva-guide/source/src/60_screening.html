@@ -1,0 +1,109 @@
+<section>
+<h1 class="part" id="p6"><span class="tag">Part 6</span>Screening and ranking materials</h1>
+<div class="srcline">Report: §6.1–6.2, §7.3–7.5, Appendices D–E</div>
+<p class="lede">How the project turns "here are 337 measured alloys" into "for this application, these are the best candidates, and here is why". Three ideas: hard constraints (pass/fail), a weighted score (ranking), and the Pareto front (trade-offs). Then a sensitivity test to see whether the ranking is robust.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p6-1"><span class="num">6.1</span>The principles</h2>
+<ol>
+<li><b>Experimental data first.</b> Rankings use the 337 Purdue materials with <i>measured</i> ΔH, ΔS. ML predictions are shown separately and never mixed into this ranking.</li>
+<li><b>Material level only.</b> Capacities are reported material values; no tank or system design.</li>
+<li><b>Missing is not failing.</b> Each constraint gives <b>pass</b>, <b>fail</b>, <b>unknown</b> (data missing) or <b>not specified</b>. A material is rejected only on a real failure.</li>
+<li><b>Everything visible.</b> Constraints, criteria and weights are printed with the results and tested for sensitivity.</li>
+</ol>
+
+<h2 id="p6-2"><span class="num">6.2</span>Step 1: hard constraints <span class="tg n">Report Table 6.1</span></h2>
+<p>A hard constraint is a yes/no engineering limit. First a <b>data-quality gate</b> (ΔS between 70 and 170 J/mol·K; capacity not "assumed" or "unconfirmed"), then the application's limits:</p>
+<table class="compact">
+<tr><th>Application</th><th>Constraint</th><th>Engineering reason</th></tr>
+<tr><td class="k">Mobile</td><td>T(1 bar, full capacity) ≤ 80 °C</td><td>PEM fuel-cell waste heat is at 60–80 °C</td></tr>
+<tr><td class="k">Mobile</td><td>P(50 °C) ≤ 50 bar</td><td>tank pressure on a hot day</td></tr>
+<tr><td class="k">Mobile</td><td>charging P(25 °C) ≤ 100 bar</td><td>refuel without very high compression</td></tr>
+<tr><td class="k">Stationary</td><td>T(1 bar) ≤ 150 °C</td><td>low-grade industrial heat</td></tr>
+<tr><td class="k">Stationary</td><td>P(25 °C) ≤ 10 bar; P(50 °C) ≤ 30 bar</td><td>low-pressure, cheaper, safer vessel</td></tr>
+<tr><td class="k">Stationary</td><td>charging P(25 °C) ≤ 30 bar</td><td>fill directly from a PEM electrolyser (30 bar assumed)</td></tr>
+</table>
+<p><b>Outcome</b>: 319 of 337 pass the gate; <b>232</b> pass all mobile constraints, <b>252</b> all stationary. Mobile mainly rejects alloys needing too much heat (56) or too much pressure on a hot day (35); stationary mainly rejects high-pressure alloys (57 at 25 °C). No Mg-based material passes either.</p>
+
+<h2 id="p6-3"><span class="num">6.3</span>Step 2: the weighted score</h2>
+<p>Each criterion is first scaled to 0–1 among the materials that passed (min–max normalisation):</p>
+\[ s = \frac{x - x_{\min}}{x_{\max} - x_{\min}}\ \ \text{(higher is better)},\qquad s = 1 - \frac{x - x_{\min}}{x_{\max} - x_{\min}}\ \ \text{(lower is better)} \]
+<p>then combined: \(\text{score} = \sum_k w_k s_k\) with weights summing to 1.</p>
+<div class="two">
+<div><table class="compact small">
+<tr><th>Criterion</th><th class="c">Mobile</th><th class="c">Stationary</th></tr>
+<tr><td>capacity</td><td class="c">0.35</td><td class="c">0.10</td></tr>
+<tr><td>reaction heat</td><td class="c">0.20</td><td class="c">0.10</td></tr>
+<tr><td>kinetics class</td><td class="c">0.15</td><td class="c">0.10</td></tr>
+<tr><td>hysteresis</td><td class="c">0.10</td><td class="c">0.15</td></tr>
+<tr><td>pressure fit</td><td class="c">0.10</td><td class="c">0.10</td></tr>
+<tr><td>cost class</td><td class="c">0.10</td><td class="c">0.25</td></tr>
+<tr><td>pressure safety</td><td class="c">–</td><td class="c">0.20</td></tr>
+</table></div>
+<div><p class="small"><b>Kinetics class</b> is family-level: AB₅/AB₂/AB/AB₃ = 1, complex = 0.25, Mg = 0, no data = 0.5. Individual kinetic data span 7 orders of magnitude and depend on each lab's setup, so they are not comparable alloy by alloy.</p>
+<p class="small"><b>Cost class</b> is an element indicator, <i>not a price</i>: common metals 1; rare earths, Co, V, minor metals 0.5; precious metals 0.</p>
+<p class="small"><b>Missing hysteresis</b> → 0.5 (neutral) and flagged.</p></div>
+</div>
+<p>Mobile weights favour capacity and low heat; stationary weights favour cost, low pressure and low cycling loss, because weight barely matters for a fixed store.</p>
+
+<h2 id="p6-4"><span class="num">6.4</span>Step 3: the Pareto front</h2>
+<div class="box intuition"><div class="lbl">Dominance in one sentence</div>
+Material A <b>dominates</b> B if A is at least as good on every objective and strictly better on one. The <b>Pareto front</b> is the set of materials that nobody dominates: the best possible trade-offs.</div>
+<p>With objectives "capacity ↑" and "reaction heat ↓": in the mobile scenario, V₀.₈₅₅Ti₀.₀₉₅Fe₀.₀₅ (3.7 wt%, 21.4 MJ/kg) and TiCrMn₀.₈₅Fe₀.₃V₀.₁₅ (1.6 wt%, 10.4 MJ/kg) are both on the front: one has more capacity, the other needs half the heat. Neither is "better"; the user chooses the trade-off. The weighted score gives one ranking; the Pareto front shows the trade-off without choosing weights.</p>
+<figure class="wide"><img src="../../report/figures/f_scenarios.png" style="max-height:62mm"><figcaption>Two scenarios: grey = fails a hard constraint, light blue = ranked, dark = top 5, red circles = Pareto front (report Fig. 7.1).</figcaption></figure>
+
+<h2 id="p6-5"><span class="num">6.5</span>Step 4: is the ranking robust? <span class="tg n">Report §6.2</span></h2>
+<ul>
+<li><b>Random weights</b>: 2000 weight sets drawn from a <b>Dirichlet distribution</b> (a way to draw random positive weights that sum to 1) centred on the chosen weights, plus 2000 completely random ones. Result: the leading mobile alloy stays in the top 10 in 88% (near the chosen weights) and 72% (any weights) of draws.</li>
+<li><b>One-at-a-time</b>: set each weight to 0 or double it. Ranking agreement is measured with <b>Kendall τ</b> (1 = same order, 0 = unrelated). Largest effects: removing capacity for mobile (τ = 0.71), doubling pressure safety or removing cost for stationary (τ = 0.65).</li>
+<li><b>Thresholds</b>: e.g. mobile T(1 bar) limit of 60, 80 or 100 °C → 203, 232, 253 pass; the top 3 stay the same.</li>
+</ul>
+<div class="box tip"><div class="lbl">How to describe the result</div>
+"The <b>membership</b> of the top group is robust: Ti-based AB₂/AB for mobile, TiFe-type and Ti–Zr–Mn for stationary. The exact <b>order</b> inside the group depends on the weights, so I read the ranking as tiers, not as one winner."</div>
+
+<h2 id="p6-6"><span class="num">6.6</span>Evidence classes</h2>
+<table class="compact">
+<tr><th style="width:32mm">Class</th><th>Meaning</th><th style="width:30mm">Ranked?</th></tr>
+<tr><td class="k">Data-supported</td><td>measured ΔH, ΔS and a literature capacity; no caveats</td><td>yes</td></tr>
+<tr><td class="k">Provisional</td><td>passes the gate but has a caveat: own PCT curves disagree with the tabulated ΔH by &gt; 5 kJ/mol, unverified Sandia reference, data identical to another file, pseudo-element, or approximate capacity</td><td>yes, flagged</td></tr>
+<tr><td class="k">Insufficient evidence</td><td>fails the data-quality gate</td><td>shown, <b>never ranked</b></td></tr>
+</table>
+
+<h2 id="p6-7"><span class="num">6.7</span>The results you should know <span class="tg n">Report §7.3–7.4</span></h2>
+<div class="two">
+<div><h4>Generic mobile screen, top 5</h4><ol class="small">
+<li>Ti₁.₃Cr₁.₂Mn₀.₈ (AB₂, 1.90 wt%, 18.6 bar at 25 °C)</li>
+<li>Ti₁.₂CrMn (AB₂, 2.02 wt%)</li>
+<li>Ti₀.₅₆V₀.₃Zr₀.₁Mn₀.₉₄Fe₀.₀₆Ni₀.₀₄ (AB) † its own PCT curves disagree</li>
+<li>Ti₀.₉Zr₀.₂Mn₁.₄Cr₀.₄Vf₀.₂ (AB₂) ‡ contains ferrovanadium</li>
+<li>Ti₀.₈Zr₀.₂Mn₁.₅Cr₀.₅ (AB₂) § unverified reference</li>
+</ol></div>
+<div><h4>Generic stationary screen, top 5</h4><ol class="small">
+<li>TiFe₀.₉Al₀.₁ (AB, 1.41 bar at 25 °C)</li>
+<li>Ti₀.₉Zr₀.₁Mn₁.₄ (AB₂, 0.80 bar)</li>
+<li>Ti₀.₅Zr₀.₅Mn₁.₂Fe₀.₃ (AB₂) §</li>
+<li>TiFe₀.₈Mn₀.₂ (AB)</li>
+<li>TiMn₁.₄ (AB₂) †</li>
+</ol></div>
+</div>
+<p>LaNi₅, the textbook reference, passes both but ranks only 58th (mobile) and 66th (stationary): modest capacity (1.49 wt%) and the rare-earth cost class.</p>
+<p><b>Two demonstration scenarios</b> (illustrative requirements, run in the platform):</p>
+<table class="compact">
+<tr><th></th><th>Mobile (PEMFC vehicle)</th><th>Industrial buffer</th></tr>
+<tr><td class="k">Key inputs</td><td>70 °C waste heat, 5 kW; 1 kg H₂; deliver 3 bar; ≤ 80 kg alloy; ≥ 1.5 wt%</td><td>120 °C waste heat, 50 kW; 50 kg H₂; deliver 5 bar; ≤ 30 bar</td></tr>
+<tr><td class="k">Fail / unranked / ranked</td><td>278 / 4 / 55</td><td>222 / 6 / 109</td></tr>
+<tr><td class="k">Top 3</td><td>Ti₀.₉Zr₀.₂Mn₁.₄Cr₀.₄V₀.₂, Ti₀.₉Zr₀.₂Mn₁.₈V₀.₂, V₀.₈₅₅Ti₀.₀₉₅Fe₀.₀₅</td><td>Ti₀.₉Zr₀.₁Mn₁.₄, Zr₀.₇Ti₀.₃CrFe, TiFe₀.₉Al₀.₁</td></tr>
+<tr><td class="k">Telling numbers</td><td>top alloy: ≈ 48 kg for 1 kg H₂, 1.8 kW heat</td><td>top alloy: ≈ 2.6 t for 50 kg H₂; needs ≈ 70 °C, 120 °C available</td></tr>
+</table>
+<p>The two top-5 lists share <b>zero</b> materials. When each of the seven weights is removed or doubled (14 cases), the industrial leader stays first in 9, the mobile leader in only 4: <b>mobile rankings depend much more on priorities</b>.</p>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q6.1</span>How did you choose the weights?</div><div class="aa"><p>From the engineering priorities of each application: capacity and heat matter most for a vehicle; cost, low pressure and cycling loss for a stationary store. Because weights are a judgement, I tested them: 4000 random weight sets and one-at-a-time changes. The top group stays the same; the order within it changes.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q6.2</span>Why use hard constraints and a score, not just a score?</div><div class="aa"><p>Some requirements are absolute: an alloy that cannot deliver 3 bar with 70 °C heat is useless however good its capacity. A score could hide that. So constraints remove impossible materials, and the score ranks only feasible ones.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q6.3</span>What is a Pareto front, and why show it as well as the ranking?</div><div class="aa"><p>The set of materials not beaten on all objectives at once. It shows the real trade-offs (capacity vs heat) without imposing weights. The ranking needs weights; the front does not.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q6.4</span>Your top mobile alloy contains vanadium, which you class as costly. Contradiction?</div><div class="aa"><p>No. Cost has a weight of 0.1 for mobile, where capacity and heat dominate. With the stationary weights (cost 0.25) V-containing alloys drop. The cost class is qualitative, not a price model.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q6.5</span>Is your #1 material the best hydride for vehicles?</div><div class="aa"><p>It is the top result of a screening of literature data under stated requirements and weights. Several top entries carry data caveats, and any candidate needs its own PCT measurement, cycling and kinetics tests before use. I present the result as a short list to measure.</p></div>
+<div class="why"><b>Trap</b> "Best" is an overclaim; "top-ranked under these requirements" is correct.</div></div>
+<div class="qa"><div class="qq"><span class="qn">Q6.6</span>What happens to a material with missing hysteresis data?</div><div class="aa"><p>It is not rejected. The hysteresis criterion gets a neutral 0.5 and the material is flagged; for the charging-pressure check, the desorption pressure is used and marked "optimistic".</p></div></div>
+</section>

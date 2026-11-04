@@ -1,0 +1,22 @@
+# environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplcache/
+.ipynb_checkpoints/
+.DS_Store
+.streamlit/secrets.toml
+
+# third-party raw data (no clear redistribution licence) - see data/raw/README.md
+data/raw/*
+!data/raw/README.md
+
+# build intermediates
+report/output/
+report/content_prehumanize2/
+report/__pycache__/
+viva-guide/source/node_modules/
+viva-guide/source/guide.html
+viva-guide/source/guide.pdf
+viva-guide/source/pages.json

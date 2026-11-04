@@ -1,0 +1,54 @@
+<section>
+<h1 class="part" id="p8"><span class="tag">Part 8</span>Limitations and future work</h1>
+<div class="srcline">Report: §7.6, Chapter 8, Appendix F</div>
+<p class="lede">Examiners respect a student who knows exactly where their work stops. Know each limitation, what it does to the results, and what would fix it. Then know the proposed experimental programme well enough to explain each technique in one sentence.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p8-1"><span class="num">8.1</span>The limitations, honestly <span class="tg n">Report Table 7.4</span></h2>
+<table class="compact">
+<tr><th style="width:46mm">Limitation</th><th>Consequence</th><th style="width:48mm">Fix</th></tr>
+<tr><td class="k">No independent test set</td><td>CV error is the only estimate of generalisation</td><td>newly measured alloys (blind test)</td></tr>
+<tr><td class="k">Composition-only descriptors</td><td>can't see C14 vs C15, microstructure, processing</td><td>XRD phase data; structure descriptors</td></tr>
+<tr><td class="k">Fails on unseen families</td><td>no ML screening of Mg, complex or new families</td><td>data for those families; physics-informed models</td></tr>
+<tr><td class="k">ΔS assumed, not predicted</td><td>T(1 bar) bands ≈ 105 K for new alloys</td><td>PCT isotherms at ≥ 4 temperatures; a ΔS model</td></tr>
+<tr><td class="k">Capacities: unclear definition, material level</td><td>capacity rankings indicative; no system capacity</td><td>reversible capacity between the application's pressures; a system model</td></tr>
+<tr><td class="k">Density for 37 materials only</td><td>volumetric capacity mostly unknown</td><td>density, bed packing measurements</td></tr>
+<tr><td class="k">Kinetics and cost qualitative</td><td>no rate or price optimisation</td><td>standardised kinetic tests; cost data</td></tr>
+<tr><td class="k">No cycle-life data</td><td>durability not screened</td><td>≥ 100-cycle tests</td></tr>
+<tr><td class="k">Digitised isotherms</td><td>PCT check is only a consistency check</td><td>original measured isotherms</td></tr>
+<tr><td class="k">No laboratory work</td><td>all rankings remain screening results</td><td>the proposed programme below</td></tr>
+</table>
+
+<h2 id="p8-2"><span class="num">8.2</span>The proposed experimental programme, in plain words <span class="tg n">Report §8.3</span></h2>
+<p><b>Nothing here was done.</b> It is a plan. <b>Nine alloys</b> from the screening: LaNi₅ and TiFe as <i>benchmarks</i> (known behaviour, to check the equipment); Ti₁.₂CrMn, Ti₀.₉Zr₀.₂Mn₁.₄Cr₀.₄V₀.₂ and Ti₀.₅₆V₀.₃Zr₀.₁Mn₀.₉₄Fe₀.₀₆Ni₀.₀₄ from the mobile tier (the last because its data conflict); TiFe₀.₉Al₀.₁, Ti₀.₉Zr₀.₁Mn₁.₄, TiFe₀.₈₅Mn₀.₁₅ and CaNi₅ from the stationary tier. Plus <b>two blind tests of the model</b>: LaNi₄.₂Al₀.₈ (predicted 38.7, interval 34.3–41.6) and TiFe₀.₇₅Mn₀.₂₅ (32.0, 25.7–37.8). The model "passes" if the measured ΔH falls in the interval.</p>
+<table class="compact">
+<tr><th style="width:44mm">Technique</th><th>What it does, in one sentence</th></tr>
+<tr><td class="k">Arc melting (argon, Ti getter, 4–5 remelts)</td><td>melts the pure metals together with an electric arc in inert gas, flipping and remelting so the alloy is uniform</td></tr>
+<tr><td class="k">Homogenisation anneal</td><td>holds the alloy hot in a sealed tube so segregated regions even out, then quenches</td></tr>
+<tr><td class="k">ICP-OES</td><td>dissolves a sample and measures the actual element amounts (is it really LaNi₄.₂Al₀.₈?)</td></tr>
+<tr><td class="k">XRD + Rietveld refinement</td><td>X-ray diffraction identifies the crystal phases (C14 vs C15) and lattice parameters</td></tr>
+<tr><td class="k">SEM/EDS</td><td>electron microscope images of microstructure plus local composition; shows secondary phases</td></tr>
+<tr><td class="k">Activation</td><td>first few hydrogen cycles (with heating) to crack surface oxides; essential for TiFe</td></tr>
+<tr><td class="k">Sieverts PCT, abs + des, ≥ 4 temperatures</td><td>the key test: measures plateau pressure vs hydrogen content at several temperatures → ΔH, ΔS, capacity, slope, hysteresis</td></tr>
+<tr><td class="k">Kinetic curves</td><td>uptake/release vs time at fixed pressure ratio and several temperatures → rates, activation energy</td></tr>
+<tr><td class="k">Cycling (≥ 100 cycles)</td><td>how much capacity is lost over time</td></tr>
+<tr><td class="k">DSC</td><td>measures reaction heat directly; an independent check of ΔH</td></tr>
+<tr><td class="k">Thermal conductivity, bed density</td><td>needed for heat-exchanger design and volumetric capacity</td></tr>
+</table>
+
+<h2 id="p8-3"><span class="num">8.3</span>Future modelling and platform work <span class="tg n">Report §8.4</span></h2>
+<ul>
+<li>Add structural information (C14/C15, lattice parameters).</li>
+<li>Model ΔS, or the whole Van't Hoff line, instead of assuming it.</li>
+<li><b>Active learning</b>: measure the candidates the model is least sure about, add them, retrain, and the domain grows where experiments are made.</li>
+<li>A <b>system-level model</b> (vessel, heat exchanger, porosity) for system capacity and refuelling time.</li>
+<li>Quantitative cost and kinetic data where available.</li>
+</ul>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q8.1</span>What is the weakest part of your project?</div><div class="aa"><p>The absence of an independent test: the two datasets share most values, and no new alloys were measured. The cross-validation is done carefully (grouped, nested), but a blind test on new alloys would be the real proof. That is why two blind-test compositions with stated intervals are proposed.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q8.2</span>If you had six more months, what would you do first?</div><div class="aa"><p>Synthesise and PCT-test the two blind-test alloys and the benchmarks, to check the model against new measurements. Then add XRD phase information as a descriptor, and build a ΔS model so the temperature bands shrink.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q8.3</span>Why choose LaNi₅ and TiFe for the experiments when you already know their values?</div><div class="aa"><p>They are benchmarks. If my set-up reproduces their known plateaus, I can trust its measurements on the new alloys.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q8.4</span>What is a Sieverts apparatus?</div><div class="aa"><p>A volumetric set-up: a calibrated reservoir of hydrogen at known pressure and temperature is opened to the sample; the pressure drop tells how much hydrogen was absorbed. Repeating step by step traces the PCT curve.</p></div></div>
+</section>

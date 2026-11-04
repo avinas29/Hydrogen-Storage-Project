@@ -1,0 +1,61 @@
+<section>
+<h1 class="part" id="p7"><span class="tag">Part 7</span>The software platform</h1>
+<div class="srcline">Report: §6.3; code in <code>app.py</code> and <code>src/app/</code></div>
+<p class="lede">The app ("METAL HYDRIDE AI") is the visible part of the project. Know what each page does, what happens under the hood when you click, and have a short demo ready.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p7-1"><span class="num">7.1</span>Architecture</h2>
+<figure class="wide"><img src="../../report/figures/f_architecture.png" style="max-height:70mm"><figcaption>Pages (Streamlit) call engine modules; engines read the model bundle and project data read-only (report Fig. 6.2).</figcaption></figure>
+<p>The app computes nothing of its own. Every ΔH comes live from the saved random forest, and every thermodynamic number from the same Van't Hoff functions used in the report. The engines contain no user-interface code, so they can be tested without a browser.</p>
+
+<h2 id="p7-2"><span class="num">7.2</span>The eight pages</h2>
+<table class="compact">
+<tr><th style="width:42mm">Page</th><th>What it does</th></tr>
+<tr><td class="k">Overview</td><td>model metrics read from the result files, dataset coverage, shortcuts</td></tr>
+<tr><td class="k">Property Predictor</td><td>type a formula → ΔH, 80% interval, domain flag, 5 nearest measured alloys, labelled Van't Hoff estimate</td></tr>
+<tr><td class="k">Candidate Discovery Lab</td><td>generate a grid of compositions in an alloy system → predict → reject with reasons → rank → Pareto front</td></tr>
+<tr><td class="k">Application Requirement Designer</td><td>7-step requirement form → hard constraints → ranking, Pareto, evidence, explanation, export</td></tr>
+<tr><td class="k">Material Comparison</td><td>measured properties side by side, with provenance; missing shown as missing</td></tr>
+<tr><td class="k">Thermodynamic Explorer</td><td>Van't Hoff curves with ΔS sensitivity and neighbour lines</td></tr>
+<tr><td class="k">Model Performance</td><td>the validation results of Part 5</td></tr>
+<tr><td class="k">Dataset &amp; Evidence Explorer</td><td>overlap, flags and missing data of Part 3</td></tr>
+</table>
+
+<h2 id="p7-3"><span class="num">7.3</span>What happens when you press "Predict"</h2>
+<ol>
+<li><b>Parse</b> the text (e.g. "LaNi4.2Al0.8") into elements and amounts; reject invalid input with a message.</li>
+<li><b>Normalise</b> to atomic fractions and build the composition key.</li>
+<li><b>Featurise</b>: compute the 38 descriptors (Part 4), using the same code as in training.</li>
+<li><b>Predict</b> ΔH with the saved random forest → 38.69 kJ/mol.</li>
+<li><b>Distance</b>: L1 distance to all 725 training alloys → nearest 0.016.</li>
+<li><b>Interval</b>: look up the calibration bin → [34.3, 41.6]; domain check (≤ 0.15) → in domain.</li>
+<li><b>Warnings</b>: unseen element? already in training (then the value is in-sample)? outside domain?</li>
+<li><b>Van't Hoff estimate</b> with the assumed family-median ΔS, labelled as an estimate.</li>
+</ol>
+
+<h2 id="p7-4"><span class="num">7.4</span>Discovery Lab and Requirement Designer</h2>
+<p><b>Discovery Lab</b>: choose a template (TiFe₁₋ₓMnₓ; Ti–Zr–Mn–Cr or Ti–Cr–Mn Laves; La–Ni–Al, La–Ni–Sn, La–Ce–Ni–Al AB₅; V–Ti–Cr BCC) or free fractions, set ranges and step. The generator builds a reproducible grid and removes duplicates. A candidate is <b>rejected</b> if it has unseen elements, lies outside the domain, or if even the optimistic end of its temperature band misses the target. Survivors are ranked. All outputs say: ΔH predicted, ΔS assumed, capacity not predicted, candidates only.</p>
+<p><b>Requirement Designer</b>: Step 1 application type (5 presets), 2 environment (ambient range, heat source), 3 hydrogen needs (kg, delivery pressure, flow), 4 optional limits (mass, volume, pressures, heating power), 5 weights, 6 review, 7 results. It derives the operating conditions: delivery temperature = heat-source temperature if any, else the coldest ambient; hottest bed temperature; charging temperature (cooling water or hottest ambient). Then it evaluates every measured material.</p>
+
+<h2 id="p7-5"><span class="num">7.5</span>Testing, and a bug found while writing the report</h2>
+<p><b>77 automated tests</b> check parsing, consistency with the training pipeline, the generator, constraints, scoring, Pareto fronts, evidence classes, export and a headless run of every page. While writing the report, reviewing the demo output showed that unranked "insufficient evidence" materials were included in the Pareto computation and could dominate the ranked ones. In the industrial scenario this made the front among ranked materials appear empty. The fix computes the front among ranked materials only, and a new test guards it. Rankings did not change.</p>
+
+<h2 id="p7-6"><span class="num">7.6</span>A five-minute demo for the viva</h2>
+<div class="box notes breakable"><div class="lbl">Run</div>
+<p><code>cd Hydrogen-Storage-Project</code> then <code>.venv/bin/streamlit run app.py</code>, which opens <code>http://localhost:8501</code>. Open it before the viva and keep it running.</p>
+<ol>
+<li><b>Overview</b> (20 s): "725 compositions, MAE 5.26, read live from the result files."</li>
+<li><b>Property Predictor</b>, type <code>LaNi4.2Al0.8</code>: "38.7 kJ/mol, interval 34.3–41.6, in domain, nearest known alloy LaNi₄.₂₅Al₀.₇₅ at 38.3."</li>
+<li>Type <code>Ti0.5V0.5</code>: "outside the domain, distance 0.33, typical error 13 kJ/mol. The app refuses to pretend."</li>
+<li>Type <code>LaNi5</code>: "it warns this is a training alloy, so the measured 32.15 is the value to quote."</li>
+<li><b>Requirement Designer</b>, choose "Mobile hydrogen storage" and run: "every rejected material lists the requirement it fails; the ranked ones show an evidence class; the Pareto front shows capacity against heat." (The report's scenario 1 adds a mass limit of 80 kg and a minimum of 1.5 wt%: 278 rejected, 55 ranked.)</li>
+<li><b>Model Performance</b>: "leave-family-out: the model fails on unseen families, and that is why the domain flag exists."</li>
+</ol></div>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q7.1</span>Does the app use the same model as the report?</div><div class="aa"><p>Yes, the identical saved random forest, packaged unchanged. A manifest stores SHA-256 hashes of the model files, and a test checks that the app's predictions match the training pipeline.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q7.2</span>Why Streamlit?</div><div class="aa"><p>It turns Python analysis code into an interactive web app quickly, so the same tested engine functions serve the report and the app. For a research prototype that matters more than a custom front end.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q7.3</span>How do you know the app's numbers are right?</div><div class="aa"><p>The engines are separate from the interface and covered by 77 tests, including consistency between the app predictor and the training pipeline. All thermodynamics use the same Van't Hoff functions as the report, and the demo outputs were regenerated and compared after the Pareto fix.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q7.4</span>What stops a user from trusting a bad prediction?</div><div class="aa"><p>Every prediction shows its interval and the distance to the nearest known alloy; outside the domain it is labelled OUTSIDE DOMAIN with the typical error at that distance; training alloys are flagged as in-sample; unseen elements trigger a warning; Lab outputs are always labelled as candidates.</p></div></div>
+</section>

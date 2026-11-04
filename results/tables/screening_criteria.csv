@@ -1,0 +1,21 @@
+application,criterion,value,type
+mobile,T1_full_max_C,80.0,hard constraint
+mobile,P50_max_bar,50.0,hard constraint
+mobile,Pcharge25_max_bar,100.0,hard constraint
+stationary,T1_full_max_C,150.0,hard constraint
+stationary,P25_max_bar,10.0,hard constraint
+stationary,P50_max_bar,30.0,hard constraint
+stationary,Pcharge25_max_bar,30.0,hard constraint
+mobile,capacity,0.35,weight
+mobile,heat,0.2,weight
+mobile,kinetics,0.15,weight
+mobile,hysteresis,0.1,weight
+mobile,pressure_fit,0.1,weight
+mobile,cost,0.1,weight
+stationary,cost,0.25,weight
+stationary,pressure_safety,0.2,weight
+stationary,hysteresis,0.15,weight
+stationary,kinetics,0.1,weight
+stationary,heat,0.1,weight
+stationary,capacity,0.1,weight
+stationary,pressure_fit,0.1,weight

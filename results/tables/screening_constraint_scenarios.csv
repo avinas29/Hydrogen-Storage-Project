@@ -1,0 +1,13 @@
+application,threshold,value,n_pass,families_passing,top3
+mobile,T1_full_max_C,60,203,"AB5 106, AB2 59, AB 15, SS 11, AB3 7, Misc 3, A2B7 2",Ti[1.3]Cr[1.2]Mn[0.8]; Ti[1.2]Cr[1]Mn[1]; Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]
+mobile,T1_full_max_C,80,232,"AB5 121, AB2 66, AB 17, SS 14, AB3 7, Misc 4, A2B7 3",Ti[1.3]Cr[1.2]Mn[0.8]; Ti[1.2]Cr[1]Mn[1]; Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]
+mobile,T1_full_max_C,100,253,"AB5 125, AB2 72, AB 20, SS 18, AB3 9, Misc 5, A2B7 3, Complex 1",Ti[1.3]Cr[1.2]Mn[0.8]; Ti[1.2]Cr[1]Mn[1]; Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]
+mobile,P50_max_bar,30,219,"AB5 117, AB2 60, AB 17, SS 12, AB3 6, Misc 4, A2B7 3",Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]; Ti[0.9]Zr[0.2]Mn[1.4]Cr[0.4]Vf[0.2]; Ti[0.8]Zr[0.2]Mn[1.5]Cr[0.5]
+mobile,P50_max_bar,50,232,"AB5 121, AB2 66, AB 17, SS 14, AB3 7, Misc 4, A2B7 3",Ti[1.3]Cr[1.2]Mn[0.8]; Ti[1.2]Cr[1]Mn[1]; Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]
+mobile,P50_max_bar,100,250,"AB5 127, AB2 76, AB 18, SS 15, AB3 7, Misc 4, A2B7 3",Ti[1.3]Cr[1.2]Mn[0.8]; Ti[1.2]Cr[1]Mn[1]; Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]
+stationary,T1_full_max_C,80,211,"AB5 113, AB2 57, AB 17, SS 12, AB3 6, Misc 4, A2B7 2",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ca[1]Ni[5]
+stationary,T1_full_max_C,150,252,"AB5 121, AB2 67, AB 24, SS 19, AB3 9, A2B7 6, Misc 5, Complex 1",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]
+stationary,T1_full_max_C,350,261,"AB5 121, AB2 68, AB 25, SS 19, AB3 11, A2B7 7, Misc 5, Mg 4, Complex 1",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ti[1]Mn[1.4]
+stationary,P25_max_bar,5,223,"AB5 105, AB2 57, AB 24, SS 18, AB3 8, Misc 5, A2B7 5, Complex 1",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]
+stationary,P25_max_bar,10,252,"AB5 121, AB2 67, AB 24, SS 19, AB3 9, A2B7 6, Misc 5, Complex 1",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]
+stationary,P25_max_bar,20,260,"AB5 125, AB2 70, AB 24, SS 19, AB3 9, A2B7 7, Misc 5, Complex 1",Ti[1]Fe[0.9]Al[0.1]; Ti[0.9]Zr[0.1]Mn[1.4]; Ti[1]Fe[0.8]Mn[0.2]

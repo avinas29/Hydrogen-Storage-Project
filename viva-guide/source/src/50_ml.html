@@ -1,0 +1,120 @@
+<section>
+<h1 class="part" id="p5"><span class="tag">Part 5</span>The machine-learning model</h1>
+<div class="srcline">Report: §3.5 and Chapter 4, Appendix B</div>
+<p class="lede">The part examiners probe hardest. Understand what a random forest does, why the validation is "grouped" and "nested", what the error numbers mean physically, and, most importantly, where the model stops being trustworthy.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p5-1"><span class="num">5.1</span>From one decision tree to a random forest <span class="tg b">background</span></h2>
+<div class="box intuition"><div class="lbl">A decision tree is a sequence of yes/no questions</div>
+"Is the mean molar volume above 9.0?" → yes → "Is the fraction of hydride formers above 0.3?" → no → … Each question splits the training alloys into two groups. At the end of the path (a "leaf"), the prediction is the average ΔH of the training alloys that ended up there. A tree can capture non-linear effects and interactions, but a single deep tree memorises noise (it "overfits").</div>
+<p>A <b>random forest</b> (Breiman 2001) grows many trees and averages them. Two tricks make the trees different from each other:</p>
+<ul>
+<li><b>Bootstrap</b>: each tree trains on a random resample of the alloys (with replacement).</li>
+<li><b>Random features</b>: at each split, a tree may only consider a random subset of descriptors. Your model uses <b>max_features = 0.33</b>, i.e. about a third of the 38 at each split.</li>
+</ul>
+<p>Averaging 300 different, individually overfitting trees cancels much of their noise. Your final settings: <b>300 trees, max_features 0.33, min_samples_leaf 1, random_state 0</b> (the seed, so results repeat exactly).</p>
+<div class="box tip"><div class="lbl">Why a random forest and not a neural network?</div>
+725 rows of tabular data is small. Tree ensembles are the standard strong choice for small tabular data: non-linear, no feature scaling needed, little tuning, and easy to inspect (permutation importance). A neural network would need far more data and would be harder to validate honestly. Gradient boosting (another tree ensemble) was also tested and performed the same.</div>
+
+<h2 id="p5-2"><span class="num">5.2</span>How good is "good"? Metrics and baselines</h2>
+<div class="three">
+<div class="box def"><div class="lbl">MAE</div>Mean absolute error: average of |true − predicted|. In kJ/mol. "On average the prediction is off by this much."</div>
+<div class="box def"><div class="lbl">RMSE</div>Root-mean-square error. Squares the errors first, so a few <b>large</b> errors raise it a lot. RMSE ≫ MAE means "a few bad outliers".</div>
+<div class="box def"><div class="lbl">R²</div>Share of the variation in ΔH explained. 1 = perfect, 0 = no better than always predicting the mean.</div>
+</div>
+<p><b>Baselines</b> are the "dumb" predictors a model must beat to be worth anything:</p>
+<ul>
+<li><b>Mean baseline</b>: always predict the average ΔH of the training set. MAE 12.26.</li>
+<li><b>Family-median baseline</b>: predict the median ΔH of the alloy's family (AB₅, AB₂ …). MAE 8.88. This is what a hydride chemist's rule of thumb would give.</li>
+</ul>
+
+<h2 id="p5-3"><span class="num">5.3</span>Cross-validation: grouped and nested <span class="tg n">Report §3.5</span></h2>
+<p><b>k-fold cross-validation</b>: split the data into 5 parts; train on 4, test on the 5th; rotate so every part is tested once; average. Repeat with 3 different shuffles. Every alloy is predicted by a model that never saw it.</p>
+<div class="box intuition"><div class="lbl">Why "grouped"?</div>
+The data contain near-duplicates, e.g. LaNi₅ and LaNi₄.₉₅Sn₀.₀₅ (L1 distance 0.016). If one is in training and the other in testing, the test is too easy. So compositions with the <b>same elements and an L1 distance ≤ 0.02</b> are put in the same group (725 compositions → 659 groups), and a whole group always goes to the same side of the split. Effect: ungrouped CV would have reported MAE 5.12, grouped gives 5.26, about 3% more honest.</div>
+<div class="box intuition"><div class="lbl">Why "nested"?</div>
+Hyperparameters (e.g. max_features) are chosen by trying a few values and picking the best. If you pick using the <i>same</i> test folds you then report, the reported error is optimistically biased (Varma &amp; Simon 2006). Nested CV has two loops: the <b>inner</b> loop (4-fold, inside each training part only) picks the hyperparameters; the <b>outer</b> loop (5-fold × 3 repeats) measures the error on data never used for any choice.</div>
+
+<h2 id="p5-4"><span class="num">5.4</span>The results <span class="tg n">Report Table 4.2</span></h2>
+<table class="compact">
+<tr><th>Model</th><th class="c">MAE (kJ/mol)</th><th class="c">RMSE</th><th class="c">R²</th></tr>
+<tr><td class="k">Random forest (chosen)</td><td class="c"><b>5.26 ± 0.14</b></td><td class="c">10.32</td><td class="c">0.715</td></tr>
+<tr><td class="k">Gradient boosting</td><td class="c">5.30 ± 0.13</td><td class="c">9.77</td><td class="c">0.744</td></tr>
+<tr><td class="k">Ridge (linear)</td><td class="c">7.09</td><td class="c">12.3</td><td class="c">0.60</td></tr>
+<tr><td class="k">Family-median baseline</td><td class="c">8.88</td><td class="c">16.3</td><td class="c">0.29</td></tr>
+<tr><td class="k">Mean baseline</td><td class="c">12.26</td><td class="c">19.4</td><td class="c">0.00</td></tr>
+</table>
+<ul>
+<li>RF is <b>41% better</b> than the family rule and 57% better than the mean.</li>
+<li>RF and GB are the same within noise; RF was kept (not better or worse on MAE, the main metric).</li>
+<li>Ridge is clearly worse → the composition–ΔH relation is <b>non-linear</b>.</li>
+<li>RMSE ≈ 2 × MAE because a few very stable hydrides (ΔH &gt; 60) have large errors.</li>
+<li><b>Hold-out check</b>: on one separate grouped 20% split (145 alloys), RF MAE 5.55, R² 0.73. Consistent.</li>
+</ul>
+<figure class="wide"><img src="../../report/figures/existing/fig12_dH_parity_residuals.png" style="max-height:58mm"><figcaption>Hold-out parity and residuals (report Fig. 4.2). Points close to the diagonal are good predictions.</figcaption></figure>
+
+<h2 id="p5-5"><span class="num">5.5</span>What 5.26 kJ/mol means physically</h2>
+<ul>
+<li><b>Against the data floor</b>: independent measurements of the same alloy differ by ≈ 2.2 kJ/mol. The model's error is ≈ 2.4× that. No model can go much below ≈ 2 with these data.</li>
+<li><b>Against the operating point</b>: 5 kJ/mol ≈ a factor 7.5 in plateau pressure at 25 °C. So the model can tell a 25 kJ/mol alloy (several bar at room temperature) from a 40 kJ/mol alloy (needs ≈ 100 °C), but it cannot design an exact plateau pressure. <b>It is a screening tool.</b></li>
+<li><b>Data quality</b>: on a cleaner subset of 456 compositions (referenced, typical ΔS, metals only), MAE drops to 3.51. Part of the error is the data, not the model.</li>
+</ul>
+
+<h2 id="p5-6"><span class="num">5.6</span>By family, and the leave-one-family-out test <span class="tg n">Report §4.4–4.5</span></h2>
+<p>Within the big families the model is good: <b>AB₅ MAE 3.09</b> (family rule 5.15), <b>AB₂ 4.17</b> (7.12). So it learns substitution effects, like Al or Sn replacing Ni in LaNi₅.</p>
+<p>The hard test: remove a whole family from training, then predict it.</p>
+<table class="compact">
+<tr><th>Held-out family</th><th class="c">n</th><th class="c">Mean of other families</th><th class="c">Random forest</th><th>Verdict</th></tr>
+<tr><td class="k">AB₅</td><td class="c">116</td><td class="c">5.10</td><td class="c">5.86</td><td class="red">worse than a constant</td></tr>
+<tr><td class="k">AB₂</td><td class="c">401</td><td class="c">17.50</td><td class="c">13.84</td><td>better, still large</td></tr>
+<tr><td class="k">AB</td><td class="c">40</td><td class="c">16.21</td><td class="c">16.52</td><td class="red">worse</td></tr>
+<tr><td class="k">SS</td><td class="c">59</td><td class="c">12.33</td><td class="c">20.98</td><td class="red">much worse</td></tr>
+<tr><td class="k">Mg</td><td class="c">35</td><td class="c">36.01</td><td class="c">14.51</td><td>better, still large</td></tr>
+<tr><td class="k">MIC</td><td class="c">33</td><td class="c">14.30</td><td class="c">11.09</td><td>better, still large</td></tr>
+</table>
+<div class="box trap"><div class="lbl">The honest conclusion</div>
+<b>The model does not generalise to an unseen family.</b> It interpolates within and near known families. That is why it is never used to screen Mg-based or complex hydrides, and why every prediction carries a domain flag. Saying this openly is a strength in a viva, not a weakness.</div>
+
+<h2 id="p5-7"><span class="num">5.7</span>Applicability domain and the 80% interval <span class="tg n">Report §4.6</span></h2>
+<p><b>Distance to the training data.</b> For a query alloy, compute the <b>L1 distance</b> between its fraction vector and every training alloy's, and take the smallest, \(d_{NN}\).</p>
+<div class="ex"><div class="lbl">Example: LaNi₄.₂Al₀.₈ vs the nearest known alloy LaNi₄.₂₅Al₀.₇₅</div>
+<p>Fractions (La, Ni, Al): (0.167, 0.700, 0.133) vs (0.167, 0.708, 0.125).
+\(d_{NN} = |0.167-0.167| + |0.700-0.708| + |0.133-0.125| = 0 + 0.008 + 0.008 = 0.016.\)</p></div>
+<p><b>Calibration.</b> For every out-of-fold prediction, the distance to its nearest training alloy (outside its own group) was recorded, and errors were binned by distance:</p>
+<table class="compact">
+<tr><th>\(d_{NN}\)</th><th class="c">≤ 0.05</th><th class="c">0.05–0.10</th><th class="c">0.10–0.15</th><th class="c">0.15–0.20</th><th class="c">0.20–0.30</th><th class="c">0.30–0.50</th><th class="c">&gt; 0.50</th></tr>
+<tr><td class="k">n</td><td class="c">219</td><td class="c">220</td><td class="c">94</td><td class="c">86</td><td class="c">27</td><td class="c">57</td><td class="c">22</td></tr>
+<tr><td class="k">MAE</td><td class="c">2.62</td><td class="c">4.22</td><td class="c">4.63</td><td class="c">6.14</td><td class="c">6.88</td><td class="c">12.9</td><td class="c">16.9</td></tr>
+<tr><td class="k">q10 / q90 of residual</td><td class="c">−2.95 / 4.34</td><td class="c">−5.76 / 6.36</td><td class="c">−7.04 / 7.23</td><td class="c">−7.81 / 10.7</td><td class="c">−13.8 / 5.67</td><td class="c">−32.2 / 8.28</td><td class="c">−22.3 / 23.7</td></tr>
+</table>
+<div class="box derive"><div class="lbl">How the 80% interval is computed (residual = predicted − true)</div>
+\[ [\,\hat y - q_{90},\ \hat y - q_{10}\,] \]
+LaNi₄.₂Al₀.₈: \(\hat y = 38.69\), bin ≤ 0.05 → \([38.69-4.34,\ 38.69+2.95] = [34.3,\ 41.6]\) kJ/mol. ✓ (in domain)<br>
+Ti₀.₅V₀.₅: \(d_{NN} = 0.333\), bin 0.30–0.50 → \(\hat y = 54.4\), interval \([46.1,\ 86.6]\); bin MAE 12.9 → <b>flagged OUTSIDE DOMAIN</b>.</div>
+<ul>
+<li><b>Domain limit d<sub>NN</sub> ≤ 0.15</b>: beyond it the typical error exceeds 6 kJ/mol and climbs fast.</li>
+<li><b>Coverage check</b>: on 22 alloys of four substitution series with known values, 91% of the measured ΔH fell inside the nominal 80% interval (mean error 1.91 kJ/mol).</li>
+<li>The interval is <b>empirical</b>: the typical spread of past errors at that distance. It is not a guarantee for one alloy.</li>
+</ul>
+
+<h2 id="p5-8"><span class="num">5.8</span>What the model uses: permutation importance <span class="tg n">Report §4.7</span></h2>
+<p><b>Method</b>: take the hold-out set, shuffle one descriptor's column randomly, and see how much the error increases. A big increase means the model relies on that descriptor.</p>
+<p>Top three: <b>mean molar volume</b> (+3.57 kJ/mol), <b>fraction of hydride formers</b> (+2.10), <b>valence-electron spread</b> (+1.31). The first matches the hole-size rule (Lundin 1977) and the volume descriptor Witman et al. (2020) found on HydPARK. Physically sensible. But descriptors are correlated, so importance is shared: this explains the model, not causation.</p>
+
+<h2 id="p5-9"><span class="num">5.9</span>The capacity model that was not used</h2>
+<p>A second model tried to predict wt% (181 Purdue records with a stated wt%). Best MAE 0.247 wt%, only slightly better than a <b>physics baseline</b> (0.286 wt%: take the family's typical H per metal atom and divide by the alloy's mass). The model mostly rediscovered "heavier alloys hold less wt%". With narrow ranges and inconsistent definitions, it was <b>reported but not used</b>. Screening uses reported capacities.</p>
+
+<h2 id="p5-10"><span class="num">5.10</span>The deployed model</h2>
+<p>The final RF was refitted on all 725 compositions with the same settings, then packaged <b>unchanged</b> into a bundle with the training compositions, the calibration table and the ΔS assumption. A manifest records the <b>SHA-256 hash</b> of each file (a fingerprint that changes if a single byte changes), so you can prove the app uses exactly the validated model. It was never retrained after validation.</p>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q5.1</span>R² is only 0.72. Isn't that weak?</div><div class="aa"><p>Judge it against the baselines and the data. The family rule gets R² 0.29, and independent measurements of the same alloy already scatter by ≈ 2.2 kJ/mol. R² is also pulled down by a few very stable outliers. Within AB₅/AB₂ the MAE is 3–4 kJ/mol, and on clean data 3.5. For screening that is useful; for design it is not, and I say so.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.2</span>What is overfitting and how did you avoid it?</div><div class="aa"><p>A model that memorises training noise and fails on new data. Controlled by averaging many trees, small hyperparameter grids, and above all by measuring error only on data the model never saw (nested, grouped CV, plus a separate hold-out).</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.3</span>Why 5 folds and 3 repeats?</div><div class="aa"><p>Five folds leave 80% for training, which matters with 725 rows; three repeats with different shuffles show how stable the estimate is (± 0.14 kJ/mol). The inner loop uses 4 folds inside each training part.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.4</span>Why is the interval asymmetric for Ti₀.₅V₀.₅?</div><div class="aa"><p>Because it uses the actual error distribution of that distance bin. In that bin some alloys were badly <i>under</i>-predicted (10% residual quantile −32.2 kJ/mol), so the interval stretches upward.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.5</span>Why is the domain limit 0.15 and not something else?</div><div class="aa"><p>It comes from the calibration: up to 0.15 the MAE stays below 5 kJ/mol (2.6, 4.2, 4.6); just beyond it is 6.1, and after 0.3 it jumps to 13–17. 0.15 is where the error starts to exceed the useful screening resolution. It is a judgement based on that table.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.6</span>Is the 80% interval a confidence interval?</div><div class="aa"><p>Not in the strict statistical sense. It is an empirical prediction interval: the 10–90% range of past out-of-fold errors for alloys at a similar distance from the training data. It assumes new alloys behave like past ones at that distance. On a check set, 91% of true values fell inside.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.7</span>What does "out-of-fold" mean?</div><div class="aa"><p>A prediction for an alloy made by a model trained on the other folds, i.e. a model that never saw that alloy. All reported errors and the calibration use out-of-fold predictions.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q5.8</span>If I type LaNi₅ into your app it says 31.4, but the measured value is 32.15. Why?</div><div class="aa"><p>LaNi₅ is in the training data, so 31.4 is an in-sample value (the app warns about this). The honest out-of-fold prediction, from a model that never saw LaNi₅, was 29.4. For training alloys, always quote the measured value.</p></div></div>
+</section>

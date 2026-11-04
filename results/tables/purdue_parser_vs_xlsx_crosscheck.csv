@@ -1,0 +1,10 @@
+parser_column,xlsx_column,n_parser,n_xlsx,n_agree,n_disagree,only_parser,only_xlsx
+wt_pct_stated,Weight Percent (wt% H),223,223,223,0,0,0
+hm_stated,H/M,114,114,114,0,0,0
+des_dH_J_per_molH2,Dehyd DH (J/mol H2),337,325,325,0,12,0
+des_dS_J_per_molH2K,Dehyd DS (J/mol.K),337,325,325,0,12,0
+abs_dH_J_per_molH2,Hyd DH (J/mol H2),83,82,82,0,1,0
+abs_dS_J_per_molH2K,Hyd DS (J/mol.K),83,82,82,0,1,0
+rho_kg_per_m3,rho (kg/m3),37,37,37,0,0,0
+cp_J_per_kgK,Cp (J/kg.K),28,28,28,0,0,0
+keff_W_per_mK,keff (W/m.K),14,14,14,0,0,0

@@ -1,0 +1,58 @@
+<section>
+<h1 class="part" id="p3"><span class="tag">Part 3</span>The data and the audit</h1>
+<div class="srcline">Report: Chapter 3 (§3.1–3.3), Appendix C</div>
+<p class="lede">The most defensible part of your project, and the part most students skip. Know what was in each dataset, what was wrong with it, and how each problem would have produced a misleading model if left unfixed.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p3-1"><span class="num">3.1</span>The two datasets</h2>
+<table class="compact">
+<tr><th style="width:26mm"></th><th>Purdue Metal Hydride Toolbox</th><th>ML-HydPARK v0.0.5</th></tr>
+<tr><td class="k">Who</td><td>Purdue Hydrogen Systems Lab (Voskuilen, Waters, Pourpoint 2014), MATLAB toolbox on GitHub</td><td>Sandia National Laboratories; cleaned version of the old HydPARK database for ML (Witman et al. 2020, Zenodo 2024)</td></tr>
+<tr><td class="k">Records</td><td>337 material files (.mh)</td><td>772 rows, in 4 appended blocks (397 / 25 / 15 / 335)</td></tr>
+<tr><td class="k">Content</td><td>ΔH, ΔS per plateau (absorption too for 83), capacity, slope, hysteresis, some heat-transfer and kinetics data, reference; 68 digitised PCT curves</td><td>class, formula, wt%, ΔH, ΔS, one (T, P) point, derived P(25 °C), H/M, DOI</td></tr>
+<tr><td class="k">Sign / unit</td><td>negative formation values, J/mol H₂</td><td>positive values, kJ/mol H₂</td></tr>
+<tr><td class="k">Largest families</td><td>AB₅ 146, AB₂ 106, AB 29, SS 24</td><td>AB₂ (incl. C14/C15) 454, AB₅ 106, SS 60, MIC 52</td></tr>
+</table>
+<p>Both are <b>compilations of published measurements</b>. Neither contains new experiments. Raw files were copied into <code>data/raw/</code> and never modified; every change happens in derived copies.</p>
+<figure class="wide"><img src="../../report/figures/existing/fig01_class_distribution.png" style="max-height:52mm"><figcaption>Material classes in the two datasets (report Fig. 3.1).</figcaption></figure>
+
+<h2 id="p3-2"><span class="num">3.2</span>What the audit found, and why each finding matters <span class="tg n">Report §3.2</span></h2>
+<table class="compact">
+<tr><th style="width:36mm">Finding</th><th>What it means</th><th style="width:52mm">If ignored …</th></tr>
+<tr><td class="k">HydPARK has 772 rows, not ≈ 420</td><td>the file is four blocks appended one after another; the index restarts three times</td><td>wrong dataset size and provenance</td></tr>
+<tr><td class="k">Opposite signs and units</td><td>Purdue −J/mol, HydPARK +kJ/mol</td><td>merged ΔH values would be nonsense (−32151 vs +32.15)</td></tr>
+<tr><td class="k">HydPARK ΔS is back-calculated</td><td>for 395 of the 412 rows with a (T, P) point, \(\Delta S = R\ln P + \Delta H/T\) holds to 0.01 J/mol·K: ΔS was <i>computed</i> from ΔH</td><td><b>target leakage</b>: a model using ΔS as input would look almost perfect but be useless (see box)</td></tr>
+<tr><td class="k">"H/M" means per formula unit</td><td>found by reading the MATLAB loader <code>ReadThermo.m</code></td><td>capacities off by the number of atoms in the formula</td></tr>
+<tr><td class="k">Capacity definition unclear</td><td>only 8 files say "reversible"; 17 say assumed / approximate / theoretical</td><td>capacity treated as more precise than it is</td></tr>
+<tr><td class="k">Toolbox fills gaps with defaults</td><td>missing hysteresis, density, kinetics are silently replaced by family "type" values</td><td>invented numbers treated as measurements. Defaults were excluded; missing stays missing.</td></tr>
+<tr><td class="k">All 68 PCT files digitised</td><td>traced from published figures; 14 shifted by the curators</td><td>treating them as raw data</td></tr>
+<tr><td class="k">Reference / formula problems</td><td>102 files cite an unverified Sandia placeholder; 49 use pseudo-elements (mischmetal Mm, Lm, ferrovanadium Vf); 12 are multi-plateau</td><td>unparseable formulas, unknown provenance</td></tr>
+<tr><td class="k">Heavy overlap</td><td><b>248 of 288</b> parseable Purdue compositions are also in HydPARK, mostly with the same value (median difference 0.0)</td><td>"external validation" would just test memorisation</td></tr>
+</table>
+
+<div class="box intuition"><div class="lbl">Target leakage, explained simply</div>
+Suppose you want to predict ΔH, and one of your inputs is ΔS. In HydPARK, ΔS was calculated as \(R\ln P + \Delta H/T\) from ΔH and one (T, P) point. So if the model knows ΔS, T and P, it can recover ΔH exactly. It would score a near-perfect error, but for a <i>new</i> alloy you never have ΔS in advance, so the model would be useless. The fix: <b>no thermodynamic, pressure, temperature or capacity value is allowed as an input</b>. Only the chemical formula. The feature-building script checks this automatically.</div>
+
+<div class="box intuition"><div class="lbl">Why the overlap kills "external validation"</div>
+A common idea is: train on Purdue, test on HydPARK. But HydPARK copied most Purdue values from the same papers. Testing on them is like setting an exam with the questions the student already studied: a high score proves memory, not understanding. So the project uses <b>one combined dataset with grouped cross-validation</b> instead (Part 5). It also uses the overlap usefully: where two sources report the <i>same composition independently</i>, they differ by ≈ <b>2.2 kJ/mol</b>. That is the measurement scatter, the best error any model can hope for.</div>
+
+<h2 id="p3-3"><span class="num">3.3</span>Building the modelling dataset <span class="tg n">Report §3.3</span></h2>
+<figure class="wide"><img src="../../report/figures/f_dataprep.png" style="max-height:52mm"><figcaption>From two raw sources to one composition-level table (report Fig. 3.2).</figcaption></figure>
+<ol>
+<li>Parse every formula with <b>pymatgen</b> into atomic fractions (LaNi₅ → La 0.167, Ni 0.833). The rounded fractions form a <b>composition key</b>, so "LaNi5" and "La1Ni5" are recognised as the same alloy.</li>
+<li>Keep <b>one row per composition</b>. If Purdue has a single-plateau value, use it; otherwise use the median of the HydPARK values.</li>
+<li>Leave out (but keep in the files, flagged): pseudo-element alloys (Mm, Vf: formula not defined), multi-plateau entries (one ΔH doesn't describe them), suspected entry errors, entries the Purdue curators had excluded.</li>
+<li>Store with each row: the source of the value, the spread between sources, the quality flags.</li>
+</ol>
+<p class="big">Result: <b>725 compositions</b> (276 with Purdue values, 449 with HydPARK values): AB₂ 401, AB₅ 116, SS 59, AB 40, Mg 35, MIC 33, and a few small groups.</p>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q3.1</span>Why didn't you train on one dataset and test on the other?</div><div class="aa"><p>Because 248 of the 288 parseable Purdue compositions are in HydPARK, mostly with identical values copied from the same papers. The test would measure memorisation of shared records, not generalisation. I used grouped cross-validation on the combined set instead.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.2</span>Why not use ΔS as an input? It's physically related to ΔH.</div><div class="aa"><p>In HydPARK, ΔS was back-calculated from ΔH and one (T, P) point, so it contains the answer: that's target leakage. And for a new alloy ΔS is unknown anyway. The model's purpose is to estimate ΔH from the formula alone.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.3</span>How did you choose between conflicting values for the same alloy?</div><div class="aa"><p>Purdue single-plateau value first (it has clear provenance and was checked against the toolbox's own code), otherwise the HydPARK median. The spread between sources is stored so it can be examined; 112 compositions with differing values have a median spread of 1.6 kJ/mol.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.4</span>Did you delete bad data?</div><div class="aa"><p>No. Every record is kept and flagged. Flags decide what goes into the ML union, the screening data-quality gate and the evidence class. The raw files are untouched.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.5</span>Why exclude mischmetal alloys from the ML set but include them in screening?</div><div class="aa"><p>Mischmetal is a variable mixture of rare earths, so its exact composition, and therefore its descriptors, cannot be computed. Screening uses only measured properties (ΔH, ΔS, capacity), which exist for those alloys, so they can be screened.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.6</span>Is 725 compositions enough for machine learning?</div><div class="aa"><p>It is small, which is why I used a random forest (works well on small tabular data), small hyperparameter grids, grouped and nested cross-validation, and simple baselines. It is enough to learn within-family trends (AB₅, AB₂), not enough to learn rare families. The leave-family-out test shows this.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q3.7</span>How did you know H/M meant "per formula unit"?</div><div class="aa"><p>By reading the toolbox's MATLAB loader (<code>ReadThermo.m</code>) and checking the value ranges. The Excel export's legend says "per metal atom", which is wrong.</p></div></div>
+</section>

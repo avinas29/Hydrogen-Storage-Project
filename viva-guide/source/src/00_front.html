@@ -1,0 +1,91 @@
+<section class="cover">
+<div>
+<div class="kicker">B.Tech Project · Viva &amp; Understanding Guide</div>
+<h1>Metal Hydrides, Machine Learning and Application Screening</h1>
+<p class="sub">What the project really does, how each part works, why each choice was made, and how to answer when the professor cross-questions you.</p>
+<div class="modes">
+<div class="l"><b>Understand mode</b>Each component explained from zero: the physics, the data, the model and the screening, with your own project's numbers and worked examples.</div>
+<div class="e"><b>Defend mode</b>The questions an examiner is likely to ask about each component, with short model answers, plus the traps where a careless answer would overclaim.</div>
+</div>
+<div class="parts">
+<div><span>0</span>The project in five minutes</div>
+<div><span>1</span>Hydrogen storage and metal hydrides</div>
+<div><span>2</span>Thermodynamics: Van't Hoff</div>
+<div><span>3</span>The data and the audit</div>
+<div><span>4</span>Turning a formula into numbers</div>
+<div><span>5</span>The machine-learning model</div>
+<div><span>6</span>Screening and ranking</div>
+<div><span>7</span>The software platform</div>
+<div><span>8</span>Limitations and future work</div>
+<div><span>9</span>Viva question bank</div>
+<div><span>10</span>One-page cheat sheet</div>
+</div>
+</div>
+<div class="foot">Every number comes from the project's own result files, the same ones the report uses. Tags: <span class="tg n">Report</span> = a result of your project (chapter of the report); <span class="tg b">background</span> = standard textbook knowledge you should know but did not produce. Report: <i>Machine Learning-Assisted Discovery and Application-Specific Screening of Metal Hydride Materials for Hydrogen Storage</i>, Avinash (230151005), supervisor Dr. Saket Verma.</div>
+</section>
+
+<!--TOC-->
+
+<section>
+<h1 class="part" id="p0"><span class="tag">Part 0</span>The project in five minutes</h1>
+<p class="lede">Read this part first and read it again on the morning of the viva. If you can explain this page in your own words, you can answer most questions, because almost every cross-question is about one of the arrows in the flow below.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p0-1"><span class="num">0.1</span>The story in one paragraph</h2>
+<p class="big">Hydrogen is hard to store. Some metal alloys soak it up like a sponge and release it when heated. <b>Which alloy suits a given job</b> (a fuel-cell vehicle, a factory buffer) depends mainly on one number, the enthalpy <b>ΔH</b>, because ΔH fixes the temperature at which the alloy releases hydrogen at a useful pressure. Measuring ΔH for every possible alloy is slow, so this project (1) cleaned and audited two public databases of measured hydrides, (2) trained a machine-learning model that <b>estimates ΔH from the chemical formula alone</b> and says how much to trust each estimate, (3) used the Van't Hoff equation to turn ΔH and ΔS into <b>operating temperature, pressure and heat demand</b>, and (4) built a <b>screening tool</b> that ranks real, measured alloys against an application's requirements. Everything is packaged in an interactive app. No lab experiments were done; a lab plan is proposed for the future.</p>
+
+<h2 id="p0-2"><span class="num">0.2</span>The flow of the project</h2>
+<figure class="wide"><img src="../../report/figures/f_workflow.png" style="max-height:48mm"><figcaption>The pipeline (report Fig. 1.1). Measured ΔH and ΔS are always used when they exist; the ML estimate is only for new compositions.</figcaption></figure>
+<div class="flow">
+<div class="node a"><b>Step 1 · Data</b>: two public databases (Purdue toolbox, 337 materials; ML-HydPARK, 772 rows) → audit → one clean table of <b>725 compositions</b> with measured ΔH. <span class="tg n">Report Ch 3</span></div>
+<div class="arrow">↓</div>
+<div class="node a"><b>Step 2 · Descriptors</b>: each formula (e.g. LaNi₅) → <b>38 numbers</b> computed from the elements' properties (mass, size, electronegativity …). <span class="tg n">Report §3.4</span></div>
+<div class="arrow">↓</div>
+<div class="node g"><b>Step 3 · Model</b>: Random Forest learns descriptors → ΔH. Error <b>MAE 5.26 kJ/mol</b>. Every prediction gets an 80% interval and an "in/out of domain" flag. <span class="tg n">Report Ch 4</span></div>
+<div class="arrow">↓</div>
+<div class="node y"><b>Step 4 · Thermodynamics</b>: Van't Hoff turns ΔH, ΔS into "at what temperature do I get 1 bar?" and "how much heat per kg H₂?". <span class="tg n">Report Ch 5</span></div>
+<div class="arrow">↓</div>
+<div class="node p"><b>Step 5 · Screening</b>: requirements (temperature, pressure, mass …) → pass/fail/unknown → weighted score → Pareto front → ranked list with evidence class. <span class="tg n">Report Ch 6–7</span></div>
+<div class="arrow">↓</div>
+<div class="node r"><b>Step 6 · Platform</b>: everything above inside an 8-page Streamlit app, "METAL HYDRIDE AI". <span class="tg n">Report §6.3</span></div>
+</div>
+
+<h2 id="p0-3"><span class="num">0.3</span>Twelve numbers to remember</h2>
+<div class="num-grid">
+<div><b>725</b><span>compositions in the ML dataset (276 Purdue, 449 HydPARK values)</span></div>
+<div><b>248 / 288</b><span>Purdue compositions also in HydPARK → no external validation possible</span></div>
+<div><b>38</b><span>composition descriptors (inputs to the model)</span></div>
+<div><b>5.26 ± 0.14</b><span>kJ/mol: Random Forest MAE, nested grouped CV (R² 0.72)</span></div>
+<div><b>8.88</b><span>kJ/mol: MAE of the simple "family median" baseline (41% worse)</span></div>
+<div><b>≈ 2.2</b><span>kJ/mol: scatter between independent measurements (the floor)</span></div>
+<div><b>2.6 → 16.9</b><span>kJ/mol: MAE near vs far from training data</span></div>
+<div><b>0.15</b><span>L1 distance: applicability-domain limit</span></div>
+<div><b>32.15 / 112.8</b><span>LaNi₅ ΔH (kJ/mol) / ΔS (J/mol·K) → 1 bar at 11.6 °C</span></div>
+<div><b>85%</b><span>of single-plateau materials reach 1 bar at ≤ 80 °C</span></div>
+<div><b>5.5 wt%</b><span>DOE 2025 <i>system</i> target; intermetallics give ≈ 1–2 wt% (material)</span></div>
+<div><b>77</b><span>automated software tests, all passing</span></div>
+</div>
+
+<h2 id="p0-4"><span class="num">0.4</span>What you can claim, and what you must not</h2>
+<div class="two">
+<div class="box derive"><div class="lbl">You can claim</div><ul>
+<li>A composition-only model predicts ΔH of AB₅/AB₂-type alloys with MAE ≈ 5.3 kJ/mol, 41% better than a family-median rule, under honest (nested, grouped) validation.</li>
+<li>The error is largest far from the training data, and you quantified this (calibration table, domain limit).</li>
+<li>The public datasets have serious traps (sign conventions, back-calculated ΔS, overlap), and you found and handled them.</li>
+<li>For the stated requirements, Ti-based AB₂/AB alloys rank highest for mobile use, and TiFe-type/Ti–Zr–Mn alloys for stationary use.</li>
+<li>The workflow runs as a tested, interactive tool.</li>
+</ul></div>
+<div class="box trap"><div class="lbl">You must not claim</div><ul>
+<li>"The model discovers new materials." It only interpolates near known alloys; it fails on unseen families.</li>
+<li>"The model predicts operating temperature." It predicts ΔH only; ΔS is <i>assumed</i> for new alloys.</li>
+<li>"The 80% interval guarantees the true value is inside."</li>
+<li>"This alloy is the best." Rankings are screening results under stated weights.</li>
+<li>"2 wt% storage" as a system figure. It is material-level; a tank would be lower.</li>
+<li>Any experimental result. No experiments were done.</li>
+</ul></div>
+</div>
+
+<div class="say"><div class="lbl">Say this when asked "Explain your project in two minutes"</div>
+<p>"Metal hydrides store hydrogen safely at low pressure, but which alloy suits an application depends on its enthalpy ΔH, which sets the release temperature. I combined two public hydride databases, found that they overlap heavily and use opposite sign conventions, and built a clean set of 725 compositions. I trained a random forest on 38 composition-based descriptors; under grouped, nested cross-validation it predicts ΔH with a mean error of about 5 kJ/mol, which is 41% better than a simple family rule. I measured how the error grows away from the training data, so each prediction has an interval and a reliability flag. Then I used the Van't Hoff equation to get operating temperatures and heat demand, and built a screening tool with hard constraints, weighted scores and Pareto fronts that ranks measured alloys for mobile and stationary storage. It's all in an interactive app. The model is a screening aid for alloys near known families; any candidate still needs a PCT measurement."</p></div>
+</section>

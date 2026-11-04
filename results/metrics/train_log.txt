@@ -1,0 +1,76 @@
+dH nested CV [composition] done in 52s
+dH nested CV [composition+family] done in 49s
+       feature_set                model    MAE  MAE_sd   RMSE  RMSE_sd     R2  R2_sd     n
+       composition         RandomForest  5.260   0.139 10.319    0.781  0.715  0.044 725.0
+composition+family         RandomForest  5.263   0.106 10.456    0.752  0.707  0.043 725.0
+       composition     GradientBoosting  5.303   0.128  9.773    0.690  0.744  0.036 725.0
+composition+family     GradientBoosting  5.316   0.128  9.803    0.709  0.743  0.038 725.0
+composition+family                Ridge  6.992   0.073 12.359    0.376  0.592  0.025 725.0
+       composition                Ridge  7.091   0.028 12.287    0.246  0.597  0.016 725.0
+                 - FamilyMedianBaseline  8.884   0.106 16.295    0.374  0.291  0.033 725.0
+                 -         MeanBaseline 12.264   0.015 19.397    0.025 -0.004  0.003 725.0
+best: RandomForest on composition (CV MAE 5.26)
+hold-out:
+feature_set                model    MAE   RMSE     R2   n                                        params
+composition     GradientBoosting  5.411  9.794  0.817 145        {"learning_rate": 0.1, "max_depth": 3}
+composition         RandomForest  5.554 11.921  0.729 145 {"max_features": 0.33, "min_samples_leaf": 1}
+composition                Ridge  7.261 13.827  0.635 145                         {"ridge__alpha": 100}
+composition FamilyMedianBaseline  9.310 19.864  0.247 145                                              
+composition         MeanBaseline 13.666 22.916 -0.002 145                                              
+leave-one-family-out:
+held_out_family                         model   MAE  RMSE    R2   n
+            AB5                  RandomForest  5.86  7.78 -0.46 116
+            AB5 MeanBaseline (other families)  5.10  6.49 -0.02 116
+            AB2                  RandomForest 13.84 17.61 -1.37 401
+            AB2 MeanBaseline (other families) 17.50 19.26 -1.84 401
+             AB                  RandomForest 16.52 22.37 -0.14  40
+             AB MeanBaseline (other families) 16.21 24.73 -0.39  40
+             SS                  RandomForest 20.98 25.22  0.09  59
+             SS MeanBaseline (other families) 12.33 27.05 -0.04  59
+             Mg                  RandomForest 14.51 19.27 -0.80  35
+             Mg MeanBaseline (other families) 36.01 38.20 -6.09  35
+            MIC                  RandomForest 11.09 17.73  0.41  33
+            MIC MeanBaseline (other families) 14.30 25.62 -0.24  33
+within-family:
+family                model  MAE  MAE_sd  RMSE  RMSE_sd    R2  R2_sd     n
+   AB5 FamilyMedianBaseline 5.18    0.05  6.51     0.05 -0.02   0.02 116.0
+   AB5         MeanBaseline 5.17    0.05  6.49     0.04 -0.02   0.01 116.0
+   AB5         RandomForest 3.25    0.02  4.50     0.01  0.51   0.00 116.0
+   AB5                Ridge 3.80    0.26  5.75     0.61  0.20   0.17 116.0
+   AB2 FamilyMedianBaseline 7.11    0.02 11.67     0.01 -0.04   0.00 401.0
+   AB2         MeanBaseline 7.38    0.01 11.46     0.02 -0.01   0.00 401.0
+   AB2         RandomForest 4.23    0.10  7.46     0.10  0.57   0.01 401.0
+   AB2                Ridge 4.64    0.08  7.14     0.37  0.61   0.04 401.0
+sensitivity:
+                                               subset                model   MAE  MAE_sd  RMSE  RMSE_sd    R2  R2_sd     n
+                                          all (union) FamilyMedianBaseline  8.82     NaN 16.19      NaN  0.30    NaN 725.0
+                                          all (union)         MeanBaseline 12.28     NaN 19.43      NaN -0.01    NaN 725.0
+                                          all (union)         RandomForest  5.24     NaN  9.97      NaN  0.73    NaN 725.0
+                                   Purdue values only FamilyMedianBaseline  6.32     NaN  9.17      NaN  0.19    NaN 276.0
+                                   Purdue values only         MeanBaseline  7.37     NaN 10.30      NaN -0.02    NaN 276.0
+                                   Purdue values only         RandomForest  4.94     NaN  7.68      NaN  0.43    NaN 276.0
+                            HydPARK-only compositions FamilyMedianBaseline  9.97     NaN 18.93      NaN  0.34    NaN 449.0
+                            HydPARK-only compositions         MeanBaseline 15.38     NaN 23.28      NaN -0.00    NaN 449.0
+                            HydPARK-only compositions         RandomForest  5.83     NaN 13.20      NaN  0.68    NaN 449.0
+high-confidence (referenced, typical dS, metals only) FamilyMedianBaseline  6.42     NaN  9.15      NaN  0.22    NaN 456.0
+high-confidence (referenced, typical dS, metals only)         MeanBaseline  7.51     NaN 10.38      NaN -0.00    NaN 456.0
+high-confidence (referenced, typical dS, metals only)         RandomForest  3.51     NaN  5.33      NaN  0.74    NaN 456.0
+                dH <= 60 kJ/mol (exclude very stable) FamilyMedianBaseline  6.74     NaN  9.19      NaN  0.16    NaN 667.0
+                dH <= 60 kJ/mol (exclude very stable)         MeanBaseline  7.90     NaN 10.03      NaN -0.01    NaN 667.0
+                dH <= 60 kJ/mol (exclude very stable)         RandomForest  4.08     NaN  5.84      NaN  0.66    NaN 667.0
+grouping effect:
+                  cv_grouping        model   MAE  MAE_sd   RMSE  RMSE_sd    R2  R2_sd     n
+      near-composition groups RandomForest 5.260   0.139 10.319    0.781 0.715  0.044 725.0
+ungrouped (one group per row) RandomForest 5.124   0.074  9.979    0.508 0.734  0.027 725.0
+wt% nested CV:
+       feature_set                       model   MAE  MAE_sd  RMSE  RMSE_sd     R2  R2_sd     n
+       composition                RandomForest 0.247   0.003 0.525    0.020  0.415  0.046 181.0
+composition+family                RandomForest 0.247   0.001 0.527    0.024  0.410  0.054 181.0
+       composition                       Ridge 0.256   0.001 0.477    0.039  0.515  0.080 181.0
+composition+family                       Ridge 0.258   0.004 0.506    0.038  0.454  0.083 181.0
+composition+family            GradientBoosting 0.258   0.004 0.532    0.027  0.399  0.063 181.0
+       composition            GradientBoosting 0.262   0.007 0.536    0.032  0.388  0.074 181.0
+                 - PhysicsBaseline(H/M x mass) 0.286   0.009 0.486    0.034  0.497  0.072 181.0
+                 -        FamilyMedianBaseline 0.332   0.005 0.612    0.024  0.205  0.064 181.0
+                 -                MeanBaseline 0.439   0.002 0.692    0.002 -0.016  0.005 181.0
+total 309s

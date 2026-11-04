@@ -1,0 +1,76 @@
+<section>
+<h1 class="part" id="p2"><span class="tag">Part 2</span>Thermodynamics: the Van't Hoff equation</h1>
+<div class="srcline">Report: §2.2 and Chapter 5</div>
+<p class="lede">One equation connects the two numbers ΔH and ΔS to everything an engineer wants to know: the pressure at a given temperature, the temperature needed for a given pressure, and the heat to supply. Know how to derive it, how to use it with real numbers, and what its limits are.</p>
+
+<div class="mode learn">Understand</div>
+
+<h2 id="p2-1"><span class="num">2.1</span>What ΔH and ΔS mean physically</h2>
+<div class="two">
+<div class="box def"><div class="lbl">ΔH: enthalpy of decomposition</div>
+The energy needed to pull one mole of H₂ out of the hydride (kJ per mol H₂). A <b>bigger ΔH</b> means hydrogen is held <b>more tightly</b>, so a higher temperature is needed to release it. LaNi₅: 32 kJ/mol; MgH₂: 78 kJ/mol.</div>
+<div class="box def"><div class="lbl">ΔS: entropy of decomposition</div>
+Mostly the entropy hydrogen gains when it goes from "locked in the crystal" to "free gas". The standard entropy of H₂ gas is ≈ 130.7 J/(mol·K), so ΔS is similar for most hydrides. In your data the median is <b>110.6 J/(mol·K)</b>, with half of all materials between 102.8 and 118.9.</div>
+</div>
+<div class="box trap"><div class="lbl">Sign convention trap</div>
+Chemists often quote <b>formation</b> values (metal + H₂ → hydride), which are <b>negative</b> (−32 kJ/mol). This project uses <b>positive desorption</b> values (+32 kJ/mol). Same physics, opposite sign. The Purdue files store negative values in J/mol; HydPARK stores positive values in kJ/mol. Mixing them unconverted would be a disaster, so the audit converted everything to positive kJ/mol (ΔH) and J/(mol·K) (ΔS).</div>
+
+<h2 id="p2-2"><span class="num">2.2</span>Deriving the Van't Hoff relation</h2>
+<p>For desorption, \(\tfrac{2}{x}\mathrm{MH}_x \rightleftharpoons \tfrac{2}{x}\mathrm{M} + \mathrm{H_2}\). The Gibbs energy change, with hydrogen at pressure \(P\), is</p>
+\[ \Delta G = \Delta H - T\Delta S + RT\ln\frac{P}{P_0}. \]
+<p>At equilibrium on the plateau \(\Delta G = 0\), and \(P = P_{eq}\):</p>
+\[ \boxed{\;\ln\frac{P_{eq}}{P_0} = -\frac{\Delta H}{RT} + \frac{\Delta S}{R}\;} \]
+<p>\(R = 8.314462618\) J/(mol·K), and \(P_0 = 1\) atm = 1.01325 bar is the reference pressure (both datasets use 1 atm). Two rearrangements are used constantly:</p>
+\[ T(P) = \frac{\Delta H}{\Delta S - R\ln(P/P_0)}, \qquad Q = \frac{\Delta H}{M_{H_2}},\ \ M_{H_2}=2.01588\ \text{g/mol}. \]
+<div class="box intuition"><div class="lbl">How to read it</div>
+Plot \(\ln P_{eq}\) against \(1/T\): a straight line, slope \(-\Delta H/R\), intercept \(\Delta S/R\). That is why measuring PCT curves at <b>several temperatures</b> gives ΔH and ΔS: take each curve's plateau pressure, plot, fit a line.</div>
+<figure class="wide"><img src="../../report/figures/existing/fig17_vant_hoff_lines.png" style="max-height:80mm"><figcaption>Van't Hoff lines of representative materials (report Fig. 5.1). Steeper line = larger ΔH. The green band is 1–10 bar.</figcaption></figure>
+
+<h2 id="p2-3"><span class="num">2.3</span>Worked example: LaNi₅ <span class="tg n">Report §5.1</span></h2>
+<div class="ex breakable"><div class="lbl">LaNi₅, ΔH = 32.15 kJ/mol, ΔS = 112.8 J/(mol·K)</div>
+<p><b>Pressure at 25 °C</b> (298.15 K):</p>
+\[ \ln\frac{P}{\text{atm}} = -\frac{32151}{8.314\times 298.15} + \frac{112.8}{8.314} = -12.970 + 13.567 = 0.597 \]
+<p>so \(P = e^{0.597} = 1.817\) atm \(= 1.84\) bar. <span class="ans">LaNi₅ gives ≈ 1.8 bar at room temperature.</span></p>
+<p><b>Temperature for 1 bar</b>: \(\ln(1/1.01325) = -0.0132\), so</p>
+\[ T = \frac{32151}{112.8 + 8.314\times 0.0132} = \frac{32151}{112.91} = 284.8\ \text{K} = 11.6\ ^\circ\text{C}. \]
+<p><b>Heat per kg H₂</b>: \(Q = 32.15/2.01588 = 15.95\) MJ/kg, which is \(15.95/119.96 = 13.3\%\) of the LHV. <span class="ans">To release 1 kg of H₂ you must supply ≈ 16 MJ of heat, and about the same is released when refilling.</span></p></div>
+
+<h2 id="p2-4"><span class="num">2.4</span>Three rules of thumb</h2>
+<ol>
+<li><b>\(T(1\ \text{bar}) \approx \Delta H/\Delta S\).</b> LaNi₅: 32150/112.8 = 285 K ✓. Since ΔS is roughly constant, <b>ΔH sets the operating temperature.</b></li>
+<li><b>5 kJ/mol in ΔH ≈ a factor of 7.5 in pressure</b> at 25 °C: \(e^{5000/(8.314\times298)} = e^{2.02} \approx 7.5\). This is why a model error of 5 kJ/mol is fine for sorting alloys into classes but too coarse to design a plateau pressure.</li>
+<li><b>Heat demand ∝ ΔH.</b> 1 kJ/mol ≈ 0.496 MJ/kg H₂. Near-ambient intermetallics need ≈ 14–16 MJ/kg (11–13% of the LHV); MgH₂ needs 38.8 MJ/kg (32.4%).</li>
+</ol>
+
+<h2 id="p2-5"><span class="num">2.5</span>What the analysis found across the database <span class="tg n">Report §5.2–5.3</span></h2>
+<table class="compact">
+<tr><th>Material</th><th class="c">ΔH</th><th class="c">P(25 °C) bar</th><th class="c">T(1 bar) °C</th><th class="c">Q MJ/kg</th><th>Meaning</th></tr>
+<tr><td class="k">LaNi₅</td><td class="c">32.2</td><td class="c">1.84</td><td class="c">11.6</td><td class="c">15.9</td><td>room-temperature reference</td></tr>
+<tr><td class="k">TiFe</td><td class="c">28.1</td><td class="c">4.16</td><td class="c">−8.3</td><td class="c">13.9</td><td>cheap, low-pressure</td></tr>
+<tr><td class="k">TiCrMn</td><td class="c">21.8</td><td class="c">107.5</td><td class="c">−78.5</td><td class="c">10.8</td><td>high-pressure AB₂, needs strong vessel</td></tr>
+<tr><td class="k">MgH₂</td><td class="c">78.3</td><td class="c">2.5×10⁻⁷</td><td class="c">302</td><td class="c">38.8</td><td>far too stable for ambient use</td></tr>
+<tr><td class="k">Mg₂Ni</td><td class="c">64.5</td><td class="c">1.2×10⁻⁵</td><td class="c">255</td><td class="c">32.0</td><td>same problem</td></tr>
+</table>
+<ul>
+<li>Of 318 single-plateau materials with typical ΔS, <b>85% reach 1 bar at ≤ 80 °C</b> (PEM fuel-cell waste heat is enough), 53% at ≤ 25 °C, and only 2% need more than 150 °C.</li>
+<li>Materials that work with ≤ 80 °C heat need a median of <b>15.1 MJ/kg</b>; those needing more than 80 °C need 22.4 MJ/kg. <b>Temperature and heat demand go together</b> (report Fig. 5.2).</li>
+</ul>
+
+<h2 id="p2-6"><span class="num">2.6</span>Hysteresis, slope and the NaAlH₄ check <span class="tg n">Report §5.4–5.5</span></h2>
+<p><b>Hysteresis</b>: 82 materials state absorption ΔH, ΔS and 41 more state a hysteresis constant; in every case P<sub>abs</sub> ≥ P<sub>des</sub> (no inconsistent record). Median ratio at 25 °C: 1.73.</p>
+<p><b>NaAlH₄ (two plateaus)</b>: the Purdue file gives two steps, 37 and 47 kJ/mol. Which plateau is which? The digitised isotherm at 433 K settles it: the low-hydrogen plateau (6.1 bar) matches the 47 kJ/mol step Na₃AlH₆ → NaH (predicted 8.27 bar, ratio 0.74); the high-hydrogen plateau (77.8 bar) matches the 37 kJ/mol step NaAlH₄ → Na₃AlH₆ (predicted 82.2 bar, ratio 0.95). The opposite assignment would be off by ≈ 10×. Consequence: only the first step works near 30 °C; using the full 3.9 wt% needs ≈ 100 °C.</p>
+<p><b>PCI consistency</b>: refitting Van't Hoff lines to the digitised isotherms reproduces the tabulated ΔH within a median of <b>1.76 kJ/mol</b> (53% within 2 kJ/mol). This is a <i>consistency check</i>, not independent validation, because for 32 of the fits the toolbox authors derived the tabulated value from those same curves.</p>
+
+<h2 id="p2-7"><span class="num">2.7</span>Estimates for new alloys: ML ΔH + assumed ΔS <span class="tg n">Report §5.6</span></h2>
+<p>For an alloy with no measurement, ΔH comes from the model (with its 80% interval) and ΔS is <b>assumed</b> to be the median of its family (e.g. AB₅: 111.2). The two uncertainties combine into a wide temperature band: about <b>105 K wide</b>, ≈ 65 K from ΔH and ≈ 35 K from ΔS. Example: LaNi₄.₂Al₀.₈, predicted ΔH 38.7 kJ/mol (34.3–41.6), gives T(1 bar) ≈ 74 °C with a band of 15–124 °C. So an ML estimate can say "more stable than LaNi₅"; it cannot fix an operating window.</p>
+
+<div class="mode exam">Defend</div>
+<div class="qa"><div class="qq"><span class="qn">Q2.1</span>Derive the Van't Hoff equation.</div><div class="aa"><p>\(\Delta G = \Delta H - T\Delta S + RT\ln(P/P_0)\); at equilibrium \(\Delta G=0\), so \(\ln(P_{eq}/P_0) = -\Delta H/RT + \Delta S/R\). (Write it on the board; it takes 30 seconds.)</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.2</span>What assumptions does it make?</div><div class="aa"><p>(1) ΔH and ΔS do not change with temperature over the range used; (2) a flat plateau (single equilibrium pressure); (3) ideal-gas behaviour of H₂ at the pressures used. For strongly sloped plateaus, (2) fails, and a window computed from the mid-plateau is optimistic at low state of charge.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.3</span>Why is ΔS roughly constant across hydrides?</div><div class="aa"><p>It is dominated by the loss of the gas-phase entropy of H₂ (≈ 130.7 J/mol·K standard). The solid-state contributions differ between alloys but are smaller. In the Purdue data the interquartile range is 102.8–118.9 J/mol·K.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.4</span>Why do you use P₀ = 1 atm and not 1 bar?</div><div class="aa"><p>Because both datasets define ΔS with respect to 1 atm. The toolbox's MATLAB function uses 101 325 Pa, and HydPARK's ln P(25 °C) column is consistent with 1 atm. Using 1 bar would shift every pressure by 1.3%. Results are then converted to bar.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.5</span>Your NaAlH₄ table has two rows. Why?</div><div class="aa"><p>NaAlH₄ decomposes in two steps with different ΔH (37 and 47 kJ/mol). I checked the assignment against the digitised 433 K isotherm: ratios of 0.74 and 0.95 between curve and prediction; the reverse assignment would be ≈ 10× off.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.6</span>Why is heat demand important?</div><div class="aa"><p>Desorbing 1 kg H₂ from LaNi₅ needs ≈ 16 MJ, and refuelling releases about the same, which must be removed quickly. Powder beds conduct heat poorly, so heat transfer often limits the flow rate. For MgH₂ the heat is ≈ 32% of the hydrogen's LHV, a large efficiency penalty.</p></div></div>
+<div class="qa"><div class="qq"><span class="qn">Q2.7</span>How accurate is the T(1 bar) you report for a new alloy?</div><div class="aa"><p>Not very: the band is ≈ 105 K wide, because the ΔH interval and the assumed ΔS both matter. That is exactly why new alloys are presented as candidates that need a PCT measurement.</p></div>
+<div class="why"><b>Trap</b> Don't present an estimated T(1 bar) as a property of the alloy.</div></div>
+</section>

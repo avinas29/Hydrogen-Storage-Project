@@ -1,0 +1,27 @@
+# Conclusion and Future Work
+
+## Conclusions
+
+This project built a documented path from public metal hydride data to application-specific screening. The main conclusions are as follows.
+
+1. The public datasets need an audit before use. ML-HydPARK v0.0.5 has 772 records in four blocks, back-calculated entropies and derived pressure columns. The Purdue toolbox uses the opposite sign convention, substitutes type defaults for missing properties, and has largely undefined capacities. 248 of 288 parseable Purdue compositions also occur in HydPARK, so the two cannot validate each other. A composition-level union of 725 compositions, with provenance and flags kept, is the appropriate modelling set.
+2. Composition predicts ΔH usefully, but only near known alloys. A random forest with 38 composition descriptors reaches an MAE of 5.26 ± 0.14 kJ mol⁻¹ (R² 0.72) under nested grouped cross-validation, against 8.88 for a family-median rule and a data scatter of about 2.2 kJ mol⁻¹. The error grows from 2.6 to 16.9 kJ mol⁻¹ with distance from the training data, and the model fails on held-out families. Predictions are therefore reported with a calibrated 80% interval and an applicability domain of d~NN~ ≤ 0.15.
+3. Thermodynamics ties operating temperature, heat demand and capacity together. Because ΔS varies little, 85% of the single-plateau Purdue materials reach 1 bar at or below 80 °C and need about 15 MJ kg⁻¹ H₂ (13% of the LHV), but these are the intermetallics with about 1–2 wt%. Mg-based hydrides store more but need about 255–300 °C and 32–39 MJ kg⁻¹.
+4. The best material depends on the application. Ti-based AB₂ and AB alloys lead the mobile screens, and TiFe-type, Ti–Zr–Mn and CaNi₅ alloys lead the stationary screens. In two requirement-driven scenarios the top five materials have no member in common. The membership of the top group is robust to the weights, but its order is not.
+5. The workflow can be used as a tool. The METAL HYDRIDE AI platform makes the predictor, the candidate generator and the requirement-driven screening available interactively. It keeps experimental results, ML estimates and missing data visibly separate.
+
+All rankings in this report are screening results based on literature data, and the ML-generated compositions are candidates. None of them has been synthesised or measured in this work.
+
+## Engineering insights
+
+A material's suitability is decided first by its plateau at the available temperatures, and only then by its capacity. A fuel-cell vehicle can use only materials that deliver the required pressure with heat at about 70 °C, which excludes Mg-based hydrides at the outset. Heat management scales directly with ΔH: every kilogram of hydrogen absorbed releases about 14–16 MJ in a typical near-ambient intermetallic, which must be removed during refuelling. Hysteresis and plateau slope also cost something: for TiFe the charging pressure is about twice the desorption pressure, and sloped AB₂ plateaus deliver their last hydrogen at several times lower pressure than their first. Finally, mass is decisive: storing 50 kg of hydrogen in a 1.9 wt% alloy requires about 2.6 t of material before any vessel or heat exchanger is added. This is acceptable for a stationary buffer and prohibitive for most vehicles.
+
+## Proposed experimental programme
+
+No laboratory work was done in this project. The following programme is a *proposal* for future work that would test its results (Appendix F gives the full characterisation matrix). Nine alloys are proposed from the screening. LaNi₅ and TiFe serve as benchmarks; Ti₁.₂CrMn, Ti₀.₉Zr₀.₂Mn₁.₄Cr₀.₄V₀.₂ and Ti₀.₅₆V₀.₃Zr₀.₁Mn₀.₉₄Fe₀.₀₆Ni₀.₀₄ come from the mobile tier (the last because its data conflict); and TiFe₀.₉Al₀.₁, Ti₀.₉Zr₀.₁Mn₁.₄, TiFe₀.₈₅Mn₀.₁₅ and CaNi₅ from the stationary tier. Two compositions absent from the data are proposed as blind tests of the model: LaNi₄.₂Al₀.₈ (predicted ΔH 38.7 kJ mol⁻¹, 80% interval 34.3–41.6) and TiFe₀.₇₅Mn₀.₂₅ (32.0 kJ mol⁻¹, 25.7–37.8).
+
+The alloys would be prepared by arc melting under argon with repeated remelting, followed by a homogenisation anneal. Their composition would be checked by ICP-OES, and their phases and lattice parameters by XRD with Rietveld refinement and SEM/EDS. After activation, Sieverts-type PCT isotherms for absorption and desorption at four or more temperatures would give ΔH and ΔS with uncertainties [@broom2011]. The model would pass the blind test if the measured ΔH falls within the stated interval. Kinetic uptake curves, cycling tests of at least 100 cycles, DSC as an independent enthalpy check, and measurements of bed density and thermal conductivity would add the properties that the present screening can assess only qualitatively or not at all.
+
+## Further development
+
+On the modelling side, the most useful additions would be structural information (C14 or C15, lattice parameters), a model for ΔS or for the full Van't Hoff line, and an active-learning loop in which new measurements are added and the applicability domain grows where the experiments are made. On the screening side, the next steps are a system-level model with vessel, heat exchanger and bed porosity, so that system capacity and refuelling time can be estimated, and quantitative cost and kinetic data where they become available. The platform's modular engines would allow each of these to be added without changing the user interface.

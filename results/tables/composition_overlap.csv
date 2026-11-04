@@ -1,0 +1,14 @@
+quantity,value
+Purdue records,337
+Purdue records with real-element composition,288
+Purdue unique compositions,288
+HydPARK records,772
+HydPARK unique compositions,700
+Compositions in both (exact),248
+Purdue records with exact match,248
+HydPARK records with exact match,282
+Exact-match record pairs,282
+Purdue compositions with only a near match (L1<=0.02),9
+Compositions only in Purdue (exact),40
+Compositions only in HydPARK (exact),452
+Purdue records not matchable (pseudo-elements),49

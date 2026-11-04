@@ -1,0 +1,15 @@
+technique,families,property measured,gap in this project it addresses
+"Arc melting (Ar, Ti getter, 4–5 remelts with flipping)","AB5, AB2, AB, BCC/SS",synthesis,produce the nominal compositions screened
+"Homogenisation anneal (sealed quartz under Ar, then quench)","AB5, AB2, AB",synthesis,"remove segregation, so measured ΔH belongs to the intended phase"
+"High-energy ball milling (Ar, sealed vials)","Mg-based, NaAlH4 (+Ti catalyst)",synthesis / nanostructuring,kinetic limitation of Mg and complex hydrides (Phase 7)
+ICP-OES of dissolved alloy,"all, esp. mischmetal alloys",bulk composition,nominal vs actual composition (ML uses nominal); Mm composition is unknown in Purdue
+XRD + Rietveld refinement,all,"phases, lattice parameters, C14/C15, hydride expansion",C14/C15 is invisible to composition features (Phase 4 limitation)
+"SEM/EDS (BSE imaging, point and map analysis)",all,"microstructure, secondary phases, local composition",explains sloped plateaus / extra plateaus
+Activation cycles in the Sieverts rig,AB (TiFe) especially; all,activation behaviour,TiFe activation is not in the data
+"Sieverts (volumetric) PCT, abs + des, ≥4 temperatures over ≥40 K",all,"plateau P(T), capacity, slope, hysteresis","replaces literature/digitised data; gives ΔH, ΔS with uncertainty"
+Kinetic uptake / release curves at fixed P/Peq,all,"rate constants, Ea (several T)",kinetics comparable across materials (Phase 7 found 7 orders of spread)
+Cycling (≥100 abs/des cycles) with periodic PCT,selected candidates,"capacity retention, plateau shift",cycle life is missing from the screening
+"DSC (heat-flux, high-pressure cell if needed)","all; Mg, NaAlH4",reaction enthalpy; Kissinger Ea from heating-rate series,independent ΔH check of the Van't Hoff value
+TGA / TPD-MS,"Mg-based, NaAlH4","desorption temperature, gravimetric capacity, impurity release",capacity definition (reversible vs total)
+Thermal conductivity: transient plane source on powder beds/compacts,selected candidates,k_eff vs H2 pressure and compaction,only 14 Purdue materials have k_eff; heat removal limits refuelling
+Bed density / tapped density,selected candidates,packing density,converts solid-basis volumetric capacity to bed basis (Phase 8)

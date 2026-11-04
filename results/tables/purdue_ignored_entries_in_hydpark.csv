@@ -1,0 +1,13 @@
+ignored_file,comp_key,dH_in_ignored_file_kJmol,in_hydpark,hydpark_ids,hydpark_dH,hydpark_blocks
+Ti[0.75]Al[0.25].ignore,Al0.25Ti0.75,47.28,True,HP0339,47,0
+Ti[0.9]Fe[0.9]B[0.2].ignore,B0.1Fe0.45Ti0.45,7.6,True,HP0014,7.6,0
+Zr[0.7]Ti[0.3]Mn[2]Fe[0.8].ignore,Fe0.211Mn0.526Ti0.079Zr0.184,14.0,True,HP0148,14,0
+Zr[1]Fe[1.4]Cr[1].ignore,Cr0.294Fe0.412Zr0.294,21.0,True,HP0085,21,0
+Zr[1]Fe[1.5]Cr[1].ignore,Cr0.286Fe0.429Zr0.286,23.0,True,HP0087;HP0655,23;22.7,0;3
+Zr[1]Mn[1.22]Fe[1.11].ignore,Fe0.333Mn0.366Zr0.3,13.1,True,HP0095,13,0
+Zr[1]Mn[1.53]Fe[1.27].ignore,Fe0.334Mn0.403Zr0.263,9.8,True,HP0098,9,0
+Zr[1]Mn[2.8].ignore,Mn0.737Zr0.263,18.4,True,HP0104;HP0670,29.9;32.9,0;3
+Zr[1]Mn[2]Co[0.8].ignore,Co0.211Mn0.526Zr0.263,19.3,True,HP0106,20.9,0
+Zr[1]Mn[2]Fe[1.2].ignore,Fe0.286Mn0.476Zr0.238,6.8,True,HP0109,6.8,0
+Zr[1]Mn[2]Ni[0.8].ignore,Mn0.526Ni0.211Zr0.263,18.6,True,HP0110,25,0
+Zr[1]Mn[3.8].ignore,Mn0.792Zr0.208,17.0,True,HP0112;HP0671,17;17,0;3
