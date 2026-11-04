@@ -48,10 +48,23 @@ REPRESENTATIVE_PCI = {
 }
 
 
+PCI_POINTS_CSV = ROOT / "data/processed/pci_points.csv"
+PCI_META_CSV = ROOT / "data/processed/pci_curves_meta.csv"
+
+
 def load_all_pci() -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Long table of every point, and a per-curve meta table."""
+    """Long table of every point, and a per-curve meta table.
+
+    Reads the digitised toolbox files when the raw data are present (and saves a processed copy once);
+    otherwise falls back to that processed copy, so a clone without data/raw still works.
+    """
+    files = sorted(PCI_DIR.glob("*_PCI.csv"))
+    if not files:
+        if PCI_POINTS_CSV.exists() and PCI_META_CSV.exists():
+            return pd.read_csv(PCI_POINTS_CSV), pd.read_csv(PCI_META_CSV)
+        raise FileNotFoundError(f"No PCI files in {PCI_DIR} and no processed copy; see data/raw/README.md")
     pts, meta = [], []
-    for f in sorted(PCI_DIR.glob("*_PCI.csv")):
+    for f in files:
         mid = f.name.replace("_PCI.csv", "")
         p = read_pci_file(f)
         for j, c in enumerate(p["curves"]):
@@ -64,7 +77,12 @@ def load_all_pci() -> tuple[pd.DataFrame, pd.DataFrame]:
                          "curator_note": p["note"], "flag_shifted_by_curator": "shift" in p["note"].lower()})
             pts.append(pd.DataFrame({"material_id": mid, "curve_id": cid, "mode": c["mode"],
                                      "T_K": c["T_K"], "wt_pct": c["wt_pct"], "P_bar": c["P_bar"]}))
-    return pd.concat(pts, ignore_index=True), pd.DataFrame(meta)
+    pts, meta = pd.concat(pts, ignore_index=True), pd.DataFrame(meta)
+    if not PCI_POINTS_CSV.exists():
+        PCI_POINTS_CSV.parent.mkdir(parents=True, exist_ok=True)
+        pts.to_csv(PCI_POINTS_CSV, index=False)
+        meta.to_csv(PCI_META_CSV, index=False)
+    return pts, meta
 
 
 def plateau_of_curve(g: pd.DataFrame) -> dict:

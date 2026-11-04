@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 TOOLBOX = ROOT / "data/raw/purdue/MetalHydrideToolbox"
 DATA = TOOLBOX / "data"
 
+pytestmark = pytest.mark.skipif(not DATA.exists() or not (ROOT / "data/raw/hydpark").exists(),
+                                reason="raw Purdue/HydPARK files not downloaded (see data/raw/README.md)")
+
 
 @pytest.fixture(scope="module")
 def purdue():

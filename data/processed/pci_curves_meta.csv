@@ -1,0 +1,312 @@
+material_id,curve_id,mode,T_K,n_points,x_unit,p_unit,flag_pressure_unit_not_stated,author,source,figure,curator_note,flag_shifted_by_curator
+Ca[0.85]Mm[0.15]Ni[5],Ca[0.85]Mm[0.15]Ni[5]|des|303|0,des,303.0,15,mass %,eq. pressure (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 6,Isotherm shifted left by 0.15 mass percent to zero on reversible portion only,True
+Ca[1]Ni[3],Ca[1]Ni[3]|des|293|0,des,293.0,13,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 5,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+Ca[1]Ni[3],Ca[1]Ni[3]|des|303|1,des,303.0,12,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 5,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+Ca[1]Ni[3],Ca[1]Ni[3]|des|313|2,des,313.0,12,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 5,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+Ca[1]Ni[5],Ca[1]Ni[5]|des|298|0,des,298.0,21,mass %,P (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True
+Ca[1]Ni[5],Ca[1]Ni[5]|des|303|1,des,303.0,19,mass %,P (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True
+Ca[1]Ni[5],Ca[1]Ni[5]|des|333|2,des,333.0,17,mass %,P (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True
+Ca[1]Ni[5],Ca[1]Ni[5]|des|353|3,des,353.0,19,mass %,P (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True
+Ca[1]Ni[5],Ca[1]Ni[5]|abs|353|4,abs,353.0,18,mass %,P (bar),False,Liang,10.1016/S0925-8388(01)01010-6,Figure 5,Isotherms shifted by 0.18 mass% to remove irreversible portion,True
+Ca[1]Ti[1]Mg[1]Ni[9],Ca[1]Ti[1]Mg[1]Ni[9]|des|293|0,des,293.0,15,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7c,Isotherms shifted by 0.15 mass% to zoom on reversible portion only,True
+Ca[1]Ti[1]Mg[1]Ni[9],Ca[1]Ti[1]Mg[1]Ni[9]|des|303|1,des,303.0,16,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7c,Isotherms shifted by 0.15 mass% to zoom on reversible portion only,True
+Ca[1]Ti[1]Mg[1]Ni[9],Ca[1]Ti[1]Mg[1]Ni[9]|des|313|2,des,313.0,16,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7c,Isotherms shifted by 0.15 mass% to zoom on reversible portion only,True
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|abs|253|0,abs,253.0,9,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|des|253|1,des,253.0,14,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|abs|273|2,abs,273.0,8,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|des|273|3,des,273.0,13,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|abs|298|4,abs,298.0,15,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|des|298|5,des,298.0,8,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|abs|308|6,abs,308.0,14,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.6]La[0.4]Ni[5],Ce[0.6]La[0.4]Ni[5]|des|308|7,des,308.0,6,mass %,eq. pressure (bar),False,Dayan,10.1016/0025-5408(81)90072-6,Figure 1,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|abs|273|0,abs,273.0,11,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|des|273|1,des,273.0,11,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|abs|296|2,abs,296.0,8,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|des|296|3,des,296.0,10,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|abs|353|4,abs,353.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[4.7]Cu[0.3],Ce[0.8]La[0.2]Ni[4.7]Cu[0.3]|des|353|5,des,353.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 6,,False
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|abs|273|0,abs,273.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|des|273|1,des,273.0,10,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|abs|296|2,abs,296.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|des|296|3,des,296.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|abs|353|4,abs,353.0,9,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[0.8]La[0.2]Ni[5],Ce[0.8]La[0.2]Ni[5]|des|353|5,des,353.0,10,mass %,eq. pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 5,Isotherms shifted by 0.15 mass percent to zero out irreversible portion,True
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|abs|296|0,abs,296.0,13,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|des|296|1,des,296.0,14,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|abs|329|2,abs,329.0,14,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|des|329|3,des,329.0,15,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|des|343|4,des,343.0,14,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|abs|373|5,abs,373.0,15,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.25]Mn[0.75],Ce[1]Ni[4.25]Mn[0.75]|des|373|6,des,373.0,14,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 3 and 4,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|abs|273|0,abs,273.0,17,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|des|273|1,des,273.0,13,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|abs|296|2,abs,296.0,17,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|des|296|3,des,296.0,17,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|abs|329|4,abs,329.0,18,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Al[0.5],Ce[1]Ni[4.5]Al[0.5]|des|329|5,des,329.0,15,mass %,eq. pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figures 5 and 6,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|abs|273|0,abs,273.0,13,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|des|273|1,des,273.0,15,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|abs|296|2,abs,296.0,11,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|des|296|3,des,296.0,13,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|abs|338|4,abs,338.0,12,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[4.5]Mn[0.5],Ce[1]Ni[4.5]Mn[0.5]|des|338|5,des,338.0,13,mass %,eq pressure (bar),False,Pourarian,10.1016/0360-3199(85)90135-1,Figure 1,,False
+Ce[1]Ni[5],Ce[1]Ni[5]|abs|273|0,abs,273.0,11,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Ce[1]Ni[5],Ce[1]Ni[5]|des|273|1,des,273.0,9,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Ce[1]Ni[5],Ce[1]Ni[5]|abs|296|2,abs,296.0,10,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Ce[1]Ni[5],Ce[1]Ni[5]|des|296|3,des,296.0,11,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Ce[1]Ni[5],Ce[1]Ni[5]|abs|353|4,abs,353.0,9,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Ce[1]Ni[5],Ce[1]Ni[5]|des|353|5,des,353.0,10,wt %,eq pressure (bar),False,Klyamkin,10.1016/0925-8388(95)01869-7,Figure 4,Isotherms shifted by mass percent of 0.2 to zero on reversible portion only,True
+Er[1]Ni[3],Er[1]Ni[3]|abs|273|0,abs,273.0,23,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|des|273|1,des,273.0,28,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|abs|283|2,abs,283.0,21,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|des|283|3,des,283.0,24,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|abs|293|4,abs,293.0,21,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|des|293|5,des,293.0,22,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|abs|298|6,abs,298.0,21,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[1]Ni[3],Er[1]Ni[3]|des|298|7,des,298.0,22,wt %,eq pressure (bar),False,Xie,10.1016/j.jallcom.2013.09.153,Figure 2,,False
+Er[2]Co[7],Er[2]Co[7]|des|323|0,des,323.0,26,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 20,,False
+Er[2]Co[7],Er[2]Co[7]|des|347.6|1,des,347.6,27,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 20,,False
+Er[2]Co[7],Er[2]Co[7]|des|374|2,des,374.0,28,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 20,,False
+Ho[1]Co[3],Ho[1]Co[3]|des|273|0,des,273.0,45,mass %,P (bar),False,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,False
+Ho[1]Co[3],Ho[1]Co[3]|des|293|1,des,293.0,47,mass %,P (bar),False,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,False
+Ho[1]Co[3],Ho[1]Co[3]|des|313|2,des,313.0,45,mass %,P (bar),False,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,False
+Ho[1]Co[3],Ho[1]Co[3]|des|333|3,des,333.0,34,mass %,P (bar),False,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,False
+Ho[1]Co[3],Ho[1]Co[3]|des|353|4,des,353.0,36,mass %,P (bar),False,Kierstead,10.1016/0022-5088(81)90159-4,Figure 1,,False
+Ho[2]Co[7],Ho[2]Co[7]|des|323|0,des,323.0,33,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 19,,False
+Ho[2]Co[7],Ho[2]Co[7]|des|347.6|1,des,347.6,32,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 19,,False
+Ho[2]Co[7],Ho[2]Co[7]|des|373|2,des,373.0,38,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 19,,False
+HydralloyC2,HydralloyC2|abs|298|0,abs,298.0,10,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C2),,False
+HydralloyC2,HydralloyC2|des|333|1,des,333.0,11,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C2),,False
+La[0.5]Ca[0.5]Ni[3],La[0.5]Ca[0.5]Ni[3]|des|293|0,des,293.0,12,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 6,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+La[0.5]Ca[0.5]Ni[3],La[0.5]Ca[0.5]Ni[3]|des|303|1,des,303.0,12,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 6,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+La[0.5]Ca[0.5]Ni[3],La[0.5]Ca[0.5]Ni[3]|des|313|2,des,313.0,14,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 6,Isotherms shifted by 0.25 mass% to zoom on reversible portion only,True
+La[0.5]Ca[1.5]Mg[1]Ni[9],La[0.5]Ca[1.5]Mg[1]Ni[9]|des|293|0,des,293.0,18,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7b,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[0.5]Ca[1.5]Mg[1]Ni[9],La[0.5]Ca[1.5]Mg[1]Ni[9]|des|303|1,des,303.0,14,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7b,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[0.5]Ca[1.5]Mg[1]Ni[9],La[0.5]Ca[1.5]Mg[1]Ni[9]|des|313|2,des,313.0,18,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7b,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|des|273|0,des,273.0,15,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|abs|273|1,abs,273.0,24,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|des|295|2,des,295.0,31,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|abs|295|3,abs,295.0,24,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|des|313|4,des,313.0,18,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[0.6]Y[0.4]Ni[4.8]Mn[0.2],La[0.6]Y[0.4]Ni[4.8]Mn[0.2]|abs|313|5,abs,313.0,33,mass %,Peq (bar),False,Ni,10.1016/j.ijhydene.2006.09.038,Figure 2,,False
+La[1]Ca[1]Mg[1]Ni[6]Al[3],La[1]Ca[1]Mg[1]Ni[6]Al[3]|des|293|0,des,293.0,13,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8a,Isotherms shifted by 0.6 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[6]Al[3],La[1]Ca[1]Mg[1]Ni[6]Al[3]|des|303|1,des,303.0,14,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8a,Isotherms shifted by 0.6 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[6]Al[3],La[1]Ca[1]Mg[1]Ni[6]Al[3]|des|313|2,des,313.0,14,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8a,Isotherms shifted by 0.6 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[6]Mn[3],La[1]Ca[1]Mg[1]Ni[6]Mn[3]|des|293|0,des,293.0,18,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8b,Isotherms shifted by 0.3 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[6]Mn[3],La[1]Ca[1]Mg[1]Ni[6]Mn[3]|des|303|1,des,303.0,17,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8b,Isotherms shifted by 0.3 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[6]Mn[3],La[1]Ca[1]Mg[1]Ni[6]Mn[3]|des|313|2,des,313.0,20,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 8b,Isotherms shifted by 0.3 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[9],La[1]Ca[1]Mg[1]Ni[9]|des|293|0,des,293.0,17,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7a,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[9],La[1]Ca[1]Mg[1]Ni[9]|des|303|1,des,303.0,18,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7a,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[1]Ca[1]Mg[1]Ni[9],La[1]Ca[1]Mg[1]Ni[9]|des|313|2,des,313.0,18,mass %,eq. pressure (bar),False,Chen,10.1016/S0925-8388(00)00694-0,Figure 7a,Isotherms shifted by 0.2 mass% to zoom on reversible portion only,True
+La[1]Ni[4.5]Sn[0.5],La[1]Ni[4.5]Sn[0.5]|abs|373|0,abs,373.0,13,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.5]Sn[0.5],La[1]Ni[4.5]Sn[0.5]|des|373|1,des,373.0,15,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|des|313|0,des,313.0,33,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|abs|313|1,abs,313.0,17,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|des|373|2,des,373.0,23,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|abs|373|3,abs,373.0,32,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|des|423|4,des,423.0,25,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.61]Mn[0.26]Al[0.13],La[1]Ni[4.61]Mn[0.26]Al[0.13]|abs|423|5,abs,423.0,37,mass %,eq. pressure,True,Ni,10.1016/j.ijhydene.2006.09.038,Figure 1,,False
+La[1]Ni[4.68]Sn[0.32],La[1]Ni[4.68]Sn[0.32]|abs|373|0,abs,373.0,12,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.68]Sn[0.32],La[1]Ni[4.68]Sn[0.32]|des|373|1,des,373.0,10,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.6]Sn[0.4],La[1]Ni[4.6]Sn[0.4]|abs|373|0,abs,373.0,11,mass %,Peq (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figures 1 and 5,,False
+La[1]Ni[4.6]Sn[0.4],La[1]Ni[4.6]Sn[0.4]|des|373|1,des,373.0,9,mass %,Peq (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figures 1 and 5,,False
+La[1]Ni[4.6]Sn[0.4],La[1]Ni[4.6]Sn[0.4]|abs|300|2,abs,300.0,17,mass %,Peq (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figures 1 and 5,,False
+La[1]Ni[4.6]Sn[0.4],La[1]Ni[4.6]Sn[0.4]|des|300|3,des,300.0,17,mass %,Peq (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figures 1 and 5,,False
+La[1]Ni[4.75]Sn[0.25],La[1]Ni[4.75]Sn[0.25]|abs|373|0,abs,373.0,10,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.75]Sn[0.25],La[1]Ni[4.75]Sn[0.25]|des|373|1,des,373.0,9,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|abs|300|0,abs,300.0,10,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|des|300|1,des,300.0,11,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|abs|313|2,abs,313.0,9,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|des|313|3,des,313.0,11,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|abs|333|4,abs,333.0,12,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Al[0.3],La[1]Ni[4.7]Al[0.3]|des|333|5,des,333.0,10,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 3,,False
+La[1]Ni[4.7]Sn[0.3],La[1]Ni[4.7]Sn[0.3]|des|298|0,des,298.0,42,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+La[1]Ni[4.7]Sn[0.3],La[1]Ni[4.7]Sn[0.3]|des|323|1,des,323.0,31,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+La[1]Ni[4.7]Sn[0.3],La[1]Ni[4.7]Sn[0.3]|des|348|2,des,348.0,27,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|273|0,abs,273.0,26,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|298|1,abs,298.0,17,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|323|2,abs,323.0,15,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|373|3,abs,373.0,16,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|423|4,abs,423.0,13,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|473|5,abs,473.0,11,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.8]Sn[0.2],La[1]Ni[4.8]Sn[0.2]|abs|513|6,abs,513.0,9,mass %,eq. pressure (bar),False,Lexcellent,10.1016/j.intermet.2006.11.002,Figure 2,,False
+La[1]Ni[4.9]Sn[0.1],La[1]Ni[4.9]Sn[0.1]|abs|373|0,abs,373.0,14,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[4.9]Sn[0.1],La[1]Ni[4.9]Sn[0.1]|des|373|1,des,373.0,13,mass %,eq. pressure (bar),False,Luo,10.1016/0925-8388(95)01871-9,Figure 1,,False
+La[1]Ni[5],La[1]Ni[5]|abs|248|0,abs,248.0,12,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|des|248|1,des,248.0,17,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|abs|262|2,abs,262.0,9,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|des|262|3,des,262.0,12,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|abs|273|4,abs,273.0,15,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|des|273|5,des,273.0,13,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|abs|298|6,abs,298.0,11,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|des|298|7,des,298.0,11,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|abs|323|8,abs,323.0,13,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+La[1]Ni[5],La[1]Ni[5]|des|323|9,des,323.0,9,mass %,eq. pressure (bar),False,Luo,10.1016/S0925-8388(97)00536-7,Figure 2,,False
+Lu[1]Co[3],Lu[1]Co[3]|des|273|0,des,273.0,33,wt %,P (bar),False,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,False
+Lu[1]Co[3],Lu[1]Co[3]|des|293|1,des,293.0,24,wt %,P (bar),False,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,False
+Lu[1]Co[3],Lu[1]Co[3]|des|313|2,des,313.0,24,wt %,P (bar),False,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,False
+Lu[1]Co[3],Lu[1]Co[3]|des|333|3,des,333.0,17,wt %,P (bar),False,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,False
+Lu[1]Co[3],Lu[1]Co[3]|des|353|4,des,353.0,18,wt %,P (bar),False,Kierstead,10.1016/0022-5088(84)90187-5,Figure 1,,False
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]|abs|547|0,abs,547.0,12,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,False
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]|abs|573|1,abs,573.0,11,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,False
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]|abs|593|2,abs,593.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,False
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]|abs|623|3,abs,623.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,False
+Mg[1]Ni[0.02],Mg[1]Ni[0.02]|abs|653|4,abs,653.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 4,,False
+Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],Mm[0.5]La[0.5]Ni[4.7]Sn[0.3]|des|298|0,des,298.0,35,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],Mm[0.5]La[0.5]Ni[4.7]Sn[0.3]|des|323|1,des,323.0,18,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[0.5]La[0.5]Ni[4.7]Sn[0.3],Mm[0.5]La[0.5]Ni[4.7]Sn[0.3]|des|348|2,des,348.0,19,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|abs|323|0,abs,323.0,6,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|des|323|1,des,323.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|abs|373|2,abs,373.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|des|373|3,des,373.0,10,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|abs|423|4,abs,423.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|des|423|5,des,423.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|abs|473|6,abs,473.0,10,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6],Mm[1]Al[0.4]Mn[0.3]Co[0.7]Ni[3.6]|des|473|7,des,473.0,6,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 8,,False
+Mm[1]Ni[4.5]Fe[0.5],Mm[1]Ni[4.5]Fe[0.5]|des|325|0,des,325.0,9,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3a,,False
+Mm[1]Ni[4.5]Fe[0.5],Mm[1]Ni[4.5]Fe[0.5]|des|350|1,des,350.0,10,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3a,,False
+Mm[1]Ni[4.5]Fe[0.5],Mm[1]Ni[4.5]Fe[0.5]|des|375|2,des,375.0,9,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3a,,False
+Mm[1]Ni[4.6]Fe[0.4],Mm[1]Ni[4.6]Fe[0.4]|abs|283|0,abs,283.0,23,mass %,Peq (bar),False,Muthukumar,10.1016/j.ijhydene.2004.12.007,Figure 4,,False
+Mm[1]Ni[4.6]Fe[0.4],Mm[1]Ni[4.6]Fe[0.4]|abs|288|1,abs,288.0,19,mass %,Peq (bar),False,Muthukumar,10.1016/j.ijhydene.2004.12.007,Figure 4,,False
+Mm[1]Ni[4.6]Fe[0.4],Mm[1]Ni[4.6]Fe[0.4]|abs|293|2,abs,293.0,20,mass %,Peq (bar),False,Muthukumar,10.1016/j.ijhydene.2004.12.007,Figure 4,,False
+Mm[1]Ni[4.6]Fe[0.4],Mm[1]Ni[4.6]Fe[0.4]|abs|298|3,abs,298.0,19,mass %,Peq (bar),False,Muthukumar,10.1016/j.ijhydene.2004.12.007,Figure 4,,False
+Mm[1]Ni[4.7]Fe[0.3],Mm[1]Ni[4.7]Fe[0.3]|des|325|0,des,325.0,9,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3b,,False
+Mm[1]Ni[4.7]Fe[0.3],Mm[1]Ni[4.7]Fe[0.3]|des|350|1,des,350.0,9,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3b,,False
+Mm[1]Ni[4.7]Fe[0.3],Mm[1]Ni[4.7]Fe[0.3]|des|375|2,des,375.0,11,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3b,,False
+Mm[1]Ni[4.7]Sn[0.3],Mm[1]Ni[4.7]Sn[0.3]|des|298|0,des,298.0,27,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[1]Ni[4.7]Sn[0.3],Mm[1]Ni[4.7]Sn[0.3]|des|323|1,des,323.0,25,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[1]Ni[4.7]Sn[0.3],Mm[1]Ni[4.7]Sn[0.3]|des|348|2,des,348.0,24,mass %,Peq (bar),False,Khyzhun,10.1016/S0925-8388(03)00352-9,Figure 5,,False
+Mm[1]Ni[4.9]Fe[0.1],Mm[1]Ni[4.9]Fe[0.1]|des|325|0,des,325.0,8,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3c,,False
+Mm[1]Ni[4.9]Fe[0.1],Mm[1]Ni[4.9]Fe[0.1]|des|350|1,des,350.0,7,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3c,,False
+Mm[1]Ni[4.9]Fe[0.1],Mm[1]Ni[4.9]Fe[0.1]|des|375|2,des,375.0,10,mass %,eq. pressure (bar),False,Singh,10.1016/j.jallcom.2003.11.005,Figure 3c,,False
+Na[1]Al[1]H[1],Na[1]Al[1]H[1]|abs|433|0,abs,433.0,23,mass %,eq pressure (bar),False,Streukens,10.1039/b603268k,Figure 1 4 mol % Ti,,False
+Na[1]Al[1]H[1],Na[1]Al[1]H[1]|des|433|1,des,433.0,20,mass %,ep pressure (bar),False,Streukens,10.1039/b603268k,Figure 1 4 mol % Ti,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|abs|320|0,abs,320.0,8,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|des|320|1,des,320.0,11,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|abs|350|2,abs,350.0,8,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|des|350|3,des,350.0,9,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|abs|375|4,abs,375.0,6,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.95]Cr[0.05],Nb[0.95]Cr[0.05]|des|375|5,des,375.0,8,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 1,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|abs|320|0,abs,320.0,7,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|des|320|1,des,320.0,10,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|abs|350|2,abs,350.0,9,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|des|350|3,des,350.0,8,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|abs|375|4,abs,375.0,10,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Nb[0.97]Cr[0.03],Nb[0.97]Cr[0.03]|des|375|5,des,375.0,9,mass %,eq. pressure (bar),False,Esayed,10.1016/S0360-3199(99)00025-7,Figure 2,,False
+Tb[2]Co[7],Tb[2]Co[7]|des|323|0,des,323.0,24,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 16,,False
+Tb[2]Co[7],Tb[2]Co[7]|des|348|1,des,348.0,15,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 16,,False
+Tb[2]Co[7],Tb[2]Co[7]|des|374|2,des,374.0,22,wt %,P (bar),False,Goudy,"Andrew Goudy Thesis, University of Pittsburg 1976",Figure 16,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|abs|323|0,abs,323.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|des|323|1,des,323.0,11,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|abs|343|2,abs,343.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|des|343|3,des,343.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|abs|363|4,abs,363.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|des|363|5,des,363.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|abs|393|6,abs,393.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|des|393|7,des,393.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|abs|423|8,abs,423.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04],Ti[0.56]V[0.3]Zr[0.1]Mn[0.94]Fe[0.06]Ni[0.04]|des|423|9,des,423.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 5,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|abs|393|0,abs,393.0,8,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|des|393|1,des,393.0,10,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|abs|413|2,abs,413.0,11,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|des|413|3,des,413.0,12,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|abs|433|4,abs,433.0,11,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3],Ti[0.5]Zr[0.5]Mn[1.2]Fe[0.3]|des|433|5,des,433.0,9,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 1,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|abs|373|0,abs,373.0,12,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|des|373|1,des,373.0,11,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|abs|393|2,abs,393.0,12,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|des|393|3,des,393.0,11,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|abs|413|4,abs,413.0,12,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|des|413|5,des,413.0,10,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|abs|433|6,abs,433.0,14,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34],Ti[0.5]Zr[0.5]Mn[1.36]Fe[0.34]|des|433|7,des,433.0,11,mass %,eq. pressure (bar),False,Komazaki,10.1016/0022-5088(83)90279-5,Figure 2,,False
+Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8],Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8]|abs|298|0,abs,298.0,16,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4b,,False
+Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8],Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8]|des|298|1,des,298.0,13,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4b,,False
+Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8],Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8]|abs|333|2,abs,333.0,13,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4b,,False
+Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8],Ti[0.95]Zr[0.05]Cr[1.2]Mn[0.8]|des|333|3,des,333.0,13,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4b,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|des|273.15|0,des,273.15,24,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|abs|273.15|1,abs,273.15,22,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|des|298.15|2,des,298.15,30,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|abs|295.15|3,abs,295.15,27,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|des|323.15|4,des,323.15,35,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|abs|323.15|5,abs,323.15,33,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|des|348.15|6,des,348.15,48,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|abs|348.15|7,abs,348.15,43,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|des|373.15|8,des,373.15,34,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09],Ti[0.95]Zr[0.05]Mn[1.55]V[0.45]Fe[0.09]|abs|373.15|9,abs,373.15,41,mass %,eq. pressure (bar),False,Herbrig,10.1016/j.ijhydene.2013.03.104,Figure 4a,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|abs|273|0,abs,273.0,21,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|des|273|1,des,273.0,26,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|abs|303|2,abs,303.0,29,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|des|303|3,des,303.0,25,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|abs|333|4,abs,333.0,21,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[0.9]Zr[0.1]Mn[1.4],Ti[0.9]Zr[0.1]Mn[1.4]|des|333|5,des,333.0,23,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 6,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|abs|263|0,abs,263.0,41,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|des|263|1,des,263.0,48,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|abs|274|2,abs,274.0,34,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|des|274|3,des,274.0,44,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|abs|284|4,abs,284.0,40,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1.01]Cr[1.06]Mn[1],Ti[1.01]Cr[1.06]Mn[1]|des|284|5,des,284.0,44,mass %,eq. pressure (bar),False,Voskuilen,10.1016/j.ijhydene.2010.07.169,Figure 4,,False
+Ti[1]Cr[1.2]Mn[0.6],Ti[1]Cr[1.2]Mn[0.6]|des|273|0,des,273.0,19,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5c,,False
+Ti[1]Cr[1.2]Mn[0.6],Ti[1]Cr[1.2]Mn[0.6]|des|307|1,des,307.0,23,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5c,,False
+Ti[1]Cr[1.4]Mn[0.4],Ti[1]Cr[1.4]Mn[0.4]|des|307|0,des,307.0,24,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5b,,False
+Ti[1]Cr[1.78],Ti[1]Cr[1.78]|des|251|0,des,251.0,15,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5a,,False
+Ti[1]Cr[1.78],Ti[1]Cr[1.78]|des|273|1,des,273.0,26,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5a,,False
+Ti[1]Cr[1.78],Ti[1]Cr[1.78]|des|297|2,des,297.0,36,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5a,,False
+Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15],Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15]|abs|298|0,abs,298.0,11,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4a,,False
+Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15],Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15]|des|298|1,des,298.0,9,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4a,,False
+Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15],Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15]|abs|333|2,abs,333.0,11,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4a,,False
+Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15],Ti[1]Cr[1]Mn[0.55]Fe[0.3]V[0.15]|des|333|3,des,333.0,9,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 4a,,False
+Ti[1]Cr[1]Mn[0.8],Ti[1]Cr[1]Mn[0.8]|des|273|0,des,273.0,22,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5d,,False
+Ti[1]Cr[1]Mn[0.8],Ti[1]Cr[1]Mn[0.8]|des|307|1,des,307.0,28,mass %,eq. pressure (bar),False,Agresti,10.1016/j.msea.2008.09.154,Figure 5d,,False
+Ti[1]Fe[0.8]Ni[0.15]V[0.05],Ti[1]Fe[0.8]Ni[0.15]V[0.05]|abs|393|0,abs,393.0,18,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 2,(Isotherms shifted by 0.1 mass% to remove irreversible portion(,True
+Ti[1]Fe[0.8]Ni[0.15]V[0.05],Ti[1]Fe[0.8]Ni[0.15]V[0.05]|des|393|1,des,393.0,18,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 2,(Isotherms shifted by 0.1 mass% to remove irreversible portion(,True
+Ti[1]Fe[0.8]Ni[0.15]V[0.05],Ti[1]Fe[0.8]Ni[0.15]V[0.05]|abs|423|2,abs,423.0,19,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 2,(Isotherms shifted by 0.1 mass% to remove irreversible portion(,True
+Ti[1]Fe[0.8]Ni[0.15]V[0.05],Ti[1]Fe[0.8]Ni[0.15]V[0.05]|des|423|3,des,423.0,19,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 2,(Isotherms shifted by 0.1 mass% to remove irreversible portion(,True
+Ti[1]Fe[0.8]Ni[0.2]Nb[0.05],Ti[1]Fe[0.8]Ni[0.2]Nb[0.05]|abs|393|0,abs,393.0,17,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 5,,False
+Ti[1]Fe[0.8]Ni[0.2]Nb[0.05],Ti[1]Fe[0.8]Ni[0.2]Nb[0.05]|des|393|1,des,393.0,18,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 5,,False
+Ti[1]Fe[0.8]Ni[0.2]Nb[0.05],Ti[1]Fe[0.8]Ni[0.2]Nb[0.05]|abs|423|2,abs,423.0,18,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 5,,False
+Ti[1]Fe[0.8]Ni[0.2]Nb[0.05],Ti[1]Fe[0.8]Ni[0.2]Nb[0.05]|des|423|3,des,423.0,20,mass %,Peq (bar),False,Oguro,10.1016/0022-5088(83)90280-1,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|abs|273|0,abs,273.0,29,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|des|273|1,des,273.0,27,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|abs|303|2,abs,303.0,29,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|des|303|3,des,303.0,24,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|abs|333|4,abs,333.0,27,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.4],Ti[1]Mn[1.4]|des|333|5,des,333.0,24,mass %,eq. pressure (bar),False,Taizhong,10.1016/j.intermet.2003.08.005,Figure 5,,False
+Ti[1]Mn[1.5]V[0.45]Fe[0.1],Ti[1]Mn[1.5]V[0.45]Fe[0.1]|abs|298|0,abs,298.0,12,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C0),Isotherms shifted by 0.15 to zero on reversible portion,True
+Ti[1]Mn[1.5]V[0.45]Fe[0.1],Ti[1]Mn[1.5]V[0.45]Fe[0.1]|des|333|1,des,333.0,10,mass %,eq. pressure (bar),False,Hagstrom,10.1016/S0925-8388(98)00213-8,Figure 8 (Hydralloy C0),Isotherms shifted by 0.15 to zero on reversible portion,True
+Y[1]Co[3],Y[1]Co[3]|des|348|0,des,348.0,25,mass %,P (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 2,,False
+Y[1]Co[3],Y[1]Co[3]|des|393|1,des,393.0,36,mass %,P (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 2,,False
+Y[1]Co[3],Y[1]Co[3]|des|423|2,des,423.0,35,mass %,P (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 2,,False
+Y[1]Co[3],Y[1]Co[3]|des|498|3,des,498.0,21,mass %,P (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 2,,False
+Y[2]Co[7],Y[2]Co[7]|des|298|0,des,298.0,39,wt %,eq pressure (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,False
+Y[2]Co[7],Y[2]Co[7]|des|323|1,des,323.0,30,wt %,eq pressure (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,False
+Y[2]Co[7],Y[2]Co[7]|des|348|2,des,348.0,32,wt %,eq pressure (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,False
+Y[2]Co[7],Y[2]Co[7]|des|423|3,des,423.0,23,wt %,eq pressure (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,False
+Y[2]Co[7],Y[2]Co[7]|des|498|4,des,498.0,21,wt %,eq pressure (bar),False,Yamaguchi,10.1016/0022-5088(85)90377-7,Figure 1,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|323|0,abs,323.0,16,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|348|1,abs,348.0,16,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|373|2,abs,373.0,18,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|398|3,abs,398.0,12,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|423|4,abs,423.0,13,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.4]Ho[0.6]Co[2],Zr[0.4]Ho[0.6]Co[2]|abs|448|5,abs,448.0,11,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 2,,False
+Zr[0.5]Ti[0.5]Cr[1]Fe[1],Zr[0.5]Ti[0.5]Cr[1]Fe[1]|des|273|0,des,273.0,14,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 3,,False
+Zr[0.5]Ti[0.5]Cr[1]Fe[1],Zr[0.5]Ti[0.5]Cr[1]Fe[1]|des|296|1,des,296.0,15,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 3,,False
+Zr[0.5]Ti[0.5]Cr[1]Fe[1],Zr[0.5]Ti[0.5]Cr[1]Fe[1]|des|323|2,des,323.0,14,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 3,,False
+Zr[0.5]Ti[0.5]Cr[1]Fe[1],Zr[0.5]Ti[0.5]Cr[1]Fe[1]|des|373|3,des,373.0,12,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 3,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|323|0,abs,323.0,14,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|348|1,abs,348.0,12,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|373|2,abs,373.0,14,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|398|3,abs,398.0,10,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|423|4,abs,423.0,7,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.6]Ho[0.4]Co[2],Zr[0.6]Ho[0.4]Co[2]|abs|448|5,abs,448.0,6,mass %,Peq (bar),False,Ramesh,10.1016/0925-8388(93)90278-U,Figure 1,,False
+Zr[0.7]Ti[0.3]Cr[1]Fe[1],Zr[0.7]Ti[0.3]Cr[1]Fe[1]|des|296|0,des,296.0,14,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 2,,False
+Zr[0.7]Ti[0.3]Cr[1]Fe[1],Zr[0.7]Ti[0.3]Cr[1]Fe[1]|des|323|1,des,323.0,13,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 2,,False
+Zr[0.7]Ti[0.3]Cr[1]Fe[1],Zr[0.7]Ti[0.3]Cr[1]Fe[1]|des|373|2,des,373.0,14,mass %,Peq (bar),False,Yu,10.1016/0022-5088(85)90368-6,Figure 2,,False
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|abs|673|0,abs,673.0,5,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|des|673|1,des,673.0,4,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|abs|623|2,abs,623.0,6,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|des|623|3,des,623.0,6,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|abs|573|4,abs,573.0,7,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|des|573|5,des,573.0,10,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|abs|523|6,abs,523.0,9,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
+Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9],Zr[0.96]Ti[0.08]Cr[0.04]Fe[0.02]Ni[0.9]|des|523|7,des,523.0,8,mass %,eq. pressure (bar),False,Kapischke,10.1016/S0894-1777(98)10007-9,Figure 7,Isotherms shifted by 0.4 mass percent to zero on reversible portion,True
